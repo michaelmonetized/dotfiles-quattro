@@ -1,0 +1,4487 @@
+[2026-08-22 08:01:18.480] [info]  🆙 Upscayl version: 2.15.0 FOSS
+[2026-08-22 08:01:18.481] [info]  🚀 UPSCAYL EXEC PATH:  /usr/lib/upscayl/bin/upscayl-bin
+[2026-08-22 08:01:18.481] [info]  🚀 MODELS PATH:  /usr/lib/upscayl/models
+[2026-08-22 08:01:18.482] [info]  🚃 App Path:  /usr/lib/upscayl/app.asar
+[2026-08-22 08:01:18.677] [info]  💻 System Info: {"platform":"linux","release":"7.1.6-1-1-ARCH","arch":"arm64","model":"unknown","cpuCount":10,"gpu":{"active":false,"deviceId":0,"gpuPreference":0,"vendorId":0}}
+[2026-08-22 08:01:35.941] [info]  🔄 Resetting image paths
+[2026-08-22 08:01:46.674] [info]  📁 Updating Folder Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 08:01:46.676] [info]  📁 Selected Folder Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 08:01:46.678] [info]  🎒 BACKEND REPORTED:  📁 Updating Folder Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 08:01:46.680] [info]  🖼 Selected Folder Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 08:01:46.692] [info]  🎒 BACKEND REPORTED:  📁 Selected Folder Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 08:02:00.292] [info]  🔄 Resetting Upscaled Image Path
+[2026-08-22 08:02:00.296] [info]  📢 Upscayl Command:  [
+  '-i',
+  '/home/michael/.config/omarchy/themes/hurleyus/backgrounds',
+  '-o',
+  '/home/michael/.config/omarchy/themes/hurleyus/backgrounds/upscayl_png_upscayl-standard-4x_4x',
+  '-m',
+  '/usr/lib/upscayl/models',
+  '-n',
+  'upscayl-standard-4x',
+  '-f',
+  'png',
+  '-c',
+  '0'
+]
+[2026-08-22 08:02:00.310] [info]  🛑 Updating Stopped:  false
+[2026-08-22 08:02:00.315] [info]  💯 Done upscaling
+[2026-08-22 08:02:00.330] [info]  🏁 FOLDER_UPSCAYL
+[2026-08-22 08:02:00.331] [info]  🎒 BACKEND REPORTED:  📢 Upscayl Command:  -i,/home/michael/.config/omarchy/themes/hurleyus/backgrounds,-o,/home/michael/.config/omarchy/themes/hurleyus/backgrounds/upscayl_png_upscayl-standard-4x_4x,-m,/usr/lib/upscayl/models,-n,upscayl-standard-4x,-f,png,-c,0
+[2026-08-22 08:02:00.331] [info]  🎒 BACKEND REPORTED:  🛑 Updating Stopped:  false
+[2026-08-22 08:02:00.332] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  /usr/lib/upscayl/bin/upscayl-bin: /usr/lib/upscayl/bin/upscayl-bin: cannot execute binary file
+
+[2026-08-22 08:02:00.333] [info]  🎒 BACKEND REPORTED:  💯 Done upscaling
+[2026-08-22 08:02:00.333] [info]  💯 FOLDER_UPSCAYL_DONE:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/upscayl_png_upscayl-standard-4x_4x
+[2026-08-22 08:02:10.857] [info]  🔄 Resetting image paths
+[2026-08-22 08:02:20.746] [info]  🖼️ Updating Image Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus.png
+[2026-08-22 08:02:20.746] [info]  📄 Selected File Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus.png
+[2026-08-22 08:02:20.751] [info]  🎒 BACKEND REPORTED:  🖼️ Updating Image Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus.png
+[2026-08-22 08:02:20.757] [info]  🎒 BACKEND REPORTED:  📄 Selected File Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus.png
+[2026-08-22 08:02:20.757] [info]  🖼 Selected Image Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus.png
+[2026-08-22 08:02:20.758] [info]  📁 Selected Image Directory:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 08:02:20.758] [info]  🖼 imagePath:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus.png
+[2026-08-22 08:02:20.758] [info]  🔤 Extension:  png
+[2026-08-22 08:02:23.037] [info]  🔄 Resetting Upscaled Image Path
+[2026-08-22 08:02:23.041] [info]  ✅ Upscayl Variables:  {"model":"upscayl-standard-4x","gpuId":null,"saveImageAs":"png","inputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","fileNameWithExt":"1-hurleyus.png","outputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","outFile":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus_upscayl_4x_upscayl-standard-4x.png","fileName":"1-hurleyus","scale":"4","compression":"0","customWidth":"","useCustomWidth":false,"tileSize":null}
+[2026-08-22 08:02:23.042] [info]  📢 Upscayl Command:  [
+  '-i',
+  '/home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus.png',
+  '-o',
+  '/home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus_upscayl_4x_upscayl-standard-4x.png',
+  '-m',
+  '/usr/lib/upscayl/models',
+  '-n',
+  'upscayl-standard-4x',
+  '-f',
+  'png',
+  '-c',
+  '0'
+]
+[2026-08-22 08:02:23.049] [info]  👶 Updating Child Processes:  {"binary":"/usr/lib/upscayl/bin/upscayl-bin","args":["/usr/lib/upscayl/bin/upscayl-bin","-i","/home/michael/.config/omarchy/themes/hurleyus/backgrounds","-o","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/upscayl_png_upscayl-standard-4x_4x","-m","/usr/lib/upscayl/models","-n","upscayl-standard-4x","-f","png","-c","0"]}
+[2026-08-22 08:02:23.049] [info]  🛑 Updating Stopped:  false
+[2026-08-22 08:02:23.051] [info]  🏁 UPSCAYL
+[2026-08-22 08:02:23.059] [info]  /usr/lib/upscayl/bin/upscayl-bin: /usr/lib/upscayl/bin/upscayl-bin: cannot execute binary file
+
+[2026-08-22 08:02:23.061] [info]  💯 Done upscaling
+[2026-08-22 08:02:23.066] [info]  🎒 BACKEND REPORTED:  ✅ Upscayl Variables:  {"model":"upscayl-standard-4x","gpuId":null,"saveImageAs":"png","inputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","fileNameWithExt":"1-hurleyus.png","outputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","outFile":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus_upscayl_4x_upscayl-standard-4x.png","fileName":"1-hurleyus","scale":"4","compression":"0","customWidth":"","useCustomWidth":false,"tileSize":null}
+[2026-08-22 08:02:23.066] [info]  🎒 BACKEND REPORTED:  📢 Upscayl Command:  -i,/home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus.png,-o,/home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus_upscayl_4x_upscayl-standard-4x.png,-m,/usr/lib/upscayl/models,-n,upscayl-standard-4x,-f,png,-c,0
+[2026-08-22 08:02:23.067] [info]  🎒 BACKEND REPORTED:  👶 Updating Child Processes:  {"binary":"/usr/lib/upscayl/bin/upscayl-bin","args":["/usr/lib/upscayl/bin/upscayl-bin","-i","/home/michael/.config/omarchy/themes/hurleyus/backgrounds","-o","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/upscayl_png_upscayl-standard-4x_4x","-m","/usr/lib/upscayl/models","-n","upscayl-standard-4x","-f","png","-c","0"]}
+[2026-08-22 08:02:23.067] [info]  🎒 BACKEND REPORTED:  🛑 Updating Stopped:  false
+[2026-08-22 08:02:23.067] [info]  🎒 BACKEND REPORTED:  /usr/lib/upscayl/bin/upscayl-bin: /usr/lib/upscayl/bin/upscayl-bin: cannot execute binary file
+
+[2026-08-22 08:02:23.067] [info]  🚧 UPSCAYL_PROGRESS:  /usr/lib/upscayl/bin/upscayl-bin: /usr/lib/upscayl/bin/upscayl-bin: cannot execute binary file
+
+[2026-08-22 08:02:23.067] [info]  🎒 BACKEND REPORTED:  💯 Done upscaling
+[2026-08-22 08:02:23.068] [info]  upscaledImagePath:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus_upscayl_4x_upscayl-standard-4x.png
+[2026-08-22 08:02:23.068] [info]  💯 UPSCAYL_DONE:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/1-hurleyus_upscayl_4x_upscayl-standard-4x.png
+[2026-08-22 08:11:00.621] [info]  🆙 Upscayl version: 2.15.0 FOSS
+[2026-08-22 08:11:00.623] [info]  🚀 UPSCAYL EXEC PATH:  /usr/lib/upscayl/bin/upscayl-bin
+[2026-08-22 08:11:00.623] [info]  🚀 MODELS PATH:  /usr/lib/upscayl/models
+[2026-08-22 08:11:00.623] [info]  🚃 App Path:  /usr/lib/upscayl/app.asar
+[2026-08-22 08:11:00.767] [info]  💻 System Info: {"platform":"linux","release":"7.1.6-1-1-ARCH","arch":"arm64","model":"unknown","cpuCount":10,"gpu":{"active":false,"deviceId":0,"gpuPreference":0,"vendorId":0}}
+[2026-08-22 08:11:04.057] [info]  🔄 Resetting image paths
+[2026-08-22 08:11:06.420] [info]  🖼️ Updating Image Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:11:06.421] [info]  📄 Selected File Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:11:06.427] [info]  🎒 BACKEND REPORTED:  🖼️ Updating Image Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:11:06.437] [info]  🎒 BACKEND REPORTED:  📄 Selected File Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:11:06.438] [info]  🖼 Selected Image Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:11:06.439] [info]  📁 Selected Image Directory:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 08:11:06.443] [info]  🖼 imagePath:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:11:06.443] [info]  🔤 Extension:  png
+[2026-08-22 08:11:10.270] [info]  🔄 Resetting Upscaled Image Path
+[2026-08-22 08:11:10.274] [info]  ✅ Upscayl Variables:  {"model":"upscayl-standard-4x","gpuId":null,"saveImageAs":"png","inputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","fileNameWithExt":"6-hurleyus.png","outputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","outFile":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png","fileName":"6-hurleyus","scale":"4","compression":"0","customWidth":"","useCustomWidth":false,"tileSize":null}
+[2026-08-22 08:11:10.276] [info]  📢 Upscayl Command:  [
+  '-i',
+  '/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png',
+  '-o',
+  '/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png',
+  '-m',
+  '/usr/lib/upscayl/models',
+  '-n',
+  'upscayl-standard-4x',
+  '-f',
+  'png',
+  '-c',
+  '0'
+]
+[2026-08-22 08:11:10.290] [info]  👶 Updating Child Processes:  {"binary":"/usr/lib/upscayl/bin/upscayl-bin","args":["/usr/lib/upscayl/bin/upscayl-bin","-i","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png","-o","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png","-m","/usr/lib/upscayl/models","-n","upscayl-standard-4x","-f","png","-c","0"]}
+[2026-08-22 08:11:10.291] [info]  🛑 Updating Stopped:  false
+[2026-08-22 08:11:10.292] [info]  🏁 UPSCAYL
+[2026-08-22 08:11:10.297] [info]  /usr/lib/upscayl/bin/upscayl-bin: /usr/lib/upscayl/bin/upscayl-bin: cannot execute binary file
+
+[2026-08-22 08:11:10.303] [info]  💯 Done upscaling
+[2026-08-22 08:11:10.315] [info]  🎒 BACKEND REPORTED:  ✅ Upscayl Variables:  {"model":"upscayl-standard-4x","gpuId":null,"saveImageAs":"png","inputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","fileNameWithExt":"6-hurleyus.png","outputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","outFile":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png","fileName":"6-hurleyus","scale":"4","compression":"0","customWidth":"","useCustomWidth":false,"tileSize":null}
+[2026-08-22 08:11:10.319] [info]  🎒 BACKEND REPORTED:  📢 Upscayl Command:  -i,/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png,-o,/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png,-m,/usr/lib/upscayl/models,-n,upscayl-standard-4x,-f,png,-c,0
+[2026-08-22 08:11:10.320] [info]  🎒 BACKEND REPORTED:  👶 Updating Child Processes:  {"binary":"/usr/lib/upscayl/bin/upscayl-bin","args":["/usr/lib/upscayl/bin/upscayl-bin","-i","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png","-o","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png","-m","/usr/lib/upscayl/models","-n","upscayl-standard-4x","-f","png","-c","0"]}
+[2026-08-22 08:11:10.320] [info]  🎒 BACKEND REPORTED:  🛑 Updating Stopped:  false
+[2026-08-22 08:11:10.326] [info]  🎒 BACKEND REPORTED:  /usr/lib/upscayl/bin/upscayl-bin: /usr/lib/upscayl/bin/upscayl-bin: cannot execute binary file
+
+[2026-08-22 08:11:10.326] [info]  🚧 UPSCAYL_PROGRESS:  /usr/lib/upscayl/bin/upscayl-bin: /usr/lib/upscayl/bin/upscayl-bin: cannot execute binary file
+
+[2026-08-22 08:11:10.327] [info]  🎒 BACKEND REPORTED:  💯 Done upscaling
+[2026-08-22 08:11:10.327] [info]  upscaledImagePath:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png
+[2026-08-22 08:11:10.328] [info]  💯 UPSCAYL_DONE:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png
+[2026-08-22 08:25:58.328] [info]  🆙 Upscayl version: 2.15.0 FOSS
+[2026-08-22 08:25:58.329] [info]  🚀 UPSCAYL EXEC PATH:  /usr/lib/upscayl/bin/upscayl-bin
+[2026-08-22 08:25:58.329] [info]  🚀 MODELS PATH:  /usr/lib/upscayl/models
+[2026-08-22 08:25:58.330] [info]  🚃 App Path:  /usr/lib/upscayl/app.asar
+[2026-08-22 08:25:58.522] [info]  💻 System Info: {"platform":"linux","release":"7.1.6-1-1-ARCH","arch":"arm64","model":"unknown","cpuCount":10,"gpu":{"active":false,"deviceId":0,"gpuPreference":0,"vendorId":0}}
+[2026-08-22 08:26:00.796] [info]  🔄 Resetting image paths
+[2026-08-22 08:26:03.022] [info]  🖼️ Updating Image Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:26:03.023] [info]  📄 Selected File Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:26:03.026] [info]  🎒 BACKEND REPORTED:  🖼️ Updating Image Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:26:03.029] [info]  🎒 BACKEND REPORTED:  📄 Selected File Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:26:03.030] [info]  🖼 Selected Image Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:26:03.033] [info]  📁 Selected Image Directory:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 08:26:03.033] [info]  🖼 imagePath:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:26:03.033] [info]  🔤 Extension:  png
+[2026-08-22 08:26:04.374] [info]  🔄 Resetting Upscaled Image Path
+[2026-08-22 08:26:04.376] [info]  ✅ Upscayl Variables:  {"model":"upscayl-standard-4x","gpuId":null,"saveImageAs":"png","inputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","fileNameWithExt":"6-hurleyus.png","outputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","outFile":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png","fileName":"6-hurleyus","scale":"4","compression":"0","customWidth":"","useCustomWidth":false,"tileSize":null}
+[2026-08-22 08:26:04.380] [info]  📢 Upscayl Command:  [
+  '-i',
+  '/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png',
+  '-o',
+  '/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png',
+  '-m',
+  '/usr/lib/upscayl/models',
+  '-n',
+  'upscayl-standard-4x',
+  '-f',
+  'png',
+  '-c',
+  '0'
+]
+[2026-08-22 08:26:04.401] [info]  👶 Updating Child Processes:  {"binary":"/usr/lib/upscayl/bin/upscayl-bin","args":["/usr/lib/upscayl/bin/upscayl-bin","-i","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png","-o","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png","-m","/usr/lib/upscayl/models","-n","upscayl-standard-4x","-f","png","-c","0"]}
+[2026-08-22 08:26:04.402] [info]  🛑 Updating Stopped:  false
+[2026-08-22 08:26:04.405] [info]  /usr/lib/upscayl/bin/upscayl-bin: /usr/lib/upscayl/bin/upscayl-bin: cannot execute binary file
+
+[2026-08-22 08:26:04.407] [info]  💯 Done upscaling
+[2026-08-22 08:26:04.417] [info]  🏁 UPSCAYL
+[2026-08-22 08:26:04.419] [info]  🎒 BACKEND REPORTED:  ✅ Upscayl Variables:  {"model":"upscayl-standard-4x","gpuId":null,"saveImageAs":"png","inputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","fileNameWithExt":"6-hurleyus.png","outputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","outFile":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png","fileName":"6-hurleyus","scale":"4","compression":"0","customWidth":"","useCustomWidth":false,"tileSize":null}
+[2026-08-22 08:26:04.420] [info]  🎒 BACKEND REPORTED:  📢 Upscayl Command:  -i,/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png,-o,/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png,-m,/usr/lib/upscayl/models,-n,upscayl-standard-4x,-f,png,-c,0
+[2026-08-22 08:26:04.421] [info]  🎒 BACKEND REPORTED:  👶 Updating Child Processes:  {"binary":"/usr/lib/upscayl/bin/upscayl-bin","args":["/usr/lib/upscayl/bin/upscayl-bin","-i","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png","-o","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png","-m","/usr/lib/upscayl/models","-n","upscayl-standard-4x","-f","png","-c","0"]}
+[2026-08-22 08:26:04.422] [info]  🎒 BACKEND REPORTED:  🛑 Updating Stopped:  false
+[2026-08-22 08:26:04.423] [info]  🎒 BACKEND REPORTED:  /usr/lib/upscayl/bin/upscayl-bin: /usr/lib/upscayl/bin/upscayl-bin: cannot execute binary file
+
+[2026-08-22 08:26:04.423] [info]  🚧 UPSCAYL_PROGRESS:  /usr/lib/upscayl/bin/upscayl-bin: /usr/lib/upscayl/bin/upscayl-bin: cannot execute binary file
+
+[2026-08-22 08:26:04.423] [info]  🎒 BACKEND REPORTED:  💯 Done upscaling
+[2026-08-22 08:26:04.425] [info]  upscaledImagePath:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png
+[2026-08-22 08:26:04.426] [info]  💯 UPSCAYL_DONE:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png
+[2026-08-22 08:58:49.580] [info]  🆙 Upscayl version: 2.15.0 FOSS
+[2026-08-22 08:58:49.582] [info]  🚀 UPSCAYL EXEC PATH:  /usr/lib/upscayl/bin/upscayl-bin
+[2026-08-22 08:58:49.582] [info]  🚀 MODELS PATH:  /usr/lib/upscayl/models
+[2026-08-22 08:58:49.582] [info]  🚃 App Path:  /usr/lib/upscayl/app.asar
+[2026-08-22 08:58:49.729] [info]  💻 System Info: {"platform":"linux","release":"7.1.6-1-1-ARCH","arch":"arm64","model":"unknown","cpuCount":10,"gpu":{"active":false,"deviceId":0,"gpuPreference":0,"vendorId":0}}
+[2026-08-22 08:58:52.220] [info]  🔄 Resetting image paths
+[2026-08-22 08:58:54.466] [info]  🖼️ Updating Image Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:58:54.467] [info]  📄 Selected File Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:58:54.469] [info]  🎒 BACKEND REPORTED:  🖼️ Updating Image Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:58:54.477] [info]  🖼 Selected Image Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:58:54.478] [info]  📁 Selected Image Directory:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 08:58:54.481] [info]  🖼 imagePath:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:58:54.481] [info]  🔤 Extension:  png
+[2026-08-22 08:58:54.522] [info]  🎒 BACKEND REPORTED:  📄 Selected File Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png
+[2026-08-22 08:58:57.253] [info]  🔄 Resetting Upscaled Image Path
+[2026-08-22 08:58:57.256] [info]  ✅ Upscayl Variables:  {"model":"upscayl-standard-4x","gpuId":null,"saveImageAs":"png","inputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","fileNameWithExt":"6-hurleyus.png","outputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","outFile":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png","fileName":"6-hurleyus","scale":"4","compression":"0","customWidth":"","useCustomWidth":false,"tileSize":null}
+[2026-08-22 08:58:57.256] [info]  📢 Upscayl Command:  [
+  '-i',
+  '/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png',
+  '-o',
+  '/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png',
+  '-m',
+  '/usr/lib/upscayl/models',
+  '-n',
+  'upscayl-standard-4x',
+  '-f',
+  'png',
+  '-c',
+  '0'
+]
+[2026-08-22 08:58:57.272] [info]  👶 Updating Child Processes:  {"binary":"/usr/lib/upscayl/bin/upscayl-bin","args":["/usr/lib/upscayl/bin/upscayl-bin","-i","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png","-o","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png","-m","/usr/lib/upscayl/models","-n","upscayl-standard-4x","-f","png","-c","0"]}
+[2026-08-22 08:58:57.273] [info]  🛑 Updating Stopped:  false
+[2026-08-22 08:58:57.274] [info]  🏁 UPSCAYL
+[2026-08-22 08:58:57.277] [info]  🚀 Starting Upscayl - Copyright © 2024
+✨ Detected scale x4
+✨ Using the default scale x4
+
+[2026-08-22 08:58:57.282] [info]  🎒 BACKEND REPORTED:  ✅ Upscayl Variables:  {"model":"upscayl-standard-4x","gpuId":null,"saveImageAs":"png","inputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","fileNameWithExt":"6-hurleyus.png","outputDir":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds","outFile":"/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png","fileName":"6-hurleyus","scale":"4","compression":"0","customWidth":"","useCustomWidth":false,"tileSize":null}
+[2026-08-22 08:58:57.283] [info]  🎒 BACKEND REPORTED:  📢 Upscayl Command:  -i,/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png,-o,/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png,-m,/usr/lib/upscayl/models,-n,upscayl-standard-4x,-f,png,-c,0
+[2026-08-22 08:58:57.283] [info]  🎒 BACKEND REPORTED:  👶 Updating Child Processes:  {"binary":"/usr/lib/upscayl/bin/upscayl-bin","args":["/usr/lib/upscayl/bin/upscayl-bin","-i","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus.png","-o","/home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png","-m","/usr/lib/upscayl/models","-n","upscayl-standard-4x","-f","png","-c","0"]}
+[2026-08-22 08:58:57.286] [info]  [0 Apple M1 Pro (G13S C0)]  queueC=0[1]  queueG=0[1]  queueT=0[1]
+[0 Apple M1 Pro (G13S C0)]  bugsbn1=0  bugbilz=0  bugcopc=0  bugihfa=0
+[0 Apple M1 Pro (G13S C0)]  fp16-p/s/a=1/1/1  int8-p/s/a=1/1/1
+[0 Apple M1 Pro (G13S C0)]  subgroup=32  basic=1  vote=1  ballot=1  shuffle=1
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  queueC=0[1]  queueG=0[1]  queueT=0[1]
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  bugsbn1=0  bugbilz=0  bugcopc=0  bugihfa=0
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  fp16-p/s/a=1/1/1  int8-p/s/a=1/1/1
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  subgroup=4  basic=1  vote=1  ballot=1  shuffle=1
+
+[2026-08-22 08:58:57.288] [info]  🎒 BACKEND REPORTED:  🛑 Updating Stopped:  false
+[2026-08-22 08:58:57.290] [info]  🎒 BACKEND REPORTED:  🚀 Starting Upscayl - Copyright © 2024
+✨ Detected scale x4
+✨ Using the default scale x4
+
+[2026-08-22 08:58:57.290] [info]  🚧 UPSCAYL_PROGRESS:  🚀 Starting Upscayl - Copyright © 2024
+✨ Detected scale x4
+✨ Using the default scale x4
+
+[2026-08-22 08:58:57.291] [info]  🎒 BACKEND REPORTED:  [0 Apple M1 Pro (G13S C0)]  queueC=0[1]  queueG=0[1]  queueT=0[1]
+[0 Apple M1 Pro (G13S C0)]  bugsbn1=0  bugbilz=0  bugcopc=0  bugihfa=0
+[0 Apple M1 Pro (G13S C0)]  fp16-p/s/a=1/1/1  int8-p/s/a=1/1/1
+[0 Apple M1 Pro (G13S C0)]  subgroup=32  basic=1  vote=1  ballot=1  shuffle=1
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  queueC=0[1]  queueG=0[1]  queueT=0[1]
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  bugsbn1=0  bugbilz=0  bugcopc=0  bugihfa=0
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  fp16-p/s/a=1/1/1  int8-p/s/a=1/1/1
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  subgroup=4  basic=1  vote=1  ballot=1  shuffle=1
+
+[2026-08-22 08:58:57.298] [info]  🚧 UPSCAYL_PROGRESS:  [0 Apple M1 Pro (G13S C0)]  queueC=0[1]  queueG=0[1]  queueT=0[1]
+[0 Apple M1 Pro (G13S C0)]  bugsbn1=0  bugbilz=0  bugcopc=0  bugihfa=0
+[0 Apple M1 Pro (G13S C0)]  fp16-p/s/a=1/1/1  int8-p/s/a=1/1/1
+[0 Apple M1 Pro (G13S C0)]  subgroup=32  basic=1  vote=1  ballot=1  shuffle=1
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  queueC=0[1]  queueG=0[1]  queueT=0[1]
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  bugsbn1=0  bugbilz=0  bugcopc=0  bugihfa=0
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  fp16-p/s/a=1/1/1  int8-p/s/a=1/1/1
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  subgroup=4  basic=1  vote=1  ballot=1  shuffle=1
+
+[2026-08-22 08:58:58.663] [info]  0.00%
+
+[2026-08-22 08:58:58.666] [info]  🎒 BACKEND REPORTED:  0.00%
+
+[2026-08-22 08:58:58.675] [info]  🚧 UPSCAYL_PROGRESS:  0.00%
+
+[2026-08-22 08:58:59.395] [info]  0.25%
+
+[2026-08-22 08:58:59.403] [info]  🎒 BACKEND REPORTED:  0.25%
+
+[2026-08-22 08:58:59.409] [info]  🚧 UPSCAYL_PROGRESS:  0.25%
+
+[2026-08-22 08:59:00.125] [info]  0.49%
+
+[2026-08-22 08:59:00.133] [info]  🎒 BACKEND REPORTED:  0.49%
+
+[2026-08-22 08:59:00.142] [info]  🚧 UPSCAYL_PROGRESS:  0.49%
+
+[2026-08-22 08:59:00.855] [info]  0.74%
+
+[2026-08-22 08:59:00.868] [info]  🎒 BACKEND REPORTED:  0.74%
+
+[2026-08-22 08:59:00.875] [info]  🚧 UPSCAYL_PROGRESS:  0.74%
+
+[2026-08-22 08:59:01.587] [info]  0.99%
+
+[2026-08-22 08:59:01.593] [info]  🎒 BACKEND REPORTED:  0.99%
+
+[2026-08-22 08:59:01.609] [info]  🚧 UPSCAYL_PROGRESS:  0.99%
+
+[2026-08-22 08:59:02.323] [info]  1.23%
+
+[2026-08-22 08:59:02.336] [info]  🎒 BACKEND REPORTED:  1.23%
+
+[2026-08-22 08:59:02.344] [info]  🚧 UPSCAYL_PROGRESS:  1.23%
+
+[2026-08-22 08:59:03.058] [info]  1.48%
+
+[2026-08-22 08:59:03.065] [info]  🎒 BACKEND REPORTED:  1.48%
+
+[2026-08-22 08:59:03.067] [info]  🚧 UPSCAYL_PROGRESS:  1.48%
+
+[2026-08-22 08:59:03.801] [info]  1.73%
+
+[2026-08-22 08:59:03.811] [info]  🎒 BACKEND REPORTED:  1.73%
+
+[2026-08-22 08:59:03.816] [info]  🚧 UPSCAYL_PROGRESS:  1.73%
+
+[2026-08-22 08:59:04.549] [info]  1.98%
+
+[2026-08-22 08:59:04.558] [info]  🎒 BACKEND REPORTED:  1.98%
+
+[2026-08-22 08:59:04.567] [info]  🚧 UPSCAYL_PROGRESS:  1.98%
+
+[2026-08-22 08:59:05.298] [info]  2.22%
+
+[2026-08-22 08:59:05.301] [info]  🎒 BACKEND REPORTED:  2.22%
+
+[2026-08-22 08:59:05.316] [info]  🚧 UPSCAYL_PROGRESS:  2.22%
+
+[2026-08-22 08:59:06.036] [info]  2.47%
+
+[2026-08-22 08:59:06.041] [info]  🎒 BACKEND REPORTED:  2.47%
+
+[2026-08-22 08:59:06.056] [info]  🚧 UPSCAYL_PROGRESS:  2.47%
+
+[2026-08-22 08:59:06.781] [info]  2.72%
+
+[2026-08-22 08:59:06.788] [info]  🎒 BACKEND REPORTED:  2.72%
+
+[2026-08-22 08:59:06.795] [info]  🚧 UPSCAYL_PROGRESS:  2.72%
+
+[2026-08-22 08:59:07.515] [info]  2.96%
+
+[2026-08-22 08:59:07.519] [info]  🎒 BACKEND REPORTED:  2.96%
+
+[2026-08-22 08:59:07.536] [info]  🚧 UPSCAYL_PROGRESS:  2.96%
+
+[2026-08-22 08:59:08.256] [info]  3.21%
+
+[2026-08-22 08:59:08.260] [info]  🎒 BACKEND REPORTED:  3.21%
+
+[2026-08-22 08:59:08.273] [info]  🚧 UPSCAYL_PROGRESS:  3.21%
+
+[2026-08-22 08:59:09.002] [info]  3.46%
+
+[2026-08-22 08:59:09.005] [info]  🎒 BACKEND REPORTED:  3.46%
+
+[2026-08-22 08:59:09.015] [info]  🚧 UPSCAYL_PROGRESS:  3.46%
+
+[2026-08-22 08:59:09.749] [info]  3.70%
+
+[2026-08-22 08:59:09.755] [info]  🎒 BACKEND REPORTED:  3.70%
+
+[2026-08-22 08:59:09.762] [info]  🚧 UPSCAYL_PROGRESS:  3.70%
+
+[2026-08-22 08:59:10.498] [info]  3.95%
+
+[2026-08-22 08:59:10.502] [info]  🎒 BACKEND REPORTED:  3.95%
+
+[2026-08-22 08:59:10.511] [info]  🚧 UPSCAYL_PROGRESS:  3.95%
+
+[2026-08-22 08:59:11.237] [info]  4.20%
+
+[2026-08-22 08:59:11.244] [info]  🎒 BACKEND REPORTED:  4.20%
+
+[2026-08-22 08:59:11.256] [info]  🚧 UPSCAYL_PROGRESS:  4.20%
+
+[2026-08-22 08:59:11.983] [info]  4.44%
+
+[2026-08-22 08:59:11.987] [info]  🎒 BACKEND REPORTED:  4.44%
+
+[2026-08-22 08:59:12.007] [info]  🚧 UPSCAYL_PROGRESS:  4.44%
+
+[2026-08-22 08:59:12.726] [info]  4.69%
+
+[2026-08-22 08:59:12.731] [info]  🎒 BACKEND REPORTED:  4.69%
+
+[2026-08-22 08:59:12.746] [info]  🚧 UPSCAYL_PROGRESS:  4.69%
+
+[2026-08-22 08:59:13.470] [info]  4.94%
+
+[2026-08-22 08:59:13.474] [info]  🎒 BACKEND REPORTED:  4.94%
+
+[2026-08-22 08:59:13.488] [info]  🚧 UPSCAYL_PROGRESS:  4.94%
+
+[2026-08-22 08:59:14.215] [info]  5.19%
+
+[2026-08-22 08:59:14.225] [info]  🎒 BACKEND REPORTED:  5.19%
+
+[2026-08-22 08:59:14.230] [info]  🚧 UPSCAYL_PROGRESS:  5.19%
+
+[2026-08-22 08:59:14.955] [info]  5.43%
+
+[2026-08-22 08:59:14.965] [info]  🎒 BACKEND REPORTED:  5.43%
+
+[2026-08-22 08:59:14.969] [info]  🚧 UPSCAYL_PROGRESS:  5.43%
+
+[2026-08-22 08:59:15.707] [info]  5.68%
+
+[2026-08-22 08:59:15.710] [info]  🎒 BACKEND REPORTED:  5.68%
+
+[2026-08-22 08:59:15.726] [info]  🚧 UPSCAYL_PROGRESS:  5.68%
+
+[2026-08-22 08:59:16.451] [info]  5.93%
+
+[2026-08-22 08:59:16.453] [info]  🎒 BACKEND REPORTED:  5.93%
+
+[2026-08-22 08:59:16.462] [info]  🚧 UPSCAYL_PROGRESS:  5.93%
+
+[2026-08-22 08:59:17.192] [info]  6.17%
+
+[2026-08-22 08:59:17.195] [info]  🎒 BACKEND REPORTED:  6.17%
+
+[2026-08-22 08:59:17.217] [info]  🚧 UPSCAYL_PROGRESS:  6.17%
+
+[2026-08-22 08:59:17.391] [info]  6.42%
+
+[2026-08-22 08:59:17.397] [info]  🎒 BACKEND REPORTED:  6.42%
+
+[2026-08-22 08:59:17.415] [info]  🚧 UPSCAYL_PROGRESS:  6.42%
+
+[2026-08-22 08:59:18.154] [info]  6.67%
+
+[2026-08-22 08:59:18.160] [info]  🎒 BACKEND REPORTED:  6.67%
+
+[2026-08-22 08:59:18.178] [info]  🚧 UPSCAYL_PROGRESS:  6.67%
+
+[2026-08-22 08:59:18.895] [info]  6.91%
+
+[2026-08-22 08:59:18.902] [info]  🎒 BACKEND REPORTED:  6.91%
+
+[2026-08-22 08:59:18.915] [info]  🚧 UPSCAYL_PROGRESS:  6.91%
+
+[2026-08-22 08:59:19.638] [info]  7.16%
+
+[2026-08-22 08:59:19.643] [info]  🎒 BACKEND REPORTED:  7.16%
+
+[2026-08-22 08:59:19.672] [info]  🚧 UPSCAYL_PROGRESS:  7.16%
+
+[2026-08-22 08:59:20.388] [info]  7.41%
+
+[2026-08-22 08:59:20.396] [info]  🎒 BACKEND REPORTED:  7.41%
+
+[2026-08-22 08:59:20.406] [info]  🚧 UPSCAYL_PROGRESS:  7.41%
+
+[2026-08-22 08:59:21.138] [info]  7.65%
+
+[2026-08-22 08:59:21.143] [info]  🎒 BACKEND REPORTED:  7.65%
+
+[2026-08-22 08:59:21.148] [info]  🚧 UPSCAYL_PROGRESS:  7.65%
+
+[2026-08-22 08:59:21.888] [info]  7.90%
+
+[2026-08-22 08:59:21.898] [info]  🎒 BACKEND REPORTED:  7.90%
+
+[2026-08-22 08:59:21.901] [info]  🚧 UPSCAYL_PROGRESS:  7.90%
+
+[2026-08-22 08:59:22.636] [info]  8.15%
+
+[2026-08-22 08:59:22.646] [info]  🎒 BACKEND REPORTED:  8.15%
+
+[2026-08-22 08:59:22.647] [info]  🚧 UPSCAYL_PROGRESS:  8.15%
+
+[2026-08-22 08:59:23.391] [info]  8.40%
+
+[2026-08-22 08:59:23.402] [info]  🎒 BACKEND REPORTED:  8.40%
+
+[2026-08-22 08:59:23.411] [info]  🚧 UPSCAYL_PROGRESS:  8.40%
+
+[2026-08-22 08:59:24.145] [info]  8.64%
+
+[2026-08-22 08:59:24.148] [info]  🎒 BACKEND REPORTED:  8.64%
+
+[2026-08-22 08:59:24.160] [info]  🚧 UPSCAYL_PROGRESS:  8.64%
+
+[2026-08-22 08:59:24.889] [info]  8.89%
+
+[2026-08-22 08:59:24.897] [info]  🎒 BACKEND REPORTED:  8.89%
+
+[2026-08-22 08:59:24.904] [info]  🚧 UPSCAYL_PROGRESS:  8.89%
+
+[2026-08-22 08:59:25.635] [info]  9.14%
+
+[2026-08-22 08:59:25.644] [info]  🎒 BACKEND REPORTED:  9.14%
+
+[2026-08-22 08:59:25.651] [info]  🚧 UPSCAYL_PROGRESS:  9.14%
+
+[2026-08-22 08:59:26.376] [info]  9.38%
+
+[2026-08-22 08:59:26.380] [info]  🎒 BACKEND REPORTED:  9.38%
+
+[2026-08-22 08:59:26.388] [info]  🚧 UPSCAYL_PROGRESS:  9.38%
+
+[2026-08-22 08:59:27.126] [info]  9.63%
+
+[2026-08-22 08:59:27.134] [info]  🎒 BACKEND REPORTED:  9.63%
+
+[2026-08-22 08:59:27.141] [info]  🚧 UPSCAYL_PROGRESS:  9.63%
+
+[2026-08-22 08:59:27.873] [info]  9.88%
+
+[2026-08-22 08:59:27.875] [info]  🎒 BACKEND REPORTED:  9.88%
+
+[2026-08-22 08:59:27.889] [info]  🚧 UPSCAYL_PROGRESS:  9.88%
+
+[2026-08-22 08:59:28.627] [info]  10.12%
+
+[2026-08-22 08:59:28.634] [info]  🎒 BACKEND REPORTED:  10.12%
+
+[2026-08-22 08:59:28.636] [info]  🚧 UPSCAYL_PROGRESS:  10.12%
+
+[2026-08-22 08:59:29.368] [info]  10.37%
+
+[2026-08-22 08:59:29.378] [info]  🎒 BACKEND REPORTED:  10.37%
+
+[2026-08-22 08:59:29.388] [info]  🚧 UPSCAYL_PROGRESS:  10.37%
+
+[2026-08-22 08:59:30.115] [info]  10.62%
+
+[2026-08-22 08:59:30.130] [info]  🎒 BACKEND REPORTED:  10.62%
+
+[2026-08-22 08:59:30.137] [info]  🚧 UPSCAYL_PROGRESS:  10.62%
+
+[2026-08-22 08:59:30.873] [info]  10.86%
+
+[2026-08-22 08:59:30.876] [info]  🎒 BACKEND REPORTED:  10.86%
+
+[2026-08-22 08:59:30.884] [info]  🚧 UPSCAYL_PROGRESS:  10.86%
+
+[2026-08-22 08:59:31.628] [info]  11.11%
+
+[2026-08-22 08:59:31.629] [info]  🎒 BACKEND REPORTED:  11.11%
+
+[2026-08-22 08:59:31.629] [info]  🚧 UPSCAYL_PROGRESS:  11.11%
+
+[2026-08-22 08:59:32.371] [info]  11.36%
+
+[2026-08-22 08:59:32.385] [info]  🎒 BACKEND REPORTED:  11.36%
+
+[2026-08-22 08:59:32.395] [info]  🚧 UPSCAYL_PROGRESS:  11.36%
+
+[2026-08-22 08:59:33.121] [info]  11.60%
+
+[2026-08-22 08:59:33.128] [info]  🎒 BACKEND REPORTED:  11.60%
+
+[2026-08-22 08:59:33.137] [info]  🚧 UPSCAYL_PROGRESS:  11.60%
+
+[2026-08-22 08:59:33.873] [info]  11.85%
+
+[2026-08-22 08:59:33.877] [info]  🎒 BACKEND REPORTED:  11.85%
+
+[2026-08-22 08:59:33.891] [info]  🚧 UPSCAYL_PROGRESS:  11.85%
+
+[2026-08-22 08:59:34.632] [info]  12.10%
+
+[2026-08-22 08:59:34.638] [info]  🎒 BACKEND REPORTED:  12.10%
+
+[2026-08-22 08:59:34.645] [info]  🚧 UPSCAYL_PROGRESS:  12.10%
+
+[2026-08-22 08:59:35.381] [info]  12.35%
+
+[2026-08-22 08:59:35.386] [info]  🎒 BACKEND REPORTED:  12.35%
+
+[2026-08-22 08:59:35.400] [info]  🚧 UPSCAYL_PROGRESS:  12.35%
+
+[2026-08-22 08:59:36.135] [info]  12.59%
+
+[2026-08-22 08:59:36.137] [info]  🎒 BACKEND REPORTED:  12.59%
+
+[2026-08-22 08:59:36.157] [info]  🚧 UPSCAYL_PROGRESS:  12.59%
+
+[2026-08-22 08:59:36.878] [info]  12.84%
+
+[2026-08-22 08:59:36.890] [info]  🎒 BACKEND REPORTED:  12.84%
+
+[2026-08-22 08:59:36.891] [info]  🚧 UPSCAYL_PROGRESS:  12.84%
+
+[2026-08-22 08:59:37.078] [info]  13.09%
+
+[2026-08-22 08:59:37.087] [info]  🎒 BACKEND REPORTED:  13.09%
+
+[2026-08-22 08:59:37.094] [info]  🚧 UPSCAYL_PROGRESS:  13.09%
+
+[2026-08-22 08:59:37.841] [info]  13.33%
+
+[2026-08-22 08:59:37.847] [info]  🎒 BACKEND REPORTED:  13.33%
+
+[2026-08-22 08:59:37.854] [info]  🚧 UPSCAYL_PROGRESS:  13.33%
+
+[2026-08-22 08:59:38.588] [info]  13.58%
+
+[2026-08-22 08:59:38.592] [info]  🎒 BACKEND REPORTED:  13.58%
+
+[2026-08-22 08:59:38.609] [info]  🚧 UPSCAYL_PROGRESS:  13.58%
+
+[2026-08-22 08:59:39.336] [info]  13.83%
+
+[2026-08-22 08:59:39.351] [info]  🎒 BACKEND REPORTED:  13.83%
+
+[2026-08-22 08:59:39.352] [info]  🚧 UPSCAYL_PROGRESS:  13.83%
+
+[2026-08-22 08:59:40.084] [info]  14.07%
+
+[2026-08-22 08:59:40.087] [info]  🎒 BACKEND REPORTED:  14.07%
+
+[2026-08-22 08:59:40.100] [info]  🚧 UPSCAYL_PROGRESS:  14.07%
+
+[2026-08-22 08:59:40.832] [info]  14.32%
+
+[2026-08-22 08:59:40.834] [info]  🎒 BACKEND REPORTED:  14.32%
+
+[2026-08-22 08:59:40.848] [info]  🚧 UPSCAYL_PROGRESS:  14.32%
+
+[2026-08-22 08:59:41.584] [info]  14.57%
+
+[2026-08-22 08:59:41.590] [info]  🎒 BACKEND REPORTED:  14.57%
+
+[2026-08-22 08:59:41.596] [info]  🚧 UPSCAYL_PROGRESS:  14.57%
+
+[2026-08-22 08:59:42.331] [info]  14.81%
+
+[2026-08-22 08:59:42.338] [info]  🎒 BACKEND REPORTED:  14.81%
+
+[2026-08-22 08:59:42.344] [info]  🚧 UPSCAYL_PROGRESS:  14.81%
+
+[2026-08-22 08:59:43.078] [info]  15.06%
+
+[2026-08-22 08:59:43.085] [info]  🎒 BACKEND REPORTED:  15.06%
+
+[2026-08-22 08:59:43.090] [info]  🚧 UPSCAYL_PROGRESS:  15.06%
+
+[2026-08-22 08:59:43.816] [info]  15.31%
+
+[2026-08-22 08:59:43.827] [info]  🎒 BACKEND REPORTED:  15.31%
+
+[2026-08-22 08:59:43.838] [info]  🚧 UPSCAYL_PROGRESS:  15.31%
+
+[2026-08-22 08:59:44.555] [info]  15.56%
+
+[2026-08-22 08:59:44.563] [info]  🎒 BACKEND REPORTED:  15.56%
+
+[2026-08-22 08:59:44.571] [info]  🚧 UPSCAYL_PROGRESS:  15.56%
+
+[2026-08-22 08:59:45.307] [info]  15.80%
+
+[2026-08-22 08:59:45.317] [info]  🎒 BACKEND REPORTED:  15.80%
+
+[2026-08-22 08:59:45.329] [info]  🚧 UPSCAYL_PROGRESS:  15.80%
+
+[2026-08-22 08:59:46.053] [info]  16.05%
+
+[2026-08-22 08:59:46.058] [info]  🎒 BACKEND REPORTED:  16.05%
+
+[2026-08-22 08:59:46.076] [info]  🚧 UPSCAYL_PROGRESS:  16.05%
+
+[2026-08-22 08:59:46.798] [info]  16.30%
+
+[2026-08-22 08:59:46.800] [info]  🎒 BACKEND REPORTED:  16.30%
+
+[2026-08-22 08:59:46.801] [info]  🚧 UPSCAYL_PROGRESS:  16.30%
+
+[2026-08-22 08:59:47.536] [info]  16.54%
+
+[2026-08-22 08:59:47.544] [info]  🎒 BACKEND REPORTED:  16.54%
+
+[2026-08-22 08:59:47.559] [info]  🚧 UPSCAYL_PROGRESS:  16.54%
+
+[2026-08-22 08:59:48.282] [info]  16.79%
+
+[2026-08-22 08:59:48.287] [info]  🎒 BACKEND REPORTED:  16.79%
+
+[2026-08-22 08:59:48.293] [info]  🚧 UPSCAYL_PROGRESS:  16.79%
+
+[2026-08-22 08:59:49.036] [info]  17.04%
+
+[2026-08-22 08:59:49.044] [info]  🎒 BACKEND REPORTED:  17.04%
+
+[2026-08-22 08:59:49.049] [info]  🚧 UPSCAYL_PROGRESS:  17.04%
+
+[2026-08-22 08:59:49.793] [info]  17.28%
+
+[2026-08-22 08:59:49.805] [info]  🎒 BACKEND REPORTED:  17.28%
+
+[2026-08-22 08:59:49.806] [info]  🚧 UPSCAYL_PROGRESS:  17.28%
+
+[2026-08-22 08:59:50.546] [info]  17.53%
+
+[2026-08-22 08:59:50.565] [info]  🎒 BACKEND REPORTED:  17.53%
+
+[2026-08-22 08:59:50.571] [info]  🚧 UPSCAYL_PROGRESS:  17.53%
+
+[2026-08-22 08:59:51.306] [info]  17.78%
+
+[2026-08-22 08:59:51.313] [info]  🎒 BACKEND REPORTED:  17.78%
+
+[2026-08-22 08:59:51.318] [info]  🚧 UPSCAYL_PROGRESS:  17.78%
+
+[2026-08-22 08:59:52.052] [info]  18.02%
+
+[2026-08-22 08:59:52.054] [info]  🎒 BACKEND REPORTED:  18.02%
+
+[2026-08-22 08:59:52.058] [info]  🚧 UPSCAYL_PROGRESS:  18.02%
+
+[2026-08-22 08:59:52.789] [info]  18.27%
+
+[2026-08-22 08:59:52.799] [info]  🎒 BACKEND REPORTED:  18.27%
+
+[2026-08-22 08:59:52.809] [info]  🚧 UPSCAYL_PROGRESS:  18.27%
+
+[2026-08-22 08:59:53.545] [info]  18.52%
+
+[2026-08-22 08:59:53.554] [info]  🎒 BACKEND REPORTED:  18.52%
+
+[2026-08-22 08:59:53.560] [info]  🚧 UPSCAYL_PROGRESS:  18.52%
+
+[2026-08-22 08:59:54.311] [info]  18.77%
+
+[2026-08-22 08:59:54.314] [info]  🎒 BACKEND REPORTED:  18.77%
+
+[2026-08-22 08:59:54.323] [info]  🚧 UPSCAYL_PROGRESS:  18.77%
+
+[2026-08-22 08:59:55.054] [info]  19.01%
+
+[2026-08-22 08:59:55.064] [info]  🎒 BACKEND REPORTED:  19.01%
+
+[2026-08-22 08:59:55.074] [info]  🚧 UPSCAYL_PROGRESS:  19.01%
+
+[2026-08-22 08:59:55.806] [info]  19.26%
+
+[2026-08-22 08:59:55.812] [info]  🎒 BACKEND REPORTED:  19.26%
+
+[2026-08-22 08:59:55.829] [info]  🚧 UPSCAYL_PROGRESS:  19.26%
+
+[2026-08-22 08:59:56.560] [info]  19.51%
+
+[2026-08-22 08:59:56.567] [info]  🎒 BACKEND REPORTED:  19.51%
+
+[2026-08-22 08:59:56.579] [info]  🚧 UPSCAYL_PROGRESS:  19.51%
+
+[2026-08-22 08:59:56.779] [info]  19.75%
+
+[2026-08-22 08:59:56.784] [info]  🎒 BACKEND REPORTED:  19.75%
+
+[2026-08-22 08:59:56.796] [info]  🚧 UPSCAYL_PROGRESS:  19.75%
+
+[2026-08-22 08:59:57.540] [info]  20.00%
+
+[2026-08-22 08:59:57.542] [info]  🎒 BACKEND REPORTED:  20.00%
+
+[2026-08-22 08:59:57.551] [info]  🚧 UPSCAYL_PROGRESS:  20.00%
+
+[2026-08-22 08:59:58.284] [info]  20.25%
+
+[2026-08-22 08:59:58.294] [info]  🎒 BACKEND REPORTED:  20.25%
+
+[2026-08-22 08:59:58.308] [info]  🚧 UPSCAYL_PROGRESS:  20.25%
+
+[2026-08-22 08:59:59.023] [info]  20.49%
+
+[2026-08-22 08:59:59.028] [info]  🎒 BACKEND REPORTED:  20.49%
+
+[2026-08-22 08:59:59.051] [info]  🚧 UPSCAYL_PROGRESS:  20.49%
+
+[2026-08-22 08:59:59.774] [info]  20.74%
+
+[2026-08-22 08:59:59.779] [info]  🎒 BACKEND REPORTED:  20.74%
+
+[2026-08-22 08:59:59.797] [info]  🚧 UPSCAYL_PROGRESS:  20.74%
+
+[2026-08-22 09:00:00.518] [info]  20.99%
+
+[2026-08-22 09:00:00.525] [info]  🎒 BACKEND REPORTED:  20.99%
+
+[2026-08-22 09:00:00.538] [info]  🚧 UPSCAYL_PROGRESS:  20.99%
+
+[2026-08-22 09:00:01.271] [info]  21.23%
+
+[2026-08-22 09:00:01.276] [info]  🎒 BACKEND REPORTED:  21.23%
+
+[2026-08-22 09:00:01.294] [info]  🚧 UPSCAYL_PROGRESS:  21.23%
+
+[2026-08-22 09:00:02.022] [info]  21.48%
+
+[2026-08-22 09:00:02.040] [info]  🎒 BACKEND REPORTED:  21.48%
+
+[2026-08-22 09:00:02.053] [info]  🚧 UPSCAYL_PROGRESS:  21.48%
+
+[2026-08-22 09:00:02.770] [info]  21.73%
+
+[2026-08-22 09:00:02.774] [info]  🎒 BACKEND REPORTED:  21.73%
+
+[2026-08-22 09:00:02.788] [info]  🚧 UPSCAYL_PROGRESS:  21.73%
+
+[2026-08-22 09:00:03.523] [info]  21.98%
+
+[2026-08-22 09:00:03.531] [info]  🎒 BACKEND REPORTED:  21.98%
+
+[2026-08-22 09:00:03.535] [info]  🚧 UPSCAYL_PROGRESS:  21.98%
+
+[2026-08-22 09:00:04.274] [info]  22.22%
+
+[2026-08-22 09:00:04.278] [info]  🎒 BACKEND REPORTED:  22.22%
+
+[2026-08-22 09:00:04.286] [info]  🚧 UPSCAYL_PROGRESS:  22.22%
+
+[2026-08-22 09:00:05.028] [info]  22.47%
+
+[2026-08-22 09:00:05.036] [info]  🎒 BACKEND REPORTED:  22.47%
+
+[2026-08-22 09:00:05.050] [info]  🚧 UPSCAYL_PROGRESS:  22.47%
+
+[2026-08-22 09:00:05.774] [info]  22.72%
+
+[2026-08-22 09:00:05.783] [info]  🎒 BACKEND REPORTED:  22.72%
+
+[2026-08-22 09:00:05.785] [info]  🚧 UPSCAYL_PROGRESS:  22.72%
+
+[2026-08-22 09:00:06.518] [info]  22.96%
+
+[2026-08-22 09:00:06.528] [info]  🎒 BACKEND REPORTED:  22.96%
+
+[2026-08-22 09:00:06.542] [info]  🚧 UPSCAYL_PROGRESS:  22.96%
+
+[2026-08-22 09:00:07.277] [info]  23.21%
+
+[2026-08-22 09:00:07.286] [info]  🎒 BACKEND REPORTED:  23.21%
+
+[2026-08-22 09:00:07.297] [info]  🚧 UPSCAYL_PROGRESS:  23.21%
+
+[2026-08-22 09:00:08.034] [info]  23.46%
+
+[2026-08-22 09:00:08.043] [info]  🎒 BACKEND REPORTED:  23.46%
+
+[2026-08-22 09:00:08.054] [info]  🚧 UPSCAYL_PROGRESS:  23.46%
+
+[2026-08-22 09:00:08.797] [info]  23.70%
+
+[2026-08-22 09:00:08.802] [info]  🎒 BACKEND REPORTED:  23.70%
+
+[2026-08-22 09:00:08.811] [info]  🚧 UPSCAYL_PROGRESS:  23.70%
+
+[2026-08-22 09:00:09.551] [info]  23.95%
+
+[2026-08-22 09:00:09.560] [info]  🎒 BACKEND REPORTED:  23.95%
+
+[2026-08-22 09:00:09.572] [info]  🚧 UPSCAYL_PROGRESS:  23.95%
+
+[2026-08-22 09:00:10.308] [info]  24.20%
+
+[2026-08-22 09:00:10.320] [info]  🎒 BACKEND REPORTED:  24.20%
+
+[2026-08-22 09:00:10.323] [info]  🚧 UPSCAYL_PROGRESS:  24.20%
+
+[2026-08-22 09:00:11.069] [info]  24.44%
+
+[2026-08-22 09:00:11.078] [info]  🎒 BACKEND REPORTED:  24.44%
+
+[2026-08-22 09:00:11.096] [info]  🚧 UPSCAYL_PROGRESS:  24.44%
+
+[2026-08-22 09:00:11.828] [info]  24.69%
+
+[2026-08-22 09:00:11.840] [info]  🎒 BACKEND REPORTED:  24.69%
+
+[2026-08-22 09:00:11.846] [info]  🚧 UPSCAYL_PROGRESS:  24.69%
+
+[2026-08-22 09:00:12.590] [info]  24.94%
+
+[2026-08-22 09:00:12.595] [info]  🎒 BACKEND REPORTED:  24.94%
+
+[2026-08-22 09:00:12.605] [info]  🚧 UPSCAYL_PROGRESS:  24.94%
+
+[2026-08-22 09:00:13.350] [info]  25.19%
+
+[2026-08-22 09:00:13.353] [info]  🎒 BACKEND REPORTED:  25.19%
+
+[2026-08-22 09:00:13.365] [info]  🚧 UPSCAYL_PROGRESS:  25.19%
+
+[2026-08-22 09:00:14.098] [info]  25.43%
+
+[2026-08-22 09:00:14.108] [info]  🎒 BACKEND REPORTED:  25.43%
+
+[2026-08-22 09:00:14.121] [info]  🚧 UPSCAYL_PROGRESS:  25.43%
+
+[2026-08-22 09:00:14.855] [info]  25.68%
+
+[2026-08-22 09:00:14.864] [info]  🎒 BACKEND REPORTED:  25.68%
+
+[2026-08-22 09:00:14.873] [info]  🚧 UPSCAYL_PROGRESS:  25.68%
+
+[2026-08-22 09:00:15.609] [info]  25.93%
+
+[2026-08-22 09:00:15.621] [info]  🎒 BACKEND REPORTED:  25.93%
+
+[2026-08-22 09:00:15.624] [info]  🚧 UPSCAYL_PROGRESS:  25.93%
+
+[2026-08-22 09:00:16.356] [info]  26.17%
+
+[2026-08-22 09:00:16.362] [info]  🎒 BACKEND REPORTED:  26.17%
+
+[2026-08-22 09:00:16.380] [info]  🚧 UPSCAYL_PROGRESS:  26.17%
+
+[2026-08-22 09:00:16.570] [info]  26.42%
+
+[2026-08-22 09:00:16.576] [info]  🎒 BACKEND REPORTED:  26.42%
+
+[2026-08-22 09:00:16.596] [info]  🚧 UPSCAYL_PROGRESS:  26.42%
+
+[2026-08-22 09:00:17.344] [info]  26.67%
+
+[2026-08-22 09:00:17.351] [info]  🎒 BACKEND REPORTED:  26.67%
+
+[2026-08-22 09:00:17.362] [info]  🚧 UPSCAYL_PROGRESS:  26.67%
+
+[2026-08-22 09:00:18.088] [info]  26.91%
+
+[2026-08-22 09:00:18.105] [info]  🎒 BACKEND REPORTED:  26.91%
+
+[2026-08-22 09:00:18.107] [info]  🚧 UPSCAYL_PROGRESS:  26.91%
+
+[2026-08-22 09:00:18.837] [info]  27.16%
+
+[2026-08-22 09:00:18.841] [info]  🎒 BACKEND REPORTED:  27.16%
+
+[2026-08-22 09:00:18.849] [info]  🚧 UPSCAYL_PROGRESS:  27.16%
+
+[2026-08-22 09:00:19.589] [info]  27.41%
+
+[2026-08-22 09:00:19.593] [info]  🎒 BACKEND REPORTED:  27.41%
+
+[2026-08-22 09:00:19.604] [info]  🚧 UPSCAYL_PROGRESS:  27.41%
+
+[2026-08-22 09:00:20.339] [info]  27.65%
+
+[2026-08-22 09:00:20.348] [info]  🎒 BACKEND REPORTED:  27.65%
+
+[2026-08-22 09:00:20.360] [info]  🚧 UPSCAYL_PROGRESS:  27.65%
+
+[2026-08-22 09:00:21.091] [info]  27.90%
+
+[2026-08-22 09:00:21.096] [info]  🎒 BACKEND REPORTED:  27.90%
+
+[2026-08-22 09:00:21.110] [info]  🚧 UPSCAYL_PROGRESS:  27.90%
+
+[2026-08-22 09:00:21.840] [info]  28.15%
+
+[2026-08-22 09:00:21.854] [info]  🎒 BACKEND REPORTED:  28.15%
+
+[2026-08-22 09:00:21.863] [info]  🚧 UPSCAYL_PROGRESS:  28.15%
+
+[2026-08-22 09:00:22.586] [info]  28.40%
+
+[2026-08-22 09:00:22.606] [info]  🎒 BACKEND REPORTED:  28.40%
+
+[2026-08-22 09:00:22.621] [info]  🚧 UPSCAYL_PROGRESS:  28.40%
+
+[2026-08-22 09:00:23.329] [info]  28.64%
+
+[2026-08-22 09:00:23.332] [info]  🎒 BACKEND REPORTED:  28.64%
+
+[2026-08-22 09:00:23.350] [info]  🚧 UPSCAYL_PROGRESS:  28.64%
+
+[2026-08-22 09:00:24.086] [info]  28.89%
+
+[2026-08-22 09:00:24.098] [info]  🎒 BACKEND REPORTED:  28.89%
+
+[2026-08-22 09:00:24.102] [info]  🚧 UPSCAYL_PROGRESS:  28.89%
+
+[2026-08-22 09:00:24.837] [info]  29.14%
+
+[2026-08-22 09:00:24.841] [info]  🎒 BACKEND REPORTED:  29.14%
+
+[2026-08-22 09:00:24.845] [info]  🚧 UPSCAYL_PROGRESS:  29.14%
+
+[2026-08-22 09:00:25.585] [info]  29.38%
+
+[2026-08-22 09:00:25.591] [info]  🎒 BACKEND REPORTED:  29.38%
+
+[2026-08-22 09:00:25.599] [info]  🚧 UPSCAYL_PROGRESS:  29.38%
+
+[2026-08-22 09:00:26.335] [info]  29.63%
+
+[2026-08-22 09:00:26.342] [info]  🎒 BACKEND REPORTED:  29.63%
+
+[2026-08-22 09:00:26.355] [info]  🚧 UPSCAYL_PROGRESS:  29.63%
+
+[2026-08-22 09:00:27.081] [info]  29.88%
+
+[2026-08-22 09:00:27.086] [info]  🎒 BACKEND REPORTED:  29.88%
+
+[2026-08-22 09:00:27.090] [info]  🚧 UPSCAYL_PROGRESS:  29.88%
+
+[2026-08-22 09:00:27.828] [info]  30.12%
+
+[2026-08-22 09:00:27.832] [info]  🎒 BACKEND REPORTED:  30.12%
+
+[2026-08-22 09:00:27.839] [info]  🚧 UPSCAYL_PROGRESS:  30.12%
+
+[2026-08-22 09:00:28.577] [info]  30.37%
+
+[2026-08-22 09:00:28.580] [info]  🎒 BACKEND REPORTED:  30.37%
+
+[2026-08-22 09:00:28.587] [info]  🚧 UPSCAYL_PROGRESS:  30.37%
+
+[2026-08-22 09:00:29.325] [info]  30.62%
+
+[2026-08-22 09:00:29.328] [info]  🎒 BACKEND REPORTED:  30.62%
+
+[2026-08-22 09:00:29.341] [info]  🚧 UPSCAYL_PROGRESS:  30.62%
+
+[2026-08-22 09:00:30.073] [info]  30.86%
+
+[2026-08-22 09:00:30.078] [info]  🎒 BACKEND REPORTED:  30.86%
+
+[2026-08-22 09:00:30.079] [info]  🚧 UPSCAYL_PROGRESS:  30.86%
+
+[2026-08-22 09:00:30.820] [info]  31.11%
+
+[2026-08-22 09:00:30.823] [info]  🎒 BACKEND REPORTED:  31.11%
+
+[2026-08-22 09:00:30.829] [info]  🚧 UPSCAYL_PROGRESS:  31.11%
+
+[2026-08-22 09:00:31.564] [info]  31.36%
+
+[2026-08-22 09:00:31.567] [info]  🎒 BACKEND REPORTED:  31.36%
+
+[2026-08-22 09:00:31.573] [info]  🚧 UPSCAYL_PROGRESS:  31.36%
+
+[2026-08-22 09:00:32.309] [info]  31.60%
+
+[2026-08-22 09:00:32.313] [info]  🎒 BACKEND REPORTED:  31.60%
+
+[2026-08-22 09:00:32.323] [info]  🚧 UPSCAYL_PROGRESS:  31.60%
+
+[2026-08-22 09:00:33.054] [info]  31.85%
+
+[2026-08-22 09:00:33.060] [info]  🎒 BACKEND REPORTED:  31.85%
+
+[2026-08-22 09:00:33.061] [info]  🚧 UPSCAYL_PROGRESS:  31.85%
+
+[2026-08-22 09:00:33.798] [info]  32.10%
+
+[2026-08-22 09:00:33.808] [info]  🎒 BACKEND REPORTED:  32.10%
+
+[2026-08-22 09:00:33.812] [info]  🚧 UPSCAYL_PROGRESS:  32.10%
+
+[2026-08-22 09:00:34.549] [info]  32.35%
+
+[2026-08-22 09:00:34.553] [info]  🎒 BACKEND REPORTED:  32.35%
+
+[2026-08-22 09:00:34.555] [info]  🚧 UPSCAYL_PROGRESS:  32.35%
+
+[2026-08-22 09:00:35.293] [info]  32.59%
+
+[2026-08-22 09:00:35.298] [info]  🎒 BACKEND REPORTED:  32.59%
+
+[2026-08-22 09:00:35.301] [info]  🚧 UPSCAYL_PROGRESS:  32.59%
+
+[2026-08-22 09:00:36.043] [info]  32.84%
+
+[2026-08-22 09:00:36.044] [info]  🎒 BACKEND REPORTED:  32.84%
+
+[2026-08-22 09:00:36.047] [info]  🚧 UPSCAYL_PROGRESS:  32.84%
+
+[2026-08-22 09:00:36.245] [info]  33.09%
+
+[2026-08-22 09:00:36.251] [info]  🎒 BACKEND REPORTED:  33.09%
+
+[2026-08-22 09:00:36.255] [info]  🚧 UPSCAYL_PROGRESS:  33.09%
+
+[2026-08-22 09:00:37.014] [info]  33.33%
+
+[2026-08-22 09:00:37.018] [info]  🎒 BACKEND REPORTED:  33.33%
+
+[2026-08-22 09:00:37.023] [info]  🚧 UPSCAYL_PROGRESS:  33.33%
+
+[2026-08-22 09:00:37.756] [info]  33.58%
+
+[2026-08-22 09:00:37.760] [info]  🎒 BACKEND REPORTED:  33.58%
+
+[2026-08-22 09:00:37.769] [info]  🚧 UPSCAYL_PROGRESS:  33.58%
+
+[2026-08-22 09:00:38.502] [info]  33.83%
+
+[2026-08-22 09:00:38.512] [info]  🎒 BACKEND REPORTED:  33.83%
+
+[2026-08-22 09:00:38.516] [info]  🚧 UPSCAYL_PROGRESS:  33.83%
+
+[2026-08-22 09:00:39.242] [info]  34.07%
+
+[2026-08-22 09:00:39.250] [info]  🎒 BACKEND REPORTED:  34.07%
+
+[2026-08-22 09:00:39.253] [info]  🚧 UPSCAYL_PROGRESS:  34.07%
+
+[2026-08-22 09:00:39.992] [info]  34.32%
+
+[2026-08-22 09:00:40.004] [info]  🎒 BACKEND REPORTED:  34.32%
+
+[2026-08-22 09:00:40.009] [info]  🚧 UPSCAYL_PROGRESS:  34.32%
+
+[2026-08-22 09:00:40.737] [info]  34.57%
+
+[2026-08-22 09:00:40.745] [info]  🎒 BACKEND REPORTED:  34.57%
+
+[2026-08-22 09:00:40.749] [info]  🚧 UPSCAYL_PROGRESS:  34.57%
+
+[2026-08-22 09:00:41.486] [info]  34.81%
+
+[2026-08-22 09:00:41.489] [info]  🎒 BACKEND REPORTED:  34.81%
+
+[2026-08-22 09:00:41.497] [info]  🚧 UPSCAYL_PROGRESS:  34.81%
+
+[2026-08-22 09:00:42.233] [info]  35.06%
+
+[2026-08-22 09:00:42.238] [info]  🎒 BACKEND REPORTED:  35.06%
+
+[2026-08-22 09:00:42.242] [info]  🚧 UPSCAYL_PROGRESS:  35.06%
+
+[2026-08-22 09:00:42.978] [info]  35.31%
+
+[2026-08-22 09:00:42.982] [info]  🎒 BACKEND REPORTED:  35.31%
+
+[2026-08-22 09:00:42.996] [info]  🚧 UPSCAYL_PROGRESS:  35.31%
+
+[2026-08-22 09:00:43.726] [info]  35.56%
+
+[2026-08-22 09:00:43.732] [info]  🎒 BACKEND REPORTED:  35.56%
+
+[2026-08-22 09:00:43.734] [info]  🚧 UPSCAYL_PROGRESS:  35.56%
+
+[2026-08-22 09:00:44.472] [info]  35.80%
+
+[2026-08-22 09:00:44.477] [info]  🎒 BACKEND REPORTED:  35.80%
+
+[2026-08-22 09:00:44.484] [info]  🚧 UPSCAYL_PROGRESS:  35.80%
+
+[2026-08-22 09:00:45.217] [info]  36.05%
+
+[2026-08-22 09:00:45.220] [info]  🎒 BACKEND REPORTED:  36.05%
+
+[2026-08-22 09:00:45.233] [info]  🚧 UPSCAYL_PROGRESS:  36.05%
+
+[2026-08-22 09:00:45.962] [info]  36.30%
+
+[2026-08-22 09:00:45.968] [info]  🎒 BACKEND REPORTED:  36.30%
+
+[2026-08-22 09:00:45.976] [info]  🚧 UPSCAYL_PROGRESS:  36.30%
+
+[2026-08-22 09:00:46.706] [info]  36.54%
+
+[2026-08-22 09:00:46.710] [info]  🎒 BACKEND REPORTED:  36.54%
+
+[2026-08-22 09:00:46.711] [info]  🚧 UPSCAYL_PROGRESS:  36.54%
+
+[2026-08-22 09:00:47.444] [info]  36.79%
+
+[2026-08-22 09:00:47.446] [info]  🎒 BACKEND REPORTED:  36.79%
+
+[2026-08-22 09:00:47.449] [info]  🚧 UPSCAYL_PROGRESS:  36.79%
+
+[2026-08-22 09:00:48.191] [info]  37.04%
+
+[2026-08-22 09:00:48.195] [info]  🎒 BACKEND REPORTED:  37.04%
+
+[2026-08-22 09:00:48.197] [info]  🚧 UPSCAYL_PROGRESS:  37.04%
+
+[2026-08-22 09:00:48.936] [info]  37.28%
+
+[2026-08-22 09:00:48.939] [info]  🎒 BACKEND REPORTED:  37.28%
+
+[2026-08-22 09:00:48.944] [info]  🚧 UPSCAYL_PROGRESS:  37.28%
+
+[2026-08-22 09:00:49.686] [info]  37.53%
+
+[2026-08-22 09:00:49.688] [info]  🎒 BACKEND REPORTED:  37.53%
+
+[2026-08-22 09:00:49.692] [info]  🚧 UPSCAYL_PROGRESS:  37.53%
+
+[2026-08-22 09:00:50.435] [info]  37.78%
+
+[2026-08-22 09:00:50.449] [info]  🎒 BACKEND REPORTED:  37.78%
+
+[2026-08-22 09:00:50.450] [info]  🚧 UPSCAYL_PROGRESS:  37.78%
+
+[2026-08-22 09:00:51.190] [info]  38.02%
+
+[2026-08-22 09:00:51.193] [info]  🎒 BACKEND REPORTED:  38.02%
+
+[2026-08-22 09:00:51.204] [info]  🚧 UPSCAYL_PROGRESS:  38.02%
+
+[2026-08-22 09:00:51.941] [info]  38.27%
+
+[2026-08-22 09:00:51.949] [info]  🎒 BACKEND REPORTED:  38.27%
+
+[2026-08-22 09:00:51.950] [info]  🚧 UPSCAYL_PROGRESS:  38.27%
+
+[2026-08-22 09:00:52.703] [info]  38.52%
+
+[2026-08-22 09:00:52.715] [info]  🎒 BACKEND REPORTED:  38.52%
+
+[2026-08-22 09:00:52.721] [info]  🚧 UPSCAYL_PROGRESS:  38.52%
+
+[2026-08-22 09:00:53.460] [info]  38.77%
+
+[2026-08-22 09:00:53.464] [info]  🎒 BACKEND REPORTED:  38.77%
+
+[2026-08-22 09:00:53.475] [info]  🚧 UPSCAYL_PROGRESS:  38.77%
+
+[2026-08-22 09:00:54.214] [info]  39.01%
+
+[2026-08-22 09:00:54.222] [info]  🎒 BACKEND REPORTED:  39.01%
+
+[2026-08-22 09:00:54.236] [info]  🚧 UPSCAYL_PROGRESS:  39.01%
+
+[2026-08-22 09:00:54.977] [info]  39.26%
+
+[2026-08-22 09:00:54.986] [info]  🎒 BACKEND REPORTED:  39.26%
+
+[2026-08-22 09:00:54.991] [info]  🚧 UPSCAYL_PROGRESS:  39.26%
+
+[2026-08-22 09:00:55.735] [info]  39.51%
+
+[2026-08-22 09:00:55.756] [info]  🎒 BACKEND REPORTED:  39.51%
+
+[2026-08-22 09:00:55.758] [info]  🚧 UPSCAYL_PROGRESS:  39.51%
+
+[2026-08-22 09:00:55.960] [info]  39.75%
+
+[2026-08-22 09:00:55.973] [info]  🎒 BACKEND REPORTED:  39.75%
+
+[2026-08-22 09:00:55.974] [info]  🚧 UPSCAYL_PROGRESS:  39.75%
+
+[2026-08-22 09:00:56.749] [info]  40.00%
+
+[2026-08-22 09:00:56.754] [info]  🎒 BACKEND REPORTED:  40.00%
+
+[2026-08-22 09:00:56.756] [info]  🚧 UPSCAYL_PROGRESS:  40.00%
+
+[2026-08-22 09:00:57.496] [info]  40.25%
+
+[2026-08-22 09:00:57.503] [info]  🎒 BACKEND REPORTED:  40.25%
+
+[2026-08-22 09:00:57.514] [info]  🚧 UPSCAYL_PROGRESS:  40.25%
+
+[2026-08-22 09:00:58.245] [info]  40.49%
+
+[2026-08-22 09:00:58.253] [info]  🎒 BACKEND REPORTED:  40.49%
+
+[2026-08-22 09:00:58.262] [info]  🚧 UPSCAYL_PROGRESS:  40.49%
+
+[2026-08-22 09:00:58.993] [info]  40.74%
+
+[2026-08-22 09:00:59.003] [info]  🎒 BACKEND REPORTED:  40.74%
+
+[2026-08-22 09:00:59.010] [info]  🚧 UPSCAYL_PROGRESS:  40.74%
+
+[2026-08-22 09:00:59.740] [info]  40.99%
+
+[2026-08-22 09:00:59.747] [info]  🎒 BACKEND REPORTED:  40.99%
+
+[2026-08-22 09:00:59.767] [info]  🚧 UPSCAYL_PROGRESS:  40.99%
+
+[2026-08-22 09:01:00.481] [info]  41.23%
+
+[2026-08-22 09:01:00.491] [info]  🎒 BACKEND REPORTED:  41.23%
+
+[2026-08-22 09:01:00.492] [info]  🚧 UPSCAYL_PROGRESS:  41.23%
+
+[2026-08-22 09:01:01.226] [info]  41.48%
+
+[2026-08-22 09:01:01.230] [info]  🎒 BACKEND REPORTED:  41.48%
+
+[2026-08-22 09:01:01.240] [info]  🚧 UPSCAYL_PROGRESS:  41.48%
+
+[2026-08-22 09:01:01.993] [info]  41.73%
+
+[2026-08-22 09:01:02.005] [info]  🎒 BACKEND REPORTED:  41.73%
+
+[2026-08-22 09:01:02.007] [info]  🚧 UPSCAYL_PROGRESS:  41.73%
+
+[2026-08-22 09:01:02.734] [info]  41.98%
+
+[2026-08-22 09:01:02.736] [info]  🎒 BACKEND REPORTED:  41.98%
+
+[2026-08-22 09:01:02.743] [info]  🚧 UPSCAYL_PROGRESS:  41.98%
+
+[2026-08-22 09:01:03.485] [info]  42.22%
+
+[2026-08-22 09:01:03.494] [info]  🎒 BACKEND REPORTED:  42.22%
+
+[2026-08-22 09:01:03.502] [info]  🚧 UPSCAYL_PROGRESS:  42.22%
+
+[2026-08-22 09:01:04.234] [info]  42.47%
+
+[2026-08-22 09:01:04.247] [info]  🎒 BACKEND REPORTED:  42.47%
+
+[2026-08-22 09:01:04.249] [info]  🚧 UPSCAYL_PROGRESS:  42.47%
+
+[2026-08-22 09:01:04.977] [info]  42.72%
+
+[2026-08-22 09:01:04.989] [info]  🎒 BACKEND REPORTED:  42.72%
+
+[2026-08-22 09:01:04.999] [info]  🚧 UPSCAYL_PROGRESS:  42.72%
+
+[2026-08-22 09:01:05.733] [info]  42.96%
+
+[2026-08-22 09:01:05.742] [info]  🎒 BACKEND REPORTED:  42.96%
+
+[2026-08-22 09:01:05.750] [info]  🚧 UPSCAYL_PROGRESS:  42.96%
+
+[2026-08-22 09:01:06.478] [info]  43.21%
+
+[2026-08-22 09:01:06.484] [info]  🎒 BACKEND REPORTED:  43.21%
+
+[2026-08-22 09:01:06.500] [info]  🚧 UPSCAYL_PROGRESS:  43.21%
+
+[2026-08-22 09:01:07.233] [info]  43.46%
+
+[2026-08-22 09:01:07.246] [info]  🎒 BACKEND REPORTED:  43.46%
+
+[2026-08-22 09:01:07.259] [info]  🚧 UPSCAYL_PROGRESS:  43.46%
+
+[2026-08-22 09:01:07.980] [info]  43.70%
+
+[2026-08-22 09:01:07.997] [info]  🎒 BACKEND REPORTED:  43.70%
+
+[2026-08-22 09:01:08.010] [info]  🚧 UPSCAYL_PROGRESS:  43.70%
+
+[2026-08-22 09:01:08.727] [info]  43.95%
+
+[2026-08-22 09:01:08.736] [info]  🎒 BACKEND REPORTED:  43.95%
+
+[2026-08-22 09:01:08.748] [info]  🚧 UPSCAYL_PROGRESS:  43.95%
+
+[2026-08-22 09:01:09.477] [info]  44.20%
+
+[2026-08-22 09:01:09.483] [info]  🎒 BACKEND REPORTED:  44.20%
+
+[2026-08-22 09:01:09.494] [info]  🚧 UPSCAYL_PROGRESS:  44.20%
+
+[2026-08-22 09:01:10.230] [info]  44.44%
+
+[2026-08-22 09:01:10.237] [info]  🎒 BACKEND REPORTED:  44.44%
+
+[2026-08-22 09:01:10.246] [info]  🚧 UPSCAYL_PROGRESS:  44.44%
+
+[2026-08-22 09:01:10.980] [info]  44.69%
+
+[2026-08-22 09:01:10.987] [info]  🎒 BACKEND REPORTED:  44.69%
+
+[2026-08-22 09:01:10.997] [info]  🚧 UPSCAYL_PROGRESS:  44.69%
+
+[2026-08-22 09:01:11.746] [info]  44.94%
+
+[2026-08-22 09:01:11.749] [info]  🎒 BACKEND REPORTED:  44.94%
+
+[2026-08-22 09:01:11.762] [info]  🚧 UPSCAYL_PROGRESS:  44.94%
+
+[2026-08-22 09:01:12.498] [info]  45.19%
+
+[2026-08-22 09:01:12.502] [info]  🎒 BACKEND REPORTED:  45.19%
+
+[2026-08-22 09:01:12.517] [info]  🚧 UPSCAYL_PROGRESS:  45.19%
+
+[2026-08-22 09:01:13.256] [info]  45.43%
+
+[2026-08-22 09:01:13.259] [info]  🎒 BACKEND REPORTED:  45.43%
+
+[2026-08-22 09:01:13.260] [info]  🚧 UPSCAYL_PROGRESS:  45.43%
+
+[2026-08-22 09:01:14.005] [info]  45.68%
+
+[2026-08-22 09:01:14.019] [info]  🎒 BACKEND REPORTED:  45.68%
+
+[2026-08-22 09:01:14.026] [info]  🚧 UPSCAYL_PROGRESS:  45.68%
+
+[2026-08-22 09:01:14.771] [info]  45.93%
+
+[2026-08-22 09:01:14.775] [info]  🎒 BACKEND REPORTED:  45.93%
+
+[2026-08-22 09:01:14.790] [info]  🚧 UPSCAYL_PROGRESS:  45.93%
+
+[2026-08-22 09:01:15.525] [info]  46.17%
+
+[2026-08-22 09:01:15.532] [info]  🎒 BACKEND REPORTED:  46.17%
+
+[2026-08-22 09:01:15.536] [info]  🚧 UPSCAYL_PROGRESS:  46.17%
+
+[2026-08-22 09:01:15.732] [info]  46.42%
+
+[2026-08-22 09:01:15.736] [info]  🎒 BACKEND REPORTED:  46.42%
+
+[2026-08-22 09:01:15.746] [info]  🚧 UPSCAYL_PROGRESS:  46.42%
+
+[2026-08-22 09:01:16.497] [info]  46.67%
+
+[2026-08-22 09:01:16.499] [info]  🎒 BACKEND REPORTED:  46.67%
+
+[2026-08-22 09:01:16.501] [info]  🚧 UPSCAYL_PROGRESS:  46.67%
+
+[2026-08-22 09:01:17.239] [info]  46.91%
+
+[2026-08-22 09:01:17.241] [info]  🎒 BACKEND REPORTED:  46.91%
+
+[2026-08-22 09:01:17.247] [info]  🚧 UPSCAYL_PROGRESS:  46.91%
+
+[2026-08-22 09:01:17.981] [info]  47.16%
+
+[2026-08-22 09:01:17.984] [info]  🎒 BACKEND REPORTED:  47.16%
+
+[2026-08-22 09:01:17.986] [info]  🚧 UPSCAYL_PROGRESS:  47.16%
+
+[2026-08-22 09:01:18.724] [info]  47.41%
+
+[2026-08-22 09:01:18.727] [info]  🎒 BACKEND REPORTED:  47.41%
+
+[2026-08-22 09:01:18.729] [info]  🚧 UPSCAYL_PROGRESS:  47.41%
+
+[2026-08-22 09:01:19.466] [info]  47.65%
+
+[2026-08-22 09:01:19.469] [info]  🎒 BACKEND REPORTED:  47.65%
+
+[2026-08-22 09:01:19.476] [info]  🚧 UPSCAYL_PROGRESS:  47.65%
+
+[2026-08-22 09:01:20.209] [info]  47.90%
+
+[2026-08-22 09:01:20.212] [info]  🎒 BACKEND REPORTED:  47.90%
+
+[2026-08-22 09:01:20.214] [info]  🚧 UPSCAYL_PROGRESS:  47.90%
+
+[2026-08-22 09:01:20.954] [info]  48.15%
+
+[2026-08-22 09:01:20.957] [info]  🎒 BACKEND REPORTED:  48.15%
+
+[2026-08-22 09:01:20.961] [info]  🚧 UPSCAYL_PROGRESS:  48.15%
+
+[2026-08-22 09:01:21.696] [info]  48.40%
+
+[2026-08-22 09:01:21.700] [info]  🎒 BACKEND REPORTED:  48.40%
+
+[2026-08-22 09:01:21.703] [info]  🚧 UPSCAYL_PROGRESS:  48.40%
+
+[2026-08-22 09:01:22.440] [info]  48.64%
+
+[2026-08-22 09:01:22.444] [info]  🎒 BACKEND REPORTED:  48.64%
+
+[2026-08-22 09:01:22.446] [info]  🚧 UPSCAYL_PROGRESS:  48.64%
+
+[2026-08-22 09:01:23.184] [info]  48.89%
+
+[2026-08-22 09:01:23.186] [info]  🎒 BACKEND REPORTED:  48.89%
+
+[2026-08-22 09:01:23.190] [info]  🚧 UPSCAYL_PROGRESS:  48.89%
+
+[2026-08-22 09:01:23.927] [info]  49.14%
+
+[2026-08-22 09:01:23.930] [info]  🎒 BACKEND REPORTED:  49.14%
+
+[2026-08-22 09:01:23.933] [info]  🚧 UPSCAYL_PROGRESS:  49.14%
+
+[2026-08-22 09:01:24.671] [info]  49.38%
+
+[2026-08-22 09:01:24.675] [info]  🎒 BACKEND REPORTED:  49.38%
+
+[2026-08-22 09:01:24.677] [info]  🚧 UPSCAYL_PROGRESS:  49.38%
+
+[2026-08-22 09:01:25.414] [info]  49.63%
+
+[2026-08-22 09:01:25.418] [info]  🎒 BACKEND REPORTED:  49.63%
+
+[2026-08-22 09:01:25.420] [info]  🚧 UPSCAYL_PROGRESS:  49.63%
+
+[2026-08-22 09:01:26.157] [info]  49.88%
+
+[2026-08-22 09:01:26.159] [info]  🎒 BACKEND REPORTED:  49.88%
+
+[2026-08-22 09:01:26.165] [info]  🚧 UPSCAYL_PROGRESS:  49.88%
+
+[2026-08-22 09:01:26.900] [info]  50.12%
+
+[2026-08-22 09:01:26.905] [info]  🎒 BACKEND REPORTED:  50.12%
+
+[2026-08-22 09:01:26.907] [info]  🚧 UPSCAYL_PROGRESS:  50.12%
+
+[2026-08-22 09:01:27.644] [info]  50.37%
+
+[2026-08-22 09:01:27.648] [info]  🎒 BACKEND REPORTED:  50.37%
+
+[2026-08-22 09:01:27.654] [info]  🚧 UPSCAYL_PROGRESS:  50.37%
+
+[2026-08-22 09:01:28.390] [info]  50.62%
+
+[2026-08-22 09:01:28.393] [info]  🎒 BACKEND REPORTED:  50.62%
+
+[2026-08-22 09:01:28.395] [info]  🚧 UPSCAYL_PROGRESS:  50.62%
+
+[2026-08-22 09:01:29.133] [info]  50.86%
+
+[2026-08-22 09:01:29.134] [info]  🎒 BACKEND REPORTED:  50.86%
+
+[2026-08-22 09:01:29.136] [info]  🚧 UPSCAYL_PROGRESS:  50.86%
+
+[2026-08-22 09:01:29.874] [info]  51.11%
+
+[2026-08-22 09:01:29.876] [info]  🎒 BACKEND REPORTED:  51.11%
+
+[2026-08-22 09:01:29.876] [info]  🚧 UPSCAYL_PROGRESS:  51.11%
+
+[2026-08-22 09:01:30.616] [info]  51.36%
+
+[2026-08-22 09:01:30.617] [info]  🎒 BACKEND REPORTED:  51.36%
+
+[2026-08-22 09:01:30.618] [info]  🚧 UPSCAYL_PROGRESS:  51.36%
+
+[2026-08-22 09:01:31.351] [info]  51.60%
+
+[2026-08-22 09:01:31.358] [info]  🎒 BACKEND REPORTED:  51.60%
+
+[2026-08-22 09:01:31.367] [info]  🚧 UPSCAYL_PROGRESS:  51.60%
+
+[2026-08-22 09:01:32.097] [info]  51.85%
+
+[2026-08-22 09:01:32.102] [info]  🎒 BACKEND REPORTED:  51.85%
+
+[2026-08-22 09:01:32.108] [info]  🚧 UPSCAYL_PROGRESS:  51.85%
+
+[2026-08-22 09:01:32.843] [info]  52.10%
+
+[2026-08-22 09:01:32.847] [info]  🎒 BACKEND REPORTED:  52.10%
+
+[2026-08-22 09:01:32.855] [info]  🚧 UPSCAYL_PROGRESS:  52.10%
+
+[2026-08-22 09:01:33.594] [info]  52.35%
+
+[2026-08-22 09:01:33.600] [info]  🎒 BACKEND REPORTED:  52.35%
+
+[2026-08-22 09:01:33.610] [info]  🚧 UPSCAYL_PROGRESS:  52.35%
+
+[2026-08-22 09:01:34.336] [info]  52.59%
+
+[2026-08-22 09:01:34.339] [info]  🎒 BACKEND REPORTED:  52.59%
+
+[2026-08-22 09:01:34.342] [info]  🚧 UPSCAYL_PROGRESS:  52.59%
+
+[2026-08-22 09:01:35.076] [info]  52.84%
+
+[2026-08-22 09:01:35.081] [info]  🎒 BACKEND REPORTED:  52.84%
+
+[2026-08-22 09:01:35.089] [info]  🚧 UPSCAYL_PROGRESS:  52.84%
+
+[2026-08-22 09:01:35.280] [info]  53.09%
+
+[2026-08-22 09:01:35.282] [info]  🎒 BACKEND REPORTED:  53.09%
+
+[2026-08-22 09:01:35.291] [info]  🚧 UPSCAYL_PROGRESS:  53.09%
+
+[2026-08-22 09:01:36.048] [info]  53.33%
+
+[2026-08-22 09:01:36.055] [info]  🎒 BACKEND REPORTED:  53.33%
+
+[2026-08-22 09:01:36.064] [info]  🚧 UPSCAYL_PROGRESS:  53.33%
+
+[2026-08-22 09:01:36.800] [info]  53.58%
+
+[2026-08-22 09:01:36.809] [info]  🎒 BACKEND REPORTED:  53.58%
+
+[2026-08-22 09:01:36.810] [info]  🚧 UPSCAYL_PROGRESS:  53.58%
+
+[2026-08-22 09:01:37.550] [info]  53.83%
+
+[2026-08-22 09:01:37.553] [info]  🎒 BACKEND REPORTED:  53.83%
+
+[2026-08-22 09:01:37.559] [info]  🚧 UPSCAYL_PROGRESS:  53.83%
+
+[2026-08-22 09:01:38.305] [info]  54.07%
+
+[2026-08-22 09:01:38.309] [info]  🎒 BACKEND REPORTED:  54.07%
+
+[2026-08-22 09:01:38.313] [info]  🚧 UPSCAYL_PROGRESS:  54.07%
+
+[2026-08-22 09:01:39.048] [info]  54.32%
+
+[2026-08-22 09:01:39.051] [info]  🎒 BACKEND REPORTED:  54.32%
+
+[2026-08-22 09:01:39.061] [info]  🚧 UPSCAYL_PROGRESS:  54.32%
+
+[2026-08-22 09:01:39.800] [info]  54.57%
+
+[2026-08-22 09:01:39.807] [info]  🎒 BACKEND REPORTED:  54.57%
+
+[2026-08-22 09:01:39.817] [info]  🚧 UPSCAYL_PROGRESS:  54.57%
+
+[2026-08-22 09:01:40.561] [info]  54.81%
+
+[2026-08-22 09:01:40.563] [info]  🎒 BACKEND REPORTED:  54.81%
+
+[2026-08-22 09:01:40.568] [info]  🚧 UPSCAYL_PROGRESS:  54.81%
+
+[2026-08-22 09:01:41.301] [info]  55.06%
+
+[2026-08-22 09:01:41.304] [info]  🎒 BACKEND REPORTED:  55.06%
+
+[2026-08-22 09:01:41.310] [info]  🚧 UPSCAYL_PROGRESS:  55.06%
+
+[2026-08-22 09:01:42.048] [info]  55.31%
+
+[2026-08-22 09:01:42.053] [info]  🎒 BACKEND REPORTED:  55.31%
+
+[2026-08-22 09:01:42.058] [info]  🚧 UPSCAYL_PROGRESS:  55.31%
+
+[2026-08-22 09:01:42.799] [info]  55.56%
+
+[2026-08-22 09:01:42.802] [info]  🎒 BACKEND REPORTED:  55.56%
+
+[2026-08-22 09:01:42.811] [info]  🚧 UPSCAYL_PROGRESS:  55.56%
+
+[2026-08-22 09:01:43.549] [info]  55.80%
+
+[2026-08-22 09:01:43.555] [info]  🎒 BACKEND REPORTED:  55.80%
+
+[2026-08-22 09:01:43.563] [info]  🚧 UPSCAYL_PROGRESS:  55.80%
+
+[2026-08-22 09:01:44.303] [info]  56.05%
+
+[2026-08-22 09:01:44.305] [info]  🎒 BACKEND REPORTED:  56.05%
+
+[2026-08-22 09:01:44.308] [info]  🚧 UPSCAYL_PROGRESS:  56.05%
+
+[2026-08-22 09:01:45.043] [info]  56.30%
+
+[2026-08-22 09:01:45.049] [info]  🎒 BACKEND REPORTED:  56.30%
+
+[2026-08-22 09:01:45.052] [info]  🚧 UPSCAYL_PROGRESS:  56.30%
+
+[2026-08-22 09:01:45.794] [info]  56.54%
+
+[2026-08-22 09:01:45.801] [info]  🎒 BACKEND REPORTED:  56.54%
+
+[2026-08-22 09:01:45.805] [info]  🚧 UPSCAYL_PROGRESS:  56.54%
+
+[2026-08-22 09:01:46.544] [info]  56.79%
+
+[2026-08-22 09:01:46.549] [info]  🎒 BACKEND REPORTED:  56.79%
+
+[2026-08-22 09:01:46.559] [info]  🚧 UPSCAYL_PROGRESS:  56.79%
+
+[2026-08-22 09:01:47.302] [info]  57.04%
+
+[2026-08-22 09:01:47.306] [info]  🎒 BACKEND REPORTED:  57.04%
+
+[2026-08-22 09:01:47.306] [info]  🚧 UPSCAYL_PROGRESS:  57.04%
+
+[2026-08-22 09:01:48.046] [info]  57.28%
+
+[2026-08-22 09:01:48.049] [info]  🎒 BACKEND REPORTED:  57.28%
+
+[2026-08-22 09:01:48.053] [info]  🚧 UPSCAYL_PROGRESS:  57.28%
+
+[2026-08-22 09:01:48.793] [info]  57.53%
+
+[2026-08-22 09:01:48.799] [info]  🎒 BACKEND REPORTED:  57.53%
+
+[2026-08-22 09:01:48.808] [info]  🚧 UPSCAYL_PROGRESS:  57.53%
+
+[2026-08-22 09:01:49.538] [info]  57.78%
+
+[2026-08-22 09:01:49.545] [info]  🎒 BACKEND REPORTED:  57.78%
+
+[2026-08-22 09:01:49.546] [info]  🚧 UPSCAYL_PROGRESS:  57.78%
+
+[2026-08-22 09:01:50.286] [info]  58.02%
+
+[2026-08-22 09:01:50.292] [info]  🎒 BACKEND REPORTED:  58.02%
+
+[2026-08-22 09:01:50.300] [info]  🚧 UPSCAYL_PROGRESS:  58.02%
+
+[2026-08-22 09:01:51.037] [info]  58.27%
+
+[2026-08-22 09:01:51.041] [info]  🎒 BACKEND REPORTED:  58.27%
+
+[2026-08-22 09:01:51.043] [info]  🚧 UPSCAYL_PROGRESS:  58.27%
+
+[2026-08-22 09:01:51.778] [info]  58.52%
+
+[2026-08-22 09:01:51.780] [info]  🎒 BACKEND REPORTED:  58.52%
+
+[2026-08-22 09:01:51.784] [info]  🚧 UPSCAYL_PROGRESS:  58.52%
+
+[2026-08-22 09:01:52.522] [info]  58.77%
+
+[2026-08-22 09:01:52.528] [info]  🎒 BACKEND REPORTED:  58.77%
+
+[2026-08-22 09:01:52.531] [info]  🚧 UPSCAYL_PROGRESS:  58.77%
+
+[2026-08-22 09:01:53.267] [info]  59.01%
+
+[2026-08-22 09:01:53.268] [info]  🎒 BACKEND REPORTED:  59.01%
+
+[2026-08-22 09:01:53.277] [info]  🚧 UPSCAYL_PROGRESS:  59.01%
+
+[2026-08-22 09:01:54.010] [info]  59.26%
+
+[2026-08-22 09:01:54.023] [info]  🎒 BACKEND REPORTED:  59.26%
+
+[2026-08-22 09:01:54.031] [info]  🚧 UPSCAYL_PROGRESS:  59.26%
+
+[2026-08-22 09:01:54.762] [info]  59.51%
+
+[2026-08-22 09:01:54.770] [info]  🎒 BACKEND REPORTED:  59.51%
+
+[2026-08-22 09:01:54.773] [info]  🚧 UPSCAYL_PROGRESS:  59.51%
+
+[2026-08-22 09:01:54.963] [info]  59.75%
+
+[2026-08-22 09:01:54.969] [info]  🎒 BACKEND REPORTED:  59.75%
+
+[2026-08-22 09:01:54.970] [info]  🚧 UPSCAYL_PROGRESS:  59.75%
+
+[2026-08-22 09:01:55.720] [info]  60.00%
+
+[2026-08-22 09:01:55.724] [info]  🎒 BACKEND REPORTED:  60.00%
+
+[2026-08-22 09:01:55.732] [info]  🚧 UPSCAYL_PROGRESS:  60.00%
+
+[2026-08-22 09:01:56.466] [info]  60.25%
+
+[2026-08-22 09:01:56.470] [info]  🎒 BACKEND REPORTED:  60.25%
+
+[2026-08-22 09:01:56.475] [info]  🚧 UPSCAYL_PROGRESS:  60.25%
+
+[2026-08-22 09:01:57.206] [info]  60.49%
+
+[2026-08-22 09:01:57.212] [info]  🎒 BACKEND REPORTED:  60.49%
+
+[2026-08-22 09:01:57.219] [info]  🚧 UPSCAYL_PROGRESS:  60.49%
+
+[2026-08-22 09:01:57.955] [info]  60.74%
+
+[2026-08-22 09:01:57.962] [info]  🎒 BACKEND REPORTED:  60.74%
+
+[2026-08-22 09:01:57.978] [info]  🚧 UPSCAYL_PROGRESS:  60.74%
+
+[2026-08-22 09:01:58.705] [info]  60.99%
+
+[2026-08-22 09:01:58.710] [info]  🎒 BACKEND REPORTED:  60.99%
+
+[2026-08-22 09:01:58.716] [info]  🚧 UPSCAYL_PROGRESS:  60.99%
+
+[2026-08-22 09:01:59.454] [info]  61.23%
+
+[2026-08-22 09:01:59.459] [info]  🎒 BACKEND REPORTED:  61.23%
+
+[2026-08-22 09:01:59.472] [info]  🚧 UPSCAYL_PROGRESS:  61.23%
+
+[2026-08-22 09:02:00.196] [info]  61.48%
+
+[2026-08-22 09:02:00.203] [info]  🎒 BACKEND REPORTED:  61.48%
+
+[2026-08-22 09:02:00.217] [info]  🚧 UPSCAYL_PROGRESS:  61.48%
+
+[2026-08-22 09:02:00.947] [info]  61.73%
+
+[2026-08-22 09:02:00.955] [info]  🎒 BACKEND REPORTED:  61.73%
+
+[2026-08-22 09:02:00.957] [info]  🚧 UPSCAYL_PROGRESS:  61.73%
+
+[2026-08-22 09:02:01.696] [info]  61.98%
+
+[2026-08-22 09:02:01.699] [info]  🎒 BACKEND REPORTED:  61.98%
+
+[2026-08-22 09:02:01.700] [info]  🚧 UPSCAYL_PROGRESS:  61.98%
+
+[2026-08-22 09:02:02.437] [info]  62.22%
+
+[2026-08-22 09:02:02.441] [info]  🎒 BACKEND REPORTED:  62.22%
+
+[2026-08-22 09:02:02.442] [info]  🚧 UPSCAYL_PROGRESS:  62.22%
+
+[2026-08-22 09:02:03.174] [info]  62.47%
+
+[2026-08-22 09:02:03.176] [info]  🎒 BACKEND REPORTED:  62.47%
+
+[2026-08-22 09:02:03.180] [info]  🚧 UPSCAYL_PROGRESS:  62.47%
+
+[2026-08-22 09:02:03.915] [info]  62.72%
+
+[2026-08-22 09:02:03.920] [info]  🎒 BACKEND REPORTED:  62.72%
+
+[2026-08-22 09:02:03.928] [info]  🚧 UPSCAYL_PROGRESS:  62.72%
+
+[2026-08-22 09:02:04.666] [info]  62.96%
+
+[2026-08-22 09:02:04.668] [info]  🎒 BACKEND REPORTED:  62.96%
+
+[2026-08-22 09:02:04.675] [info]  🚧 UPSCAYL_PROGRESS:  62.96%
+
+[2026-08-22 09:02:05.412] [info]  63.21%
+
+[2026-08-22 09:02:05.415] [info]  🎒 BACKEND REPORTED:  63.21%
+
+[2026-08-22 09:02:05.422] [info]  🚧 UPSCAYL_PROGRESS:  63.21%
+
+[2026-08-22 09:02:06.158] [info]  63.46%
+
+[2026-08-22 09:02:06.163] [info]  🎒 BACKEND REPORTED:  63.46%
+
+[2026-08-22 09:02:06.169] [info]  🚧 UPSCAYL_PROGRESS:  63.46%
+
+[2026-08-22 09:02:06.909] [info]  63.70%
+
+[2026-08-22 09:02:06.913] [info]  🎒 BACKEND REPORTED:  63.70%
+
+[2026-08-22 09:02:06.917] [info]  🚧 UPSCAYL_PROGRESS:  63.70%
+
+[2026-08-22 09:02:07.649] [info]  63.95%
+
+[2026-08-22 09:02:07.652] [info]  🎒 BACKEND REPORTED:  63.95%
+
+[2026-08-22 09:02:07.656] [info]  🚧 UPSCAYL_PROGRESS:  63.95%
+
+[2026-08-22 09:02:08.392] [info]  64.20%
+
+[2026-08-22 09:02:08.394] [info]  🎒 BACKEND REPORTED:  64.20%
+
+[2026-08-22 09:02:08.401] [info]  🚧 UPSCAYL_PROGRESS:  64.20%
+
+[2026-08-22 09:02:09.140] [info]  64.44%
+
+[2026-08-22 09:02:09.143] [info]  🎒 BACKEND REPORTED:  64.44%
+
+[2026-08-22 09:02:09.145] [info]  🚧 UPSCAYL_PROGRESS:  64.44%
+
+[2026-08-22 09:02:09.883] [info]  64.69%
+
+[2026-08-22 09:02:09.887] [info]  🎒 BACKEND REPORTED:  64.69%
+
+[2026-08-22 09:02:09.893] [info]  🚧 UPSCAYL_PROGRESS:  64.69%
+
+[2026-08-22 09:02:10.635] [info]  64.94%
+
+[2026-08-22 09:02:10.637] [info]  🎒 BACKEND REPORTED:  64.94%
+
+[2026-08-22 09:02:10.641] [info]  🚧 UPSCAYL_PROGRESS:  64.94%
+
+[2026-08-22 09:02:11.375] [info]  65.19%
+
+[2026-08-22 09:02:11.377] [info]  🎒 BACKEND REPORTED:  65.19%
+
+[2026-08-22 09:02:11.379] [info]  🚧 UPSCAYL_PROGRESS:  65.19%
+
+[2026-08-22 09:02:12.126] [info]  65.43%
+
+[2026-08-22 09:02:12.129] [info]  🎒 BACKEND REPORTED:  65.43%
+
+[2026-08-22 09:02:12.133] [info]  🚧 UPSCAYL_PROGRESS:  65.43%
+
+[2026-08-22 09:02:12.869] [info]  65.68%
+
+[2026-08-22 09:02:12.873] [info]  🎒 BACKEND REPORTED:  65.68%
+
+[2026-08-22 09:02:12.880] [info]  🚧 UPSCAYL_PROGRESS:  65.68%
+
+[2026-08-22 09:02:13.621] [info]  65.93%
+
+[2026-08-22 09:02:13.624] [info]  🎒 BACKEND REPORTED:  65.93%
+
+[2026-08-22 09:02:13.628] [info]  🚧 UPSCAYL_PROGRESS:  65.93%
+
+[2026-08-22 09:02:14.362] [info]  66.17%
+
+[2026-08-22 09:02:14.365] [info]  🎒 BACKEND REPORTED:  66.17%
+
+[2026-08-22 09:02:14.372] [info]  🚧 UPSCAYL_PROGRESS:  66.17%
+
+[2026-08-22 09:02:14.573] [info]  66.42%
+
+[2026-08-22 09:02:14.579] [info]  🎒 BACKEND REPORTED:  66.42%
+
+[2026-08-22 09:02:14.580] [info]  🚧 UPSCAYL_PROGRESS:  66.42%
+
+[2026-08-22 09:02:15.326] [info]  66.67%
+
+[2026-08-22 09:02:15.328] [info]  🎒 BACKEND REPORTED:  66.67%
+
+[2026-08-22 09:02:15.331] [info]  🚧 UPSCAYL_PROGRESS:  66.67%
+
+[2026-08-22 09:02:16.070] [info]  66.91%
+
+[2026-08-22 09:02:16.073] [info]  🎒 BACKEND REPORTED:  66.91%
+
+[2026-08-22 09:02:16.076] [info]  🚧 UPSCAYL_PROGRESS:  66.91%
+
+[2026-08-22 09:02:16.808] [info]  67.16%
+
+[2026-08-22 09:02:16.811] [info]  🎒 BACKEND REPORTED:  67.16%
+
+[2026-08-22 09:02:16.821] [info]  🚧 UPSCAYL_PROGRESS:  67.16%
+
+[2026-08-22 09:02:17.551] [info]  67.41%
+
+[2026-08-22 09:02:17.556] [info]  🎒 BACKEND REPORTED:  67.41%
+
+[2026-08-22 09:02:17.560] [info]  🚧 UPSCAYL_PROGRESS:  67.41%
+
+[2026-08-22 09:02:18.295] [info]  67.65%
+
+[2026-08-22 09:02:18.303] [info]  🎒 BACKEND REPORTED:  67.65%
+
+[2026-08-22 09:02:18.311] [info]  🚧 UPSCAYL_PROGRESS:  67.65%
+
+[2026-08-22 09:02:19.041] [info]  67.90%
+
+[2026-08-22 09:02:19.048] [info]  🎒 BACKEND REPORTED:  67.90%
+
+[2026-08-22 09:02:19.048] [info]  🚧 UPSCAYL_PROGRESS:  67.90%
+
+[2026-08-22 09:02:19.787] [info]  68.15%
+
+[2026-08-22 09:02:19.798] [info]  🎒 BACKEND REPORTED:  68.15%
+
+[2026-08-22 09:02:19.800] [info]  🚧 UPSCAYL_PROGRESS:  68.15%
+
+[2026-08-22 09:02:20.532] [info]  68.40%
+
+[2026-08-22 09:02:20.535] [info]  🎒 BACKEND REPORTED:  68.40%
+
+[2026-08-22 09:02:20.543] [info]  🚧 UPSCAYL_PROGRESS:  68.40%
+
+[2026-08-22 09:02:21.275] [info]  68.64%
+
+[2026-08-22 09:02:21.280] [info]  🎒 BACKEND REPORTED:  68.64%
+
+[2026-08-22 09:02:21.284] [info]  🚧 UPSCAYL_PROGRESS:  68.64%
+
+[2026-08-22 09:02:22.022] [info]  68.89%
+
+[2026-08-22 09:02:22.027] [info]  🎒 BACKEND REPORTED:  68.89%
+
+[2026-08-22 09:02:22.031] [info]  🚧 UPSCAYL_PROGRESS:  68.89%
+
+[2026-08-22 09:02:22.771] [info]  69.14%
+
+[2026-08-22 09:02:22.772] [info]  🎒 BACKEND REPORTED:  69.14%
+
+[2026-08-22 09:02:22.780] [info]  🚧 UPSCAYL_PROGRESS:  69.14%
+
+[2026-08-22 09:02:23.520] [info]  69.38%
+
+[2026-08-22 09:02:23.528] [info]  🎒 BACKEND REPORTED:  69.38%
+
+[2026-08-22 09:02:23.542] [info]  🚧 UPSCAYL_PROGRESS:  69.38%
+
+[2026-08-22 09:02:24.274] [info]  69.63%
+
+[2026-08-22 09:02:24.277] [info]  🎒 BACKEND REPORTED:  69.63%
+
+[2026-08-22 09:02:24.281] [info]  🚧 UPSCAYL_PROGRESS:  69.63%
+
+[2026-08-22 09:02:25.009] [info]  69.88%
+
+[2026-08-22 09:02:25.015] [info]  🎒 BACKEND REPORTED:  69.88%
+
+[2026-08-22 09:02:25.015] [info]  🚧 UPSCAYL_PROGRESS:  69.88%
+
+[2026-08-22 09:02:25.749] [info]  70.12%
+
+[2026-08-22 09:02:25.752] [info]  🎒 BACKEND REPORTED:  70.12%
+
+[2026-08-22 09:02:25.757] [info]  🚧 UPSCAYL_PROGRESS:  70.12%
+
+[2026-08-22 09:02:26.504] [info]  70.37%
+
+[2026-08-22 09:02:26.508] [info]  🎒 BACKEND REPORTED:  70.37%
+
+[2026-08-22 09:02:26.510] [info]  🚧 UPSCAYL_PROGRESS:  70.37%
+
+[2026-08-22 09:02:27.249] [info]  70.62%
+
+[2026-08-22 09:02:27.256] [info]  🎒 BACKEND REPORTED:  70.62%
+
+[2026-08-22 09:02:27.262] [info]  🚧 UPSCAYL_PROGRESS:  70.62%
+
+[2026-08-22 09:02:27.997] [info]  70.86%
+
+[2026-08-22 09:02:28.010] [info]  🎒 BACKEND REPORTED:  70.86%
+
+[2026-08-22 09:02:28.017] [info]  🚧 UPSCAYL_PROGRESS:  70.86%
+
+[2026-08-22 09:02:28.748] [info]  71.11%
+
+[2026-08-22 09:02:28.757] [info]  🎒 BACKEND REPORTED:  71.11%
+
+[2026-08-22 09:02:28.760] [info]  🚧 UPSCAYL_PROGRESS:  71.11%
+
+[2026-08-22 09:02:29.500] [info]  71.36%
+
+[2026-08-22 09:02:29.508] [info]  🎒 BACKEND REPORTED:  71.36%
+
+[2026-08-22 09:02:29.511] [info]  🚧 UPSCAYL_PROGRESS:  71.36%
+
+[2026-08-22 09:02:30.246] [info]  71.60%
+
+[2026-08-22 09:02:30.251] [info]  🎒 BACKEND REPORTED:  71.60%
+
+[2026-08-22 09:02:30.254] [info]  🚧 UPSCAYL_PROGRESS:  71.60%
+
+[2026-08-22 09:02:30.984] [info]  71.85%
+
+[2026-08-22 09:02:30.986] [info]  🎒 BACKEND REPORTED:  71.85%
+
+[2026-08-22 09:02:30.995] [info]  🚧 UPSCAYL_PROGRESS:  71.85%
+
+[2026-08-22 09:02:31.731] [info]  72.10%
+
+[2026-08-22 09:02:31.737] [info]  🎒 BACKEND REPORTED:  72.10%
+
+[2026-08-22 09:02:31.743] [info]  🚧 UPSCAYL_PROGRESS:  72.10%
+
+[2026-08-22 09:02:32.481] [info]  72.35%
+
+[2026-08-22 09:02:32.485] [info]  🎒 BACKEND REPORTED:  72.35%
+
+[2026-08-22 09:02:32.488] [info]  🚧 UPSCAYL_PROGRESS:  72.35%
+
+[2026-08-22 09:02:33.231] [info]  72.59%
+
+[2026-08-22 09:02:33.235] [info]  🎒 BACKEND REPORTED:  72.59%
+
+[2026-08-22 09:02:33.241] [info]  🚧 UPSCAYL_PROGRESS:  72.59%
+
+[2026-08-22 09:02:33.980] [info]  72.84%
+
+[2026-08-22 09:02:33.985] [info]  🎒 BACKEND REPORTED:  72.84%
+
+[2026-08-22 09:02:33.986] [info]  🚧 UPSCAYL_PROGRESS:  72.84%
+
+[2026-08-22 09:02:34.178] [info]  73.09%
+
+[2026-08-22 09:02:34.180] [info]  🎒 BACKEND REPORTED:  73.09%
+
+[2026-08-22 09:02:34.184] [info]  🚧 UPSCAYL_PROGRESS:  73.09%
+
+[2026-08-22 09:02:34.935] [info]  73.33%
+
+[2026-08-22 09:02:34.939] [info]  🎒 BACKEND REPORTED:  73.33%
+
+[2026-08-22 09:02:34.949] [info]  🚧 UPSCAYL_PROGRESS:  73.33%
+
+[2026-08-22 09:02:35.688] [info]  73.58%
+
+[2026-08-22 09:02:35.696] [info]  🎒 BACKEND REPORTED:  73.58%
+
+[2026-08-22 09:02:35.700] [info]  🚧 UPSCAYL_PROGRESS:  73.58%
+
+[2026-08-22 09:02:36.439] [info]  73.83%
+
+[2026-08-22 09:02:36.444] [info]  🎒 BACKEND REPORTED:  73.83%
+
+[2026-08-22 09:02:36.448] [info]  🚧 UPSCAYL_PROGRESS:  73.83%
+
+[2026-08-22 09:02:37.184] [info]  74.07%
+
+[2026-08-22 09:02:37.189] [info]  🎒 BACKEND REPORTED:  74.07%
+
+[2026-08-22 09:02:37.194] [info]  🚧 UPSCAYL_PROGRESS:  74.07%
+
+[2026-08-22 09:02:37.932] [info]  74.32%
+
+[2026-08-22 09:02:37.936] [info]  🎒 BACKEND REPORTED:  74.32%
+
+[2026-08-22 09:02:37.949] [info]  🚧 UPSCAYL_PROGRESS:  74.32%
+
+[2026-08-22 09:02:38.684] [info]  74.57%
+
+[2026-08-22 09:02:38.688] [info]  🎒 BACKEND REPORTED:  74.57%
+
+[2026-08-22 09:02:38.698] [info]  🚧 UPSCAYL_PROGRESS:  74.57%
+
+[2026-08-22 09:02:39.429] [info]  74.81%
+
+[2026-08-22 09:02:39.433] [info]  🎒 BACKEND REPORTED:  74.81%
+
+[2026-08-22 09:02:39.437] [info]  🚧 UPSCAYL_PROGRESS:  74.81%
+
+[2026-08-22 09:02:40.172] [info]  75.06%
+
+[2026-08-22 09:02:40.179] [info]  🎒 BACKEND REPORTED:  75.06%
+
+[2026-08-22 09:02:40.185] [info]  🚧 UPSCAYL_PROGRESS:  75.06%
+
+[2026-08-22 09:02:40.917] [info]  75.31%
+
+[2026-08-22 09:02:40.924] [info]  🎒 BACKEND REPORTED:  75.31%
+
+[2026-08-22 09:02:40.926] [info]  🚧 UPSCAYL_PROGRESS:  75.31%
+
+[2026-08-22 09:02:41.656] [info]  75.56%
+
+[2026-08-22 09:02:41.657] [info]  🎒 BACKEND REPORTED:  75.56%
+
+[2026-08-22 09:02:41.660] [info]  🚧 UPSCAYL_PROGRESS:  75.56%
+
+[2026-08-22 09:02:42.394] [info]  75.80%
+
+[2026-08-22 09:02:42.398] [info]  🎒 BACKEND REPORTED:  75.80%
+
+[2026-08-22 09:02:42.407] [info]  🚧 UPSCAYL_PROGRESS:  75.80%
+
+[2026-08-22 09:02:43.141] [info]  76.05%
+
+[2026-08-22 09:02:43.145] [info]  🎒 BACKEND REPORTED:  76.05%
+
+[2026-08-22 09:02:43.145] [info]  🚧 UPSCAYL_PROGRESS:  76.05%
+
+[2026-08-22 09:02:43.882] [info]  76.30%
+
+[2026-08-22 09:02:43.887] [info]  🎒 BACKEND REPORTED:  76.30%
+
+[2026-08-22 09:02:43.897] [info]  🚧 UPSCAYL_PROGRESS:  76.30%
+
+[2026-08-22 09:02:44.627] [info]  76.54%
+
+[2026-08-22 09:02:44.630] [info]  🎒 BACKEND REPORTED:  76.54%
+
+[2026-08-22 09:02:44.636] [info]  🚧 UPSCAYL_PROGRESS:  76.54%
+
+[2026-08-22 09:02:45.367] [info]  76.79%
+
+[2026-08-22 09:02:45.371] [info]  🎒 BACKEND REPORTED:  76.79%
+
+[2026-08-22 09:02:45.373] [info]  🚧 UPSCAYL_PROGRESS:  76.79%
+
+[2026-08-22 09:02:46.112] [info]  77.04%
+
+[2026-08-22 09:02:46.120] [info]  🎒 BACKEND REPORTED:  77.04%
+
+[2026-08-22 09:02:46.122] [info]  🚧 UPSCAYL_PROGRESS:  77.04%
+
+[2026-08-22 09:02:46.860] [info]  77.28%
+
+[2026-08-22 09:02:46.870] [info]  🎒 BACKEND REPORTED:  77.28%
+
+[2026-08-22 09:02:46.872] [info]  🚧 UPSCAYL_PROGRESS:  77.28%
+
+[2026-08-22 09:02:47.610] [info]  77.53%
+
+[2026-08-22 09:02:47.616] [info]  🎒 BACKEND REPORTED:  77.53%
+
+[2026-08-22 09:02:47.621] [info]  🚧 UPSCAYL_PROGRESS:  77.53%
+
+[2026-08-22 09:02:48.356] [info]  77.78%
+
+[2026-08-22 09:02:48.361] [info]  🎒 BACKEND REPORTED:  77.78%
+
+[2026-08-22 09:02:48.365] [info]  🚧 UPSCAYL_PROGRESS:  77.78%
+
+[2026-08-22 09:02:49.103] [info]  78.02%
+
+[2026-08-22 09:02:49.105] [info]  🎒 BACKEND REPORTED:  78.02%
+
+[2026-08-22 09:02:49.106] [info]  🚧 UPSCAYL_PROGRESS:  78.02%
+
+[2026-08-22 09:02:49.850] [info]  78.27%
+
+[2026-08-22 09:02:49.858] [info]  🎒 BACKEND REPORTED:  78.27%
+
+[2026-08-22 09:02:49.865] [info]  🚧 UPSCAYL_PROGRESS:  78.27%
+
+[2026-08-22 09:02:50.606] [info]  78.52%
+
+[2026-08-22 09:02:50.616] [info]  🎒 BACKEND REPORTED:  78.52%
+
+[2026-08-22 09:02:50.616] [info]  🚧 UPSCAYL_PROGRESS:  78.52%
+
+[2026-08-22 09:02:51.346] [info]  78.77%
+
+[2026-08-22 09:02:51.351] [info]  🎒 BACKEND REPORTED:  78.77%
+
+[2026-08-22 09:02:51.351] [info]  🚧 UPSCAYL_PROGRESS:  78.77%
+
+[2026-08-22 09:02:52.085] [info]  79.01%
+
+[2026-08-22 09:02:52.089] [info]  🎒 BACKEND REPORTED:  79.01%
+
+[2026-08-22 09:02:52.091] [info]  🚧 UPSCAYL_PROGRESS:  79.01%
+
+[2026-08-22 09:02:52.837] [info]  79.26%
+
+[2026-08-22 09:02:52.842] [info]  🎒 BACKEND REPORTED:  79.26%
+
+[2026-08-22 09:02:52.849] [info]  🚧 UPSCAYL_PROGRESS:  79.26%
+
+[2026-08-22 09:02:53.596] [info]  79.51%
+
+[2026-08-22 09:02:53.601] [info]  🎒 BACKEND REPORTED:  79.51%
+
+[2026-08-22 09:02:53.609] [info]  🚧 UPSCAYL_PROGRESS:  79.51%
+
+[2026-08-22 09:02:53.805] [info]  79.75%
+
+[2026-08-22 09:02:53.808] [info]  🎒 BACKEND REPORTED:  79.75%
+
+[2026-08-22 09:02:53.813] [info]  🚧 UPSCAYL_PROGRESS:  79.75%
+
+[2026-08-22 09:02:54.577] [info]  80.00%
+
+[2026-08-22 09:02:54.578] [info]  🎒 BACKEND REPORTED:  80.00%
+
+[2026-08-22 09:02:54.581] [info]  🚧 UPSCAYL_PROGRESS:  80.00%
+
+[2026-08-22 09:02:55.320] [info]  80.25%
+
+[2026-08-22 09:02:55.326] [info]  🎒 BACKEND REPORTED:  80.25%
+
+[2026-08-22 09:02:55.328] [info]  🚧 UPSCAYL_PROGRESS:  80.25%
+
+[2026-08-22 09:02:56.068] [info]  80.49%
+
+[2026-08-22 09:02:56.072] [info]  🎒 BACKEND REPORTED:  80.49%
+
+[2026-08-22 09:02:56.077] [info]  🚧 UPSCAYL_PROGRESS:  80.49%
+
+[2026-08-22 09:02:56.814] [info]  80.74%
+
+[2026-08-22 09:02:56.818] [info]  🎒 BACKEND REPORTED:  80.74%
+
+[2026-08-22 09:02:56.823] [info]  🚧 UPSCAYL_PROGRESS:  80.74%
+
+[2026-08-22 09:02:57.568] [info]  80.99%
+
+[2026-08-22 09:02:57.573] [info]  🎒 BACKEND REPORTED:  80.99%
+
+[2026-08-22 09:02:57.579] [info]  🚧 UPSCAYL_PROGRESS:  80.99%
+
+[2026-08-22 09:02:58.318] [info]  81.23%
+
+[2026-08-22 09:02:58.326] [info]  🎒 BACKEND REPORTED:  81.23%
+
+[2026-08-22 09:02:58.327] [info]  🚧 UPSCAYL_PROGRESS:  81.23%
+
+[2026-08-22 09:02:59.065] [info]  81.48%
+
+[2026-08-22 09:02:59.067] [info]  🎒 BACKEND REPORTED:  81.48%
+
+[2026-08-22 09:02:59.077] [info]  🚧 UPSCAYL_PROGRESS:  81.48%
+
+[2026-08-22 09:02:59.820] [info]  81.73%
+
+[2026-08-22 09:02:59.828] [info]  🎒 BACKEND REPORTED:  81.73%
+
+[2026-08-22 09:02:59.836] [info]  🚧 UPSCAYL_PROGRESS:  81.73%
+
+[2026-08-22 09:03:00.581] [info]  81.98%
+
+[2026-08-22 09:03:00.584] [info]  🎒 BACKEND REPORTED:  81.98%
+
+[2026-08-22 09:03:00.594] [info]  🚧 UPSCAYL_PROGRESS:  81.98%
+
+[2026-08-22 09:03:01.337] [info]  82.22%
+
+[2026-08-22 09:03:01.340] [info]  🎒 BACKEND REPORTED:  82.22%
+
+[2026-08-22 09:03:01.345] [info]  🚧 UPSCAYL_PROGRESS:  82.22%
+
+[2026-08-22 09:03:02.075] [info]  82.47%
+
+[2026-08-22 09:03:02.078] [info]  🎒 BACKEND REPORTED:  82.47%
+
+[2026-08-22 09:03:02.087] [info]  🚧 UPSCAYL_PROGRESS:  82.47%
+
+[2026-08-22 09:03:02.820] [info]  82.72%
+
+[2026-08-22 09:03:02.827] [info]  🎒 BACKEND REPORTED:  82.72%
+
+[2026-08-22 09:03:02.832] [info]  🚧 UPSCAYL_PROGRESS:  82.72%
+
+[2026-08-22 09:03:03.570] [info]  82.96%
+
+[2026-08-22 09:03:03.575] [info]  🎒 BACKEND REPORTED:  82.96%
+
+[2026-08-22 09:03:03.583] [info]  🚧 UPSCAYL_PROGRESS:  82.96%
+
+[2026-08-22 09:03:04.322] [info]  83.21%
+
+[2026-08-22 09:03:04.324] [info]  🎒 BACKEND REPORTED:  83.21%
+
+[2026-08-22 09:03:04.328] [info]  🚧 UPSCAYL_PROGRESS:  83.21%
+
+[2026-08-22 09:03:05.067] [info]  83.46%
+
+[2026-08-22 09:03:05.069] [info]  🎒 BACKEND REPORTED:  83.46%
+
+[2026-08-22 09:03:05.074] [info]  🚧 UPSCAYL_PROGRESS:  83.46%
+
+[2026-08-22 09:03:05.819] [info]  83.70%
+
+[2026-08-22 09:03:05.824] [info]  🎒 BACKEND REPORTED:  83.70%
+
+[2026-08-22 09:03:05.831] [info]  🚧 UPSCAYL_PROGRESS:  83.70%
+
+[2026-08-22 09:03:06.566] [info]  83.95%
+
+[2026-08-22 09:03:06.574] [info]  🎒 BACKEND REPORTED:  83.95%
+
+[2026-08-22 09:03:06.576] [info]  🚧 UPSCAYL_PROGRESS:  83.95%
+
+[2026-08-22 09:03:07.313] [info]  84.20%
+
+[2026-08-22 09:03:07.319] [info]  🎒 BACKEND REPORTED:  84.20%
+
+[2026-08-22 09:03:07.326] [info]  🚧 UPSCAYL_PROGRESS:  84.20%
+
+[2026-08-22 09:03:08.056] [info]  84.44%
+
+[2026-08-22 09:03:08.060] [info]  🎒 BACKEND REPORTED:  84.44%
+
+[2026-08-22 09:03:08.061] [info]  🚧 UPSCAYL_PROGRESS:  84.44%
+
+[2026-08-22 09:03:08.793] [info]  84.69%
+
+[2026-08-22 09:03:08.797] [info]  🎒 BACKEND REPORTED:  84.69%
+
+[2026-08-22 09:03:08.802] [info]  🚧 UPSCAYL_PROGRESS:  84.69%
+
+[2026-08-22 09:03:09.544] [info]  84.94%
+
+[2026-08-22 09:03:09.552] [info]  🎒 BACKEND REPORTED:  84.94%
+
+[2026-08-22 09:03:09.555] [info]  🚧 UPSCAYL_PROGRESS:  84.94%
+
+[2026-08-22 09:03:10.295] [info]  85.19%
+
+[2026-08-22 09:03:10.300] [info]  🎒 BACKEND REPORTED:  85.19%
+
+[2026-08-22 09:03:10.307] [info]  🚧 UPSCAYL_PROGRESS:  85.19%
+
+[2026-08-22 09:03:11.041] [info]  85.43%
+
+[2026-08-22 09:03:11.044] [info]  🎒 BACKEND REPORTED:  85.43%
+
+[2026-08-22 09:03:11.052] [info]  🚧 UPSCAYL_PROGRESS:  85.43%
+
+[2026-08-22 09:03:11.785] [info]  85.68%
+
+[2026-08-22 09:03:11.791] [info]  🎒 BACKEND REPORTED:  85.68%
+
+[2026-08-22 09:03:11.793] [info]  🚧 UPSCAYL_PROGRESS:  85.68%
+
+[2026-08-22 09:03:12.533] [info]  85.93%
+
+[2026-08-22 09:03:12.537] [info]  🎒 BACKEND REPORTED:  85.93%
+
+[2026-08-22 09:03:12.542] [info]  🚧 UPSCAYL_PROGRESS:  85.93%
+
+[2026-08-22 09:03:13.277] [info]  86.17%
+
+[2026-08-22 09:03:13.283] [info]  🎒 BACKEND REPORTED:  86.17%
+
+[2026-08-22 09:03:13.285] [info]  🚧 UPSCAYL_PROGRESS:  86.17%
+
+[2026-08-22 09:03:13.480] [info]  86.42%
+
+[2026-08-22 09:03:13.485] [info]  🎒 BACKEND REPORTED:  86.42%
+
+[2026-08-22 09:03:13.494] [info]  🚧 UPSCAYL_PROGRESS:  86.42%
+
+[2026-08-22 09:03:14.244] [info]  86.67%
+
+[2026-08-22 09:03:14.249] [info]  🎒 BACKEND REPORTED:  86.67%
+
+[2026-08-22 09:03:14.256] [info]  🚧 UPSCAYL_PROGRESS:  86.67%
+
+[2026-08-22 09:03:14.989] [info]  86.91%
+
+[2026-08-22 09:03:14.992] [info]  🎒 BACKEND REPORTED:  86.91%
+
+[2026-08-22 09:03:14.999] [info]  🚧 UPSCAYL_PROGRESS:  86.91%
+
+[2026-08-22 09:03:15.739] [info]  87.16%
+
+[2026-08-22 09:03:15.743] [info]  🎒 BACKEND REPORTED:  87.16%
+
+[2026-08-22 09:03:15.750] [info]  🚧 UPSCAYL_PROGRESS:  87.16%
+
+[2026-08-22 09:03:16.493] [info]  87.41%
+
+[2026-08-22 09:03:16.500] [info]  🎒 BACKEND REPORTED:  87.41%
+
+[2026-08-22 09:03:16.506] [info]  🚧 UPSCAYL_PROGRESS:  87.41%
+
+[2026-08-22 09:03:17.236] [info]  87.65%
+
+[2026-08-22 09:03:17.241] [info]  🎒 BACKEND REPORTED:  87.65%
+
+[2026-08-22 09:03:17.244] [info]  🚧 UPSCAYL_PROGRESS:  87.65%
+
+[2026-08-22 09:03:17.986] [info]  87.90%
+
+[2026-08-22 09:03:17.988] [info]  🎒 BACKEND REPORTED:  87.90%
+
+[2026-08-22 09:03:17.995] [info]  🚧 UPSCAYL_PROGRESS:  87.90%
+
+[2026-08-22 09:03:18.737] [info]  88.15%
+
+[2026-08-22 09:03:18.744] [info]  🎒 BACKEND REPORTED:  88.15%
+
+[2026-08-22 09:03:18.746] [info]  🚧 UPSCAYL_PROGRESS:  88.15%
+
+[2026-08-22 09:03:19.485] [info]  88.40%
+
+[2026-08-22 09:03:19.489] [info]  🎒 BACKEND REPORTED:  88.40%
+
+[2026-08-22 09:03:19.492] [info]  🚧 UPSCAYL_PROGRESS:  88.40%
+
+[2026-08-22 09:03:20.233] [info]  88.64%
+
+[2026-08-22 09:03:20.242] [info]  🎒 BACKEND REPORTED:  88.64%
+
+[2026-08-22 09:03:20.244] [info]  🚧 UPSCAYL_PROGRESS:  88.64%
+
+[2026-08-22 09:03:20.980] [info]  88.89%
+
+[2026-08-22 09:03:20.989] [info]  🎒 BACKEND REPORTED:  88.89%
+
+[2026-08-22 09:03:20.996] [info]  🚧 UPSCAYL_PROGRESS:  88.89%
+
+[2026-08-22 09:03:21.733] [info]  89.14%
+
+[2026-08-22 09:03:21.741] [info]  🎒 BACKEND REPORTED:  89.14%
+
+[2026-08-22 09:03:21.743] [info]  🚧 UPSCAYL_PROGRESS:  89.14%
+
+[2026-08-22 09:03:22.490] [info]  89.38%
+
+[2026-08-22 09:03:22.496] [info]  🎒 BACKEND REPORTED:  89.38%
+
+[2026-08-22 09:03:22.504] [info]  🚧 UPSCAYL_PROGRESS:  89.38%
+
+[2026-08-22 09:03:23.238] [info]  89.63%
+
+[2026-08-22 09:03:23.246] [info]  🎒 BACKEND REPORTED:  89.63%
+
+[2026-08-22 09:03:23.250] [info]  🚧 UPSCAYL_PROGRESS:  89.63%
+
+[2026-08-22 09:03:23.990] [info]  89.88%
+
+[2026-08-22 09:03:23.996] [info]  🎒 BACKEND REPORTED:  89.88%
+
+[2026-08-22 09:03:24.001] [info]  🚧 UPSCAYL_PROGRESS:  89.88%
+
+[2026-08-22 09:03:24.738] [info]  90.12%
+
+[2026-08-22 09:03:24.741] [info]  🎒 BACKEND REPORTED:  90.12%
+
+[2026-08-22 09:03:24.746] [info]  🚧 UPSCAYL_PROGRESS:  90.12%
+
+[2026-08-22 09:03:25.486] [info]  90.37%
+
+[2026-08-22 09:03:25.490] [info]  🎒 BACKEND REPORTED:  90.37%
+
+[2026-08-22 09:03:25.493] [info]  🚧 UPSCAYL_PROGRESS:  90.37%
+
+[2026-08-22 09:03:26.234] [info]  90.62%
+
+[2026-08-22 09:03:26.241] [info]  🎒 BACKEND REPORTED:  90.62%
+
+[2026-08-22 09:03:26.244] [info]  🚧 UPSCAYL_PROGRESS:  90.62%
+
+[2026-08-22 09:03:26.978] [info]  90.86%
+
+[2026-08-22 09:03:26.986] [info]  🎒 BACKEND REPORTED:  90.86%
+
+[2026-08-22 09:03:26.989] [info]  🚧 UPSCAYL_PROGRESS:  90.86%
+
+[2026-08-22 09:03:27.720] [info]  91.11%
+
+[2026-08-22 09:03:27.725] [info]  🎒 BACKEND REPORTED:  91.11%
+
+[2026-08-22 09:03:27.734] [info]  🚧 UPSCAYL_PROGRESS:  91.11%
+
+[2026-08-22 09:03:28.464] [info]  91.36%
+
+[2026-08-22 09:03:28.470] [info]  🎒 BACKEND REPORTED:  91.36%
+
+[2026-08-22 09:03:28.477] [info]  🚧 UPSCAYL_PROGRESS:  91.36%
+
+[2026-08-22 09:03:29.215] [info]  91.60%
+
+[2026-08-22 09:03:29.223] [info]  🎒 BACKEND REPORTED:  91.60%
+
+[2026-08-22 09:03:29.232] [info]  🚧 UPSCAYL_PROGRESS:  91.60%
+
+[2026-08-22 09:03:29.973] [info]  91.85%
+
+[2026-08-22 09:03:29.981] [info]  🎒 BACKEND REPORTED:  91.85%
+
+[2026-08-22 09:03:29.991] [info]  🚧 UPSCAYL_PROGRESS:  91.85%
+
+[2026-08-22 09:03:30.724] [info]  92.10%
+
+[2026-08-22 09:03:30.726] [info]  🎒 BACKEND REPORTED:  92.10%
+
+[2026-08-22 09:03:30.736] [info]  🚧 UPSCAYL_PROGRESS:  92.10%
+
+[2026-08-22 09:03:31.473] [info]  92.35%
+
+[2026-08-22 09:03:31.478] [info]  🎒 BACKEND REPORTED:  92.35%
+
+[2026-08-22 09:03:31.482] [info]  🚧 UPSCAYL_PROGRESS:  92.35%
+
+[2026-08-22 09:03:32.218] [info]  92.59%
+
+[2026-08-22 09:03:32.223] [info]  🎒 BACKEND REPORTED:  92.59%
+
+[2026-08-22 09:03:32.225] [info]  🚧 UPSCAYL_PROGRESS:  92.59%
+
+[2026-08-22 09:03:32.966] [info]  92.84%
+
+[2026-08-22 09:03:32.973] [info]  🎒 BACKEND REPORTED:  92.84%
+
+[2026-08-22 09:03:32.977] [info]  🚧 UPSCAYL_PROGRESS:  92.84%
+
+[2026-08-22 09:03:33.172] [info]  93.09%
+
+[2026-08-22 09:03:33.178] [info]  🎒 BACKEND REPORTED:  93.09%
+
+[2026-08-22 09:03:33.182] [info]  🚧 UPSCAYL_PROGRESS:  93.09%
+
+[2026-08-22 09:03:33.707] [info]  93.33%
+
+[2026-08-22 09:03:33.716] [info]  🎒 BACKEND REPORTED:  93.33%
+
+[2026-08-22 09:03:33.721] [info]  🚧 UPSCAYL_PROGRESS:  93.33%
+
+[2026-08-22 09:03:34.213] [info]  93.58%
+
+[2026-08-22 09:03:34.218] [info]  🎒 BACKEND REPORTED:  93.58%
+
+[2026-08-22 09:03:34.220] [info]  🚧 UPSCAYL_PROGRESS:  93.58%
+
+[2026-08-22 09:03:34.719] [info]  93.83%
+
+[2026-08-22 09:03:34.724] [info]  🎒 BACKEND REPORTED:  93.83%
+
+[2026-08-22 09:03:34.737] [info]  🚧 UPSCAYL_PROGRESS:  93.83%
+
+[2026-08-22 09:03:35.223] [info]  94.07%
+
+[2026-08-22 09:03:35.228] [info]  🎒 BACKEND REPORTED:  94.07%
+
+[2026-08-22 09:03:35.230] [info]  🚧 UPSCAYL_PROGRESS:  94.07%
+
+[2026-08-22 09:03:35.730] [info]  94.32%
+
+[2026-08-22 09:03:35.735] [info]  🎒 BACKEND REPORTED:  94.32%
+
+[2026-08-22 09:03:35.741] [info]  🚧 UPSCAYL_PROGRESS:  94.32%
+
+[2026-08-22 09:03:36.239] [info]  94.57%
+
+[2026-08-22 09:03:36.244] [info]  🎒 BACKEND REPORTED:  94.57%
+
+[2026-08-22 09:03:36.247] [info]  🚧 UPSCAYL_PROGRESS:  94.57%
+
+[2026-08-22 09:03:36.745] [info]  94.81%
+
+[2026-08-22 09:03:36.749] [info]  🎒 BACKEND REPORTED:  94.81%
+
+[2026-08-22 09:03:36.757] [info]  🚧 UPSCAYL_PROGRESS:  94.81%
+
+[2026-08-22 09:03:37.263] [info]  95.06%
+
+[2026-08-22 09:03:37.269] [info]  🎒 BACKEND REPORTED:  95.06%
+
+[2026-08-22 09:03:37.274] [info]  🚧 UPSCAYL_PROGRESS:  95.06%
+
+[2026-08-22 09:03:37.770] [info]  95.31%
+
+[2026-08-22 09:03:37.772] [info]  🎒 BACKEND REPORTED:  95.31%
+
+[2026-08-22 09:03:37.781] [info]  🚧 UPSCAYL_PROGRESS:  95.31%
+
+[2026-08-22 09:03:38.279] [info]  95.56%
+
+[2026-08-22 09:03:38.284] [info]  🎒 BACKEND REPORTED:  95.56%
+
+[2026-08-22 09:03:38.291] [info]  🚧 UPSCAYL_PROGRESS:  95.56%
+
+[2026-08-22 09:03:38.780] [info]  95.80%
+
+[2026-08-22 09:03:38.785] [info]  🎒 BACKEND REPORTED:  95.80%
+
+[2026-08-22 09:03:38.794] [info]  🚧 UPSCAYL_PROGRESS:  95.80%
+
+[2026-08-22 09:03:39.288] [info]  96.05%
+
+[2026-08-22 09:03:39.291] [info]  🎒 BACKEND REPORTED:  96.05%
+
+[2026-08-22 09:03:39.292] [info]  🚧 UPSCAYL_PROGRESS:  96.05%
+
+[2026-08-22 09:03:39.790] [info]  96.30%
+
+[2026-08-22 09:03:39.793] [info]  🎒 BACKEND REPORTED:  96.30%
+
+[2026-08-22 09:03:39.798] [info]  🚧 UPSCAYL_PROGRESS:  96.30%
+
+[2026-08-22 09:03:40.301] [info]  96.54%
+
+[2026-08-22 09:03:40.303] [info]  🎒 BACKEND REPORTED:  96.54%
+
+[2026-08-22 09:03:40.306] [info]  🚧 UPSCAYL_PROGRESS:  96.54%
+
+[2026-08-22 09:03:40.809] [info]  96.79%
+
+[2026-08-22 09:03:40.811] [info]  🎒 BACKEND REPORTED:  96.79%
+
+[2026-08-22 09:03:40.815] [info]  🚧 UPSCAYL_PROGRESS:  96.79%
+
+[2026-08-22 09:03:41.319] [info]  97.04%
+
+[2026-08-22 09:03:41.325] [info]  🎒 BACKEND REPORTED:  97.04%
+
+[2026-08-22 09:03:41.326] [info]  🚧 UPSCAYL_PROGRESS:  97.04%
+
+[2026-08-22 09:03:41.825] [info]  97.28%
+
+[2026-08-22 09:03:41.832] [info]  🎒 BACKEND REPORTED:  97.28%
+
+[2026-08-22 09:03:41.837] [info]  🚧 UPSCAYL_PROGRESS:  97.28%
+
+[2026-08-22 09:03:42.337] [info]  97.53%
+
+[2026-08-22 09:03:42.338] [info]  🎒 BACKEND REPORTED:  97.53%
+
+[2026-08-22 09:03:42.338] [info]  🚧 UPSCAYL_PROGRESS:  97.53%
+
+[2026-08-22 09:03:42.847] [info]  97.78%
+
+[2026-08-22 09:03:42.850] [info]  🎒 BACKEND REPORTED:  97.78%
+
+[2026-08-22 09:03:42.855] [info]  🚧 UPSCAYL_PROGRESS:  97.78%
+
+[2026-08-22 09:03:43.357] [info]  98.02%
+
+[2026-08-22 09:03:43.361] [info]  🎒 BACKEND REPORTED:  98.02%
+
+[2026-08-22 09:03:43.362] [info]  🚧 UPSCAYL_PROGRESS:  98.02%
+
+[2026-08-22 09:03:43.858] [info]  98.27%
+
+[2026-08-22 09:03:43.862] [info]  🎒 BACKEND REPORTED:  98.27%
+
+[2026-08-22 09:03:43.866] [info]  🚧 UPSCAYL_PROGRESS:  98.27%
+
+[2026-08-22 09:03:44.371] [info]  98.52%
+
+[2026-08-22 09:03:44.375] [info]  🎒 BACKEND REPORTED:  98.52%
+
+[2026-08-22 09:03:44.378] [info]  🚧 UPSCAYL_PROGRESS:  98.52%
+
+[2026-08-22 09:03:44.876] [info]  98.77%
+
+[2026-08-22 09:03:44.878] [info]  🎒 BACKEND REPORTED:  98.77%
+
+[2026-08-22 09:03:44.878] [info]  🚧 UPSCAYL_PROGRESS:  98.77%
+
+[2026-08-22 09:03:45.370] [info]  99.01%
+
+[2026-08-22 09:03:45.371] [info]  🎒 BACKEND REPORTED:  99.01%
+
+[2026-08-22 09:03:45.371] [info]  🚧 UPSCAYL_PROGRESS:  99.01%
+
+[2026-08-22 09:03:45.864] [info]  99.26%
+
+[2026-08-22 09:03:45.867] [info]  🎒 BACKEND REPORTED:  99.26%
+
+[2026-08-22 09:03:45.867] [info]  🚧 UPSCAYL_PROGRESS:  99.26%
+
+[2026-08-22 09:03:46.359] [info]  99.51%
+
+[2026-08-22 09:03:46.361] [info]  🎒 BACKEND REPORTED:  99.51%
+
+[2026-08-22 09:03:46.364] [info]  🚧 UPSCAYL_PROGRESS:  99.51%
+
+[2026-08-22 09:03:46.501] [info]  99.75%
+
+[2026-08-22 09:03:46.502] [info]  🎒 BACKEND REPORTED:  99.75%
+
+[2026-08-22 09:03:46.503] [info]  🚧 UPSCAYL_PROGRESS:  99.75%
+
+[2026-08-22 09:04:20.646] [info]  100.00%
+
+🙌 Upscayled Successfully!
+
+[2026-08-22 09:04:20.652] [info]  🎒 BACKEND REPORTED:  100.00%
+
+🙌 Upscayled Successfully!
+
+[2026-08-22 09:04:20.655] [info]  🚧 UPSCAYL_PROGRESS:  100.00%
+
+🙌 Upscayled Successfully!
+
+[2026-08-22 09:04:20.741] [info]  💯 Done upscaling
+[2026-08-22 09:04:20.756] [info]  🎒 BACKEND REPORTED:  💯 Done upscaling
+[2026-08-22 09:04:20.756] [info]  upscaledImagePath:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png
+[2026-08-22 09:04:20.756] [info]  💯 UPSCAYL_DONE:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds/6-hurleyus_upscayl_4x_upscayl-standard-4x.png
+[2026-08-22 09:26:50.273] [info]  🔄 Resetting image paths
+[2026-08-22 09:26:55.354] [info]  📁 Updating Folder Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 09:26:55.354] [info]  📁 Selected Folder Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 09:26:55.359] [info]  🎒 BACKEND REPORTED:  📁 Updating Folder Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 09:26:55.362] [info]  🎒 BACKEND REPORTED:  📁 Selected Folder Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 09:26:55.362] [info]  🖼 Selected Folder Path:  /home/michael/.config/omarchy/themes/hurleyus/backgrounds
+[2026-08-22 09:27:01.643] [info]  🔄 Resetting Upscaled Image Path
+[2026-08-22 09:27:01.653] [info]  📢 Upscayl Command:  [
+  '-i',
+  '/home/michael/.config/omarchy/themes/hurleyus/backgrounds',
+  '-o',
+  '/home/michael/.config/omarchy/themes/hurleyus/backgrounds/upscayl_png_upscayl-standard-4x_2x',
+  '-s',
+  '2',
+  '-m',
+  '/usr/lib/upscayl/models',
+  '-n',
+  'upscayl-standard-4x',
+  '-f',
+  'png',
+  '-c',
+  '0'
+]
+[2026-08-22 09:27:01.670] [info]  🛑 Updating Stopped:  false
+[2026-08-22 09:27:01.673] [info]  🏁 FOLDER_UPSCAYL
+[2026-08-22 09:27:01.681] [info]  🎒 BACKEND REPORTED:  📢 Upscayl Command:  -i,/home/michael/.config/omarchy/themes/hurleyus/backgrounds,-o,/home/michael/.config/omarchy/themes/hurleyus/backgrounds/upscayl_png_upscayl-standard-4x_2x,-s,2,-m,/usr/lib/upscayl/models,-n,upscayl-standard-4x,-f,png,-c,0
+[2026-08-22 09:27:01.682] [info]  🎒 BACKEND REPORTED:  🛑 Updating Stopped:  false
+[2026-08-22 09:27:01.683] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  🚀 Starting Upscayl - Copyright © 2024
+✨ Detected scale x4
+✨ Using the default scale x4
+
+[2026-08-22 09:27:01.685] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  [0 Apple M1 Pro (G13S C0)]  queueC=0[1]  queueG=0[1]  queueT=0[1]
+[0 Apple M1 Pro (G13S C0)]  bugsbn1=0  bugbilz=0  bugcopc=0  bugihfa=0
+[0 Apple M1 Pro (G13S C0)]  fp16-p/s/a=1/1/1  int8-p/s/a=1/1/1
+[0 Apple M1 Pro (G13S C0)]  subgroup=32  basic=1  vote=1  ballot=1  shuffle=1
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  queueC=0[1]  queueG=0[1]  queueT=0[1]
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  bugsbn1=0  bugbilz=0  bugcopc=0  bugihfa=0
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  fp16-p/s/a=1/1/1  int8-p/s/a=1/1/1
+[1 llvmpipe (LLVM 22.1.8, 128 bits)]  subgroup=4  basic=1  vote=1  ballot=1  shuffle=1
+
+[2026-08-22 09:27:03.058] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.00%
+
+[2026-08-22 09:27:03.797] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.25%
+
+[2026-08-22 09:27:04.531] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.49%
+
+[2026-08-22 09:27:05.319] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.74%
+
+[2026-08-22 09:27:06.241] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.99%
+
+[2026-08-22 09:27:06.932] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  1.23%
+
+[2026-08-22 09:27:07.665] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  1.48%
+
+[2026-08-22 09:27:08.430] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  1.73%
+
+[2026-08-22 09:27:09.155] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  1.98%
+
+[2026-08-22 09:27:09.905] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  2.22%
+
+[2026-08-22 09:27:10.643] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  2.47%
+
+[2026-08-22 09:27:11.402] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  2.72%
+
+[2026-08-22 09:27:12.159] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  2.96%
+
+[2026-08-22 09:27:12.903] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  3.21%
+
+[2026-08-22 09:27:13.650] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  3.46%
+
+[2026-08-22 09:27:14.405] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  3.70%
+
+[2026-08-22 09:27:15.152] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  3.95%
+
+[2026-08-22 09:27:15.909] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  4.20%
+
+[2026-08-22 09:27:16.662] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  4.44%
+
+[2026-08-22 09:27:17.409] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  4.69%
+
+[2026-08-22 09:27:18.156] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  4.94%
+
+[2026-08-22 09:27:18.906] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  5.19%
+
+[2026-08-22 09:27:19.652] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  5.43%
+
+[2026-08-22 09:27:20.395] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  5.68%
+
+[2026-08-22 09:27:21.141] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  5.93%
+
+[2026-08-22 09:27:21.889] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  6.17%
+
+[2026-08-22 09:27:22.102] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  6.42%
+
+[2026-08-22 09:27:22.873] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  6.67%
+
+[2026-08-22 09:27:23.597] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  6.91%
+
+[2026-08-22 09:27:24.334] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  7.16%
+
+[2026-08-22 09:27:25.085] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  7.41%
+
+[2026-08-22 09:27:25.822] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  7.65%
+
+[2026-08-22 09:27:26.556] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  7.90%
+
+[2026-08-22 09:27:27.287] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  8.15%
+
+[2026-08-22 09:27:28.037] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  8.40%
+
+[2026-08-22 09:27:28.776] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  8.64%
+
+[2026-08-22 09:27:29.522] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  8.89%
+
+[2026-08-22 09:27:30.274] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  9.14%
+
+[2026-08-22 09:27:31.011] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  9.38%
+
+[2026-08-22 09:27:31.761] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  9.63%
+
+[2026-08-22 09:27:32.504] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  9.88%
+
+[2026-08-22 09:27:33.248] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  10.12%
+
+[2026-08-22 09:27:34.003] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  10.37%
+
+[2026-08-22 09:27:34.757] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  10.62%
+
+[2026-08-22 09:27:35.506] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  10.86%
+
+[2026-08-22 09:27:36.267] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  11.11%
+
+[2026-08-22 09:27:37.014] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  11.36%
+
+[2026-08-22 09:27:37.762] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  11.60%
+
+[2026-08-22 09:27:38.508] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  11.85%
+
+[2026-08-22 09:27:39.256] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  12.10%
+
+[2026-08-22 09:27:40.000] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  12.35%
+
+[2026-08-22 09:27:40.749] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  12.59%
+
+[2026-08-22 09:27:41.502] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  12.84%
+
+[2026-08-22 09:27:41.704] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  13.09%
+
+[2026-08-22 09:27:42.458] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  13.33%
+
+[2026-08-22 09:27:43.223] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  13.58%
+
+[2026-08-22 09:27:43.945] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  13.83%
+
+[2026-08-22 09:27:44.683] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  14.07%
+
+[2026-08-22 09:27:45.419] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  14.32%
+
+[2026-08-22 09:27:46.155] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  14.57%
+
+[2026-08-22 09:27:46.899] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  14.81%
+
+[2026-08-22 09:27:47.636] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  15.06%
+
+[2026-08-22 09:27:48.385] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  15.31%
+
+[2026-08-22 09:27:49.134] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  15.56%
+
+[2026-08-22 09:27:49.875] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  15.80%
+
+[2026-08-22 09:27:50.610] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  16.05%
+
+[2026-08-22 09:27:51.351] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  16.30%
+
+[2026-08-22 09:27:52.100] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  16.54%
+
+[2026-08-22 09:27:52.836] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  16.79%
+
+[2026-08-22 09:27:53.583] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  17.04%
+
+[2026-08-22 09:27:54.332] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  17.28%
+
+[2026-08-22 09:27:55.086] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  17.53%
+
+[2026-08-22 09:27:55.838] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  17.78%
+
+[2026-08-22 09:27:56.582] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  18.02%
+
+[2026-08-22 09:27:57.324] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  18.27%
+
+[2026-08-22 09:27:58.068] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  18.52%
+
+[2026-08-22 09:27:58.817] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  18.77%
+
+[2026-08-22 09:27:59.566] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  19.01%
+
+[2026-08-22 09:28:00.336] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  19.26%
+
+[2026-08-22 09:28:01.072] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  19.51%
+
+[2026-08-22 09:28:01.274] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  19.75%
+
+[2026-08-22 09:28:02.051] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  20.00%
+
+[2026-08-22 09:28:02.771] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  20.25%
+
+[2026-08-22 09:28:03.524] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  20.49%
+
+[2026-08-22 09:28:04.266] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  20.74%
+
+[2026-08-22 09:28:05.002] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  20.99%
+
+[2026-08-22 09:28:05.747] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  21.23%
+
+[2026-08-22 09:28:06.485] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  21.48%
+
+[2026-08-22 09:28:07.223] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  21.73%
+
+[2026-08-22 09:28:07.970] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  21.98%
+
+[2026-08-22 09:28:08.713] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  22.22%
+
+[2026-08-22 09:28:09.467] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  22.47%
+
+[2026-08-22 09:28:10.046] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  22.72%
+
+[2026-08-22 09:28:10.794] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  22.96%
+
+[2026-08-22 09:28:11.529] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  23.21%
+
+[2026-08-22 09:28:12.265] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  23.46%
+
+[2026-08-22 09:28:13.005] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  23.70%
+
+[2026-08-22 09:28:13.753] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  23.95%
+
+[2026-08-22 09:28:14.486] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  24.20%
+
+[2026-08-22 09:28:15.226] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  24.44%
+
+[2026-08-22 09:28:15.980] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  24.69%
+
+[2026-08-22 09:28:16.720] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  24.94%
+
+[2026-08-22 09:28:17.459] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  25.19%
+
+[2026-08-22 09:28:18.205] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  25.43%
+
+[2026-08-22 09:28:18.940] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  25.68%
+
+[2026-08-22 09:28:19.685] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  25.93%
+
+[2026-08-22 09:28:20.429] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  26.17%
+
+[2026-08-22 09:28:20.625] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  26.42%
+
+[2026-08-22 09:28:21.382] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  26.67%
+
+[2026-08-22 09:28:22.122] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  26.91%
+
+[2026-08-22 09:28:22.868] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  27.16%
+
+[2026-08-22 09:28:23.606] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  27.41%
+
+[2026-08-22 09:28:24.348] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  27.65%
+
+[2026-08-22 09:28:25.094] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  27.90%
+
+[2026-08-22 09:28:25.835] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  28.15%
+
+[2026-08-22 09:28:26.577] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  28.40%
+
+[2026-08-22 09:28:27.318] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  28.64%
+
+[2026-08-22 09:28:28.060] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  28.89%
+
+[2026-08-22 09:28:28.798] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  29.14%
+
+[2026-08-22 09:28:29.539] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  29.38%
+
+[2026-08-22 09:28:30.286] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  29.63%
+
+[2026-08-22 09:28:31.030] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  29.88%
+
+[2026-08-22 09:28:31.765] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  30.12%
+
+[2026-08-22 09:28:32.502] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  30.37%
+
+[2026-08-22 09:28:33.247] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  30.62%
+
+[2026-08-22 09:28:33.981] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  30.86%
+
+[2026-08-22 09:28:34.727] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  31.11%
+
+[2026-08-22 09:28:35.468] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  31.36%
+
+[2026-08-22 09:28:36.205] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  31.60%
+
+[2026-08-22 09:28:36.943] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  31.85%
+
+[2026-08-22 09:28:37.681] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  32.10%
+
+[2026-08-22 09:28:38.422] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  32.35%
+
+[2026-08-22 09:28:39.158] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  32.59%
+
+[2026-08-22 09:28:39.902] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  32.84%
+
+[2026-08-22 09:28:40.101] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  33.09%
+
+[2026-08-22 09:28:40.850] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  33.33%
+
+[2026-08-22 09:28:41.595] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  33.58%
+
+[2026-08-22 09:28:42.336] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  33.83%
+
+[2026-08-22 09:28:43.075] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  34.07%
+
+[2026-08-22 09:28:43.810] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  34.32%
+
+[2026-08-22 09:28:44.552] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  34.57%
+
+[2026-08-22 09:28:45.309] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  34.81%
+
+[2026-08-22 09:28:46.048] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  35.06%
+
+[2026-08-22 09:28:46.790] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  35.31%
+
+[2026-08-22 09:28:47.535] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  35.56%
+
+[2026-08-22 09:28:48.277] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  35.80%
+
+[2026-08-22 09:28:49.014] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  36.05%
+
+[2026-08-22 09:28:49.756] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  36.30%
+
+[2026-08-22 09:28:50.506] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  36.54%
+
+[2026-08-22 09:28:51.237] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  36.79%
+
+[2026-08-22 09:28:51.976] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  37.04%
+
+[2026-08-22 09:28:52.720] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  37.28%
+
+[2026-08-22 09:28:53.462] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  37.53%
+
+[2026-08-22 09:28:54.204] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  37.78%
+
+[2026-08-22 09:28:54.948] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  38.02%
+
+[2026-08-22 09:28:55.688] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  38.27%
+
+[2026-08-22 09:28:56.426] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  38.52%
+
+[2026-08-22 09:28:57.165] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  38.77%
+
+[2026-08-22 09:28:57.913] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  39.01%
+
+[2026-08-22 09:28:58.655] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  39.26%
+
+[2026-08-22 09:28:59.400] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  39.51%
+
+[2026-08-22 09:28:59.603] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  39.75%
+
+[2026-08-22 09:29:00.361] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  40.00%
+
+[2026-08-22 09:29:01.103] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  40.25%
+
+[2026-08-22 09:29:01.842] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  40.49%
+
+[2026-08-22 09:29:02.585] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  40.74%
+
+[2026-08-22 09:29:03.326] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  40.99%
+
+[2026-08-22 09:29:04.058] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  41.23%
+
+[2026-08-22 09:29:04.792] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  41.48%
+
+[2026-08-22 09:29:05.540] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  41.73%
+
+[2026-08-22 09:29:06.280] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  41.98%
+
+[2026-08-22 09:29:07.020] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  42.22%
+
+[2026-08-22 09:29:07.761] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  42.47%
+
+[2026-08-22 09:29:08.496] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  42.72%
+
+[2026-08-22 09:29:09.243] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  42.96%
+
+[2026-08-22 09:29:09.981] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  43.21%
+
+[2026-08-22 09:29:10.732] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  43.46%
+
+[2026-08-22 09:29:11.481] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  43.70%
+
+[2026-08-22 09:29:12.209] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  43.95%
+
+[2026-08-22 09:29:12.947] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  44.20%
+
+[2026-08-22 09:29:13.690] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  44.44%
+
+[2026-08-22 09:29:14.431] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  44.69%
+
+[2026-08-22 09:29:15.174] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  44.94%
+
+[2026-08-22 09:29:15.916] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  45.19%
+
+[2026-08-22 09:29:16.663] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  45.43%
+
+[2026-08-22 09:29:17.412] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  45.68%
+
+[2026-08-22 09:29:18.152] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  45.93%
+
+[2026-08-22 09:29:18.895] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  46.17%
+
+[2026-08-22 09:29:19.101] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  46.42%
+
+[2026-08-22 09:29:19.852] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  46.67%
+
+[2026-08-22 09:29:20.596] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  46.91%
+
+[2026-08-22 09:29:21.336] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  47.16%
+
+[2026-08-22 09:29:22.080] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  47.41%
+
+[2026-08-22 09:29:22.822] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  47.65%
+
+[2026-08-22 09:29:23.562] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  47.90%
+
+[2026-08-22 09:29:24.303] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  48.15%
+
+[2026-08-22 09:29:25.047] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  48.40%
+
+[2026-08-22 09:29:25.788] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  48.64%
+
+[2026-08-22 09:29:26.542] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  48.89%
+
+[2026-08-22 09:29:27.286] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  49.14%
+
+[2026-08-22 09:29:28.022] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  49.38%
+
+[2026-08-22 09:29:28.761] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  49.63%
+
+[2026-08-22 09:29:29.505] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  49.88%
+
+[2026-08-22 09:29:30.254] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  50.12%
+
+[2026-08-22 09:29:30.993] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  50.37%
+
+[2026-08-22 09:29:31.734] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  50.62%
+
+[2026-08-22 09:29:32.481] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  50.86%
+
+[2026-08-22 09:29:33.223] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  51.11%
+
+[2026-08-22 09:29:33.972] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  51.36%
+
+[2026-08-22 09:29:34.715] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  51.60%
+
+[2026-08-22 09:29:35.459] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  51.85%
+
+[2026-08-22 09:29:36.197] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  52.10%
+
+[2026-08-22 09:29:36.932] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  52.35%
+
+[2026-08-22 09:29:37.675] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  52.59%
+
+[2026-08-22 09:29:38.423] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  52.84%
+
+[2026-08-22 09:29:38.618] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  53.09%
+
+[2026-08-22 09:29:39.370] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  53.33%
+
+[2026-08-22 09:29:40.108] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  53.58%
+
+[2026-08-22 09:29:40.860] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  53.83%
+
+[2026-08-22 09:29:41.607] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  54.07%
+
+[2026-08-22 09:29:42.360] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  54.32%
+
+[2026-08-22 09:29:43.106] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  54.57%
+
+[2026-08-22 09:29:43.851] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  54.81%
+
+[2026-08-22 09:29:44.590] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  55.06%
+
+[2026-08-22 09:29:45.339] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  55.31%
+
+[2026-08-22 09:29:46.076] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  55.56%
+
+[2026-08-22 09:29:46.825] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  55.80%
+
+[2026-08-22 09:29:47.565] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  56.05%
+
+[2026-08-22 09:29:48.306] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  56.30%
+
+[2026-08-22 09:29:49.050] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  56.54%
+
+[2026-08-22 09:29:49.796] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  56.79%
+
+[2026-08-22 09:29:50.542] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  57.04%
+
+[2026-08-22 09:29:51.287] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  57.28%
+
+[2026-08-22 09:29:52.026] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  57.53%
+
+[2026-08-22 09:29:52.770] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  57.78%
+
+[2026-08-22 09:29:53.513] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  58.02%
+
+[2026-08-22 09:29:54.254] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  58.27%
+
+[2026-08-22 09:29:54.994] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  58.52%
+
+[2026-08-22 09:29:55.735] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  58.77%
+
+[2026-08-22 09:29:56.477] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  59.01%
+
+[2026-08-22 09:29:57.214] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  59.26%
+
+[2026-08-22 09:29:57.948] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  59.51%
+
+[2026-08-22 09:29:58.152] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  59.75%
+
+[2026-08-22 09:29:58.903] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  60.00%
+
+[2026-08-22 09:29:59.651] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  60.25%
+
+[2026-08-22 09:30:00.391] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  60.49%
+
+[2026-08-22 09:30:01.127] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  60.74%
+
+[2026-08-22 09:30:01.864] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  60.99%
+
+[2026-08-22 09:30:02.616] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  61.23%
+
+[2026-08-22 09:30:03.358] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  61.48%
+
+[2026-08-22 09:30:04.100] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  61.73%
+
+[2026-08-22 09:30:04.849] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  61.98%
+
+[2026-08-22 09:30:05.584] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  62.22%
+
+[2026-08-22 09:30:06.327] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  62.47%
+
+[2026-08-22 09:30:07.060] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  62.72%
+
+[2026-08-22 09:30:07.796] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  62.96%
+
+[2026-08-22 09:30:08.542] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  63.21%
+
+[2026-08-22 09:30:09.282] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  63.46%
+
+[2026-08-22 09:30:10.023] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  63.70%
+
+[2026-08-22 09:30:10.757] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  63.95%
+
+[2026-08-22 09:30:11.501] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  64.20%
+
+[2026-08-22 09:30:12.237] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  64.44%
+
+[2026-08-22 09:30:12.980] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  64.69%
+
+[2026-08-22 09:30:13.734] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  64.94%
+
+[2026-08-22 09:30:14.476] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  65.19%
+
+[2026-08-22 09:30:15.219] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  65.43%
+
+[2026-08-22 09:30:15.965] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  65.68%
+
+[2026-08-22 09:30:16.705] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  65.93%
+
+[2026-08-22 09:30:17.448] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  66.17%
+
+[2026-08-22 09:30:17.653] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  66.42%
+
+[2026-08-22 09:30:18.404] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  66.67%
+
+[2026-08-22 09:30:19.145] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  66.91%
+
+[2026-08-22 09:30:19.883] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  67.16%
+
+[2026-08-22 09:30:20.630] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  67.41%
+
+[2026-08-22 09:30:21.376] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  67.65%
+
+[2026-08-22 09:30:22.112] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  67.90%
+
+[2026-08-22 09:30:22.851] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  68.15%
+
+[2026-08-22 09:30:23.597] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  68.40%
+
+[2026-08-22 09:30:24.343] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  68.64%
+
+[2026-08-22 09:30:25.087] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  68.89%
+
+[2026-08-22 09:30:25.826] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  69.14%
+
+[2026-08-22 09:30:26.569] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  69.38%
+
+[2026-08-22 09:30:27.309] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  69.63%
+
+[2026-08-22 09:30:28.047] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  69.88%
+
+[2026-08-22 09:30:28.784] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  70.12%
+
+[2026-08-22 09:30:29.526] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  70.37%
+
+[2026-08-22 09:30:30.269] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  70.62%
+
+[2026-08-22 09:30:31.009] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  70.86%
+
+[2026-08-22 09:30:31.753] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  71.11%
+
+[2026-08-22 09:30:32.501] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  71.36%
+
+[2026-08-22 09:30:33.238] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  71.60%
+
+[2026-08-22 09:30:33.983] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  71.85%
+
+[2026-08-22 09:30:34.728] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  72.10%
+
+[2026-08-22 09:30:35.466] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  72.35%
+
+[2026-08-22 09:30:36.208] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  72.59%
+
+[2026-08-22 09:30:36.951] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  72.84%
+
+[2026-08-22 09:30:37.158] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  73.09%
+
+[2026-08-22 09:30:37.909] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  73.33%
+
+[2026-08-22 09:30:38.661] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  73.58%
+
+[2026-08-22 09:30:39.400] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  73.83%
+
+[2026-08-22 09:30:40.136] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  74.07%
+
+[2026-08-22 09:30:40.877] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  74.32%
+
+[2026-08-22 09:30:41.619] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  74.57%
+
+[2026-08-22 09:30:42.371] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  74.81%
+
+[2026-08-22 09:30:43.109] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  75.06%
+
+[2026-08-22 09:30:43.858] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  75.31%
+
+[2026-08-22 09:30:44.600] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  75.56%
+
+[2026-08-22 09:30:45.350] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  75.80%
+
+[2026-08-22 09:30:46.097] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  76.05%
+
+[2026-08-22 09:30:46.837] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  76.30%
+
+[2026-08-22 09:30:47.578] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  76.54%
+
+[2026-08-22 09:30:48.319] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  76.79%
+
+[2026-08-22 09:30:49.062] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  77.04%
+
+[2026-08-22 09:30:49.813] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  77.28%
+
+[2026-08-22 09:30:50.548] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  77.53%
+
+[2026-08-22 09:30:51.295] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  77.78%
+
+[2026-08-22 09:30:52.034] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  78.02%
+
+[2026-08-22 09:30:52.772] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  78.27%
+
+[2026-08-22 09:30:53.522] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  78.52%
+
+[2026-08-22 09:30:54.266] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  78.77%
+
+[2026-08-22 09:30:55.005] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  79.01%
+
+[2026-08-22 09:30:55.759] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  79.26%
+
+[2026-08-22 09:30:56.499] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  79.51%
+
+[2026-08-22 09:30:56.701] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  79.75%
+
+[2026-08-22 09:30:57.459] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  80.00%
+
+[2026-08-22 09:30:58.202] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  80.25%
+
+[2026-08-22 09:30:58.946] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  80.49%
+
+[2026-08-22 09:30:59.691] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  80.74%
+
+[2026-08-22 09:31:00.435] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  80.99%
+
+[2026-08-22 09:31:01.180] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  81.23%
+
+[2026-08-22 09:31:01.929] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  81.48%
+
+[2026-08-22 09:31:02.675] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  81.73%
+
+[2026-08-22 09:31:03.416] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  81.98%
+
+[2026-08-22 09:31:04.162] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  82.22%
+
+[2026-08-22 09:31:04.902] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  82.47%
+
+[2026-08-22 09:31:05.644] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  82.72%
+
+[2026-08-22 09:31:06.388] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  82.96%
+
+[2026-08-22 09:31:07.130] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  83.21%
+
+[2026-08-22 09:31:07.870] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  83.46%
+
+[2026-08-22 09:31:08.618] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  83.70%
+
+[2026-08-22 09:31:09.363] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  83.95%
+
+[2026-08-22 09:31:10.105] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  84.20%
+
+[2026-08-22 09:31:10.851] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  84.44%
+
+[2026-08-22 09:31:11.598] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  84.69%
+
+[2026-08-22 09:31:12.343] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  84.94%
+
+[2026-08-22 09:31:13.084] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  85.19%
+
+[2026-08-22 09:31:13.831] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  85.43%
+
+[2026-08-22 09:31:14.578] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  85.68%
+
+[2026-08-22 09:31:15.319] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  85.93%
+
+[2026-08-22 09:31:16.060] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  86.17%
+
+[2026-08-22 09:31:16.260] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  86.42%
+
+[2026-08-22 09:31:17.009] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  86.67%
+
+[2026-08-22 09:31:17.753] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  86.91%
+
+[2026-08-22 09:31:18.500] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  87.16%
+
+[2026-08-22 09:31:19.240] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  87.41%
+
+[2026-08-22 09:31:19.987] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  87.65%
+
+[2026-08-22 09:31:20.717] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  87.90%
+
+[2026-08-22 09:31:21.460] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  88.15%
+
+[2026-08-22 09:31:22.197] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  88.40%
+
+[2026-08-22 09:31:22.942] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  88.64%
+
+[2026-08-22 09:31:23.679] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  88.89%
+
+[2026-08-22 09:31:24.433] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  89.14%
+
+[2026-08-22 09:31:25.179] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  89.38%
+
+[2026-08-22 09:31:25.926] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  89.63%
+
+[2026-08-22 09:31:26.670] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  89.88%
+
+[2026-08-22 09:31:27.416] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  90.12%
+
+[2026-08-22 09:31:28.151] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  90.37%
+
+[2026-08-22 09:31:28.892] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  90.62%
+
+[2026-08-22 09:31:29.636] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  90.86%
+
+[2026-08-22 09:31:30.375] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  91.11%
+
+[2026-08-22 09:31:31.120] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  91.36%
+
+[2026-08-22 09:31:31.866] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  91.60%
+
+[2026-08-22 09:31:32.605] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  91.85%
+
+[2026-08-22 09:31:33.352] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  92.10%
+
+[2026-08-22 09:31:34.090] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  92.35%
+
+[2026-08-22 09:31:34.837] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  92.59%
+
+[2026-08-22 09:31:35.578] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  92.84%
+
+[2026-08-22 09:31:35.782] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  93.09%
+
+[2026-08-22 09:31:36.301] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  93.33%
+
+[2026-08-22 09:31:36.800] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  93.58%
+
+[2026-08-22 09:31:37.301] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  93.83%
+
+[2026-08-22 09:31:37.804] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  94.07%
+
+[2026-08-22 09:31:38.308] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  94.32%
+
+[2026-08-22 09:31:38.809] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  94.57%
+
+[2026-08-22 09:31:39.313] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  94.81%
+
+[2026-08-22 09:31:39.816] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  95.06%
+
+[2026-08-22 09:31:40.323] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  95.31%
+
+[2026-08-22 09:31:40.830] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  95.56%
+
+[2026-08-22 09:31:41.339] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  95.80%
+
+[2026-08-22 09:31:41.843] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  96.05%
+
+[2026-08-22 09:31:42.343] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  96.30%
+
+[2026-08-22 09:31:42.843] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  96.54%
+
+[2026-08-22 09:31:43.348] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  96.79%
+
+[2026-08-22 09:31:43.853] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  97.04%
+
+[2026-08-22 09:31:44.361] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  97.28%
+
+[2026-08-22 09:31:44.866] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  97.53%
+
+[2026-08-22 09:31:45.372] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  97.78%
+
+[2026-08-22 09:31:45.874] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  98.02%
+
+[2026-08-22 09:31:46.387] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  98.27%
+
+[2026-08-22 09:31:46.892] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  98.52%
+
+[2026-08-22 09:31:47.395] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  98.77%
+
+[2026-08-22 09:31:47.895] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  99.01%
+
+[2026-08-22 09:31:48.400] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  99.26%
+
+[2026-08-22 09:31:48.902] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  99.51%
+
+[2026-08-22 09:31:49.051] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  99.75%
+
+[2026-08-22 09:31:49.062] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  🏞️ Resizing image according to output scale
+
+[2026-08-22 09:31:49.724] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  🏞️ Scaled image from 5225x2940 to 10450x5880
+
+[2026-08-22 09:31:49.794] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.00%
+
+[2026-08-22 09:31:50.534] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.25%
+
+[2026-08-22 09:31:51.276] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.49%
+
+[2026-08-22 09:31:52.011] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.74%
+
+[2026-08-22 09:31:52.751] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.99%
+
+[2026-08-22 09:31:53.490] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  1.23%
+
+[2026-08-22 09:31:54.230] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  1.48%
+
+[2026-08-22 09:31:54.972] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  1.73%
+
+[2026-08-22 09:31:55.713] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  1.98%
+
+[2026-08-22 09:31:56.455] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  2.22%
+
+[2026-08-22 09:31:57.197] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  2.47%
+
+[2026-08-22 09:31:57.930] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  100.00%
+
+🙌 Upscayled Successfully!
+
+[2026-08-22 09:31:57.937] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  2.72%
+
+[2026-08-22 09:31:58.681] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  2.96%
+
+[2026-08-22 09:31:59.416] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  3.21%
+
+[2026-08-22 09:32:00.152] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  3.46%
+
+[2026-08-22 09:32:00.896] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  3.70%
+
+[2026-08-22 09:32:01.643] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  3.95%
+
+[2026-08-22 09:32:02.379] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  4.20%
+
+[2026-08-22 09:32:03.118] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  4.44%
+
+[2026-08-22 09:32:03.859] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  4.69%
+
+[2026-08-22 09:32:04.604] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  4.94%
+
+[2026-08-22 09:32:05.343] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  5.19%
+
+[2026-08-22 09:32:06.081] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  5.43%
+
+[2026-08-22 09:32:06.827] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  5.68%
+
+[2026-08-22 09:32:07.567] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  5.93%
+
+[2026-08-22 09:32:08.311] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  6.17%
+
+[2026-08-22 09:32:08.511] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  6.42%
+
+[2026-08-22 09:32:09.260] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  6.67%
+
+[2026-08-22 09:32:10.003] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  6.91%
+
+[2026-08-22 09:32:10.747] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  7.16%
+
+[2026-08-22 09:32:11.483] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  7.41%
+
+[2026-08-22 09:32:12.218] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  7.65%
+
+[2026-08-22 09:32:12.957] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  7.90%
+
+[2026-08-22 09:32:13.709] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  8.15%
+
+[2026-08-22 09:32:14.455] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  8.40%
+
+[2026-08-22 09:32:15.198] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  8.64%
+
+[2026-08-22 09:32:15.937] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  8.89%
+
+[2026-08-22 09:32:16.684] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  9.14%
+
+[2026-08-22 09:32:17.427] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  9.38%
+
+[2026-08-22 09:32:18.166] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  9.63%
+
+[2026-08-22 09:32:18.905] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  9.88%
+
+[2026-08-22 09:32:19.647] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  10.12%
+
+[2026-08-22 09:32:20.392] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  10.37%
+
+[2026-08-22 09:32:21.133] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  10.62%
+
+[2026-08-22 09:32:21.868] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  10.86%
+
+[2026-08-22 09:32:22.611] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  11.11%
+
+[2026-08-22 09:32:23.352] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  11.36%
+
+[2026-08-22 09:32:24.099] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  11.60%
+
+[2026-08-22 09:32:24.830] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  11.85%
+
+[2026-08-22 09:32:25.580] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  12.10%
+
+[2026-08-22 09:32:26.319] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  12.35%
+
+[2026-08-22 09:32:27.066] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  12.59%
+
+[2026-08-22 09:32:27.802] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  12.84%
+
+[2026-08-22 09:32:28.000] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  13.09%
+
+[2026-08-22 09:32:28.754] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  13.33%
+
+[2026-08-22 09:32:29.500] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  13.58%
+
+[2026-08-22 09:32:30.242] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  13.83%
+
+[2026-08-22 09:32:30.983] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  14.07%
+
+[2026-08-22 09:32:31.726] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  14.32%
+
+[2026-08-22 09:32:32.467] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  14.57%
+
+[2026-08-22 09:32:33.209] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  14.81%
+
+[2026-08-22 09:32:33.950] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  15.06%
+
+[2026-08-22 09:32:34.704] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  15.31%
+
+[2026-08-22 09:32:35.449] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  15.56%
+
+[2026-08-22 09:32:36.190] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  15.80%
+
+[2026-08-22 09:32:36.931] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  16.05%
+
+[2026-08-22 09:32:37.677] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  16.30%
+
+[2026-08-22 09:32:38.417] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  16.54%
+
+[2026-08-22 09:32:39.154] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  16.79%
+
+[2026-08-22 09:32:39.896] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  17.04%
+
+[2026-08-22 09:32:40.635] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  17.28%
+
+[2026-08-22 09:32:41.383] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  17.53%
+
+[2026-08-22 09:32:42.120] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  17.78%
+
+[2026-08-22 09:32:42.867] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  18.02%
+
+[2026-08-22 09:32:43.606] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  18.27%
+
+[2026-08-22 09:32:44.349] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  18.52%
+
+[2026-08-22 09:32:45.083] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  18.77%
+
+[2026-08-22 09:32:45.821] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  19.01%
+
+[2026-08-22 09:32:46.562] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  19.26%
+
+[2026-08-22 09:32:47.303] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  19.51%
+
+[2026-08-22 09:32:47.511] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  19.75%
+
+[2026-08-22 09:32:48.257] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  20.00%
+
+[2026-08-22 09:32:48.995] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  20.25%
+
+[2026-08-22 09:32:49.735] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  20.49%
+
+[2026-08-22 09:32:50.475] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  20.74%
+
+[2026-08-22 09:32:51.215] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  20.99%
+
+[2026-08-22 09:32:51.958] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  21.23%
+
+[2026-08-22 09:32:52.701] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  21.48%
+
+[2026-08-22 09:32:53.444] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  21.73%
+
+[2026-08-22 09:32:54.190] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  21.98%
+
+[2026-08-22 09:32:54.944] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  22.22%
+
+[2026-08-22 09:32:55.684] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  22.47%
+
+[2026-08-22 09:32:56.426] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  22.72%
+
+[2026-08-22 09:32:57.162] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  22.96%
+
+[2026-08-22 09:32:57.900] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  23.21%
+
+[2026-08-22 09:32:58.646] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  23.46%
+
+[2026-08-22 09:32:59.387] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  23.70%
+
+[2026-08-22 09:33:00.127] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  23.95%
+
+[2026-08-22 09:33:00.866] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  24.20%
+
+[2026-08-22 09:33:01.607] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  24.44%
+
+[2026-08-22 09:33:02.362] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  24.69%
+
+[2026-08-22 09:33:03.107] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  24.94%
+
+[2026-08-22 09:33:03.845] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  25.19%
+
+[2026-08-22 09:33:04.594] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  25.43%
+
+[2026-08-22 09:33:05.331] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  25.68%
+
+[2026-08-22 09:33:06.083] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  25.93%
+
+[2026-08-22 09:33:06.833] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  26.17%
+
+[2026-08-22 09:33:07.038] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  26.42%
+
+[2026-08-22 09:33:07.804] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  26.67%
+
+[2026-08-22 09:33:08.553] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  26.91%
+
+[2026-08-22 09:33:09.299] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  27.16%
+
+[2026-08-22 09:33:10.050] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  27.41%
+
+[2026-08-22 09:33:10.796] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  27.65%
+
+[2026-08-22 09:33:11.547] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  27.90%
+
+[2026-08-22 09:33:12.295] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  28.15%
+
+[2026-08-22 09:33:13.044] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  28.40%
+
+[2026-08-22 09:33:13.791] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  28.64%
+
+[2026-08-22 09:33:14.538] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  28.89%
+
+[2026-08-22 09:33:15.285] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  29.14%
+
+[2026-08-22 09:33:16.037] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  29.38%
+
+[2026-08-22 09:33:16.778] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  29.63%
+
+[2026-08-22 09:33:17.529] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  29.88%
+
+[2026-08-22 09:33:18.276] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  30.12%
+
+[2026-08-22 09:33:19.029] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  30.37%
+
+[2026-08-22 09:33:19.776] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  30.62%
+
+[2026-08-22 09:33:20.527] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  30.86%
+
+[2026-08-22 09:33:21.272] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  31.11%
+
+[2026-08-22 09:33:22.027] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  31.36%
+
+[2026-08-22 09:33:22.774] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  31.60%
+
+[2026-08-22 09:33:23.521] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  31.85%
+
+[2026-08-22 09:33:24.268] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  32.10%
+
+[2026-08-22 09:33:25.018] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  32.35%
+
+[2026-08-22 09:33:25.775] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  32.59%
+
+[2026-08-22 09:33:26.525] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  32.84%
+
+[2026-08-22 09:33:26.730] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  33.09%
+
+[2026-08-22 09:33:27.499] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  33.33%
+
+[2026-08-22 09:33:28.249] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  33.58%
+
+[2026-08-22 09:33:28.998] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  33.83%
+
+[2026-08-22 09:33:29.747] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  34.07%
+
+[2026-08-22 09:33:30.493] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  34.32%
+
+[2026-08-22 09:33:31.244] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  34.57%
+
+[2026-08-22 09:33:31.986] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  34.81%
+
+[2026-08-22 09:33:32.740] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  35.06%
+
+[2026-08-22 09:33:33.487] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  35.31%
+
+[2026-08-22 09:33:34.236] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  35.56%
+
+[2026-08-22 09:33:34.981] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  35.80%
+
+[2026-08-22 09:33:35.727] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  36.05%
+
+[2026-08-22 09:33:36.476] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  36.30%
+
+[2026-08-22 09:33:37.219] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  36.54%
+
+[2026-08-22 09:33:37.977] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  36.79%
+
+[2026-08-22 09:33:38.723] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  37.04%
+
+[2026-08-22 09:33:39.468] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  37.28%
+
+[2026-08-22 09:33:40.218] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  37.53%
+
+[2026-08-22 09:33:40.965] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  37.78%
+
+[2026-08-22 09:33:41.720] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  38.02%
+
+[2026-08-22 09:33:42.457] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  38.27%
+
+[2026-08-22 09:33:43.201] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  38.52%
+
+[2026-08-22 09:33:43.957] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  38.77%
+
+[2026-08-22 09:33:44.694] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  39.01%
+
+[2026-08-22 09:33:45.449] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  39.26%
+
+[2026-08-22 09:33:46.199] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  39.51%
+
+[2026-08-22 09:33:46.412] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  39.75%
+
+[2026-08-22 09:33:47.172] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  40.00%
+
+[2026-08-22 09:33:47.921] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  40.25%
+
+[2026-08-22 09:33:48.667] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  40.49%
+
+[2026-08-22 09:33:49.417] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  40.74%
+
+[2026-08-22 09:33:50.157] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  40.99%
+
+[2026-08-22 09:33:50.902] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  41.23%
+
+[2026-08-22 09:33:51.649] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  41.48%
+
+[2026-08-22 09:33:52.398] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  41.73%
+
+[2026-08-22 09:33:53.141] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  41.98%
+
+[2026-08-22 09:33:53.894] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  42.22%
+
+[2026-08-22 09:33:54.635] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  42.47%
+
+[2026-08-22 09:33:55.385] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  42.72%
+
+[2026-08-22 09:33:56.126] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  42.96%
+
+[2026-08-22 09:33:56.875] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  43.21%
+
+[2026-08-22 09:33:57.621] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  43.46%
+
+[2026-08-22 09:33:58.366] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  43.70%
+
+[2026-08-22 09:33:59.112] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  43.95%
+
+[2026-08-22 09:33:59.860] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  44.20%
+
+[2026-08-22 09:34:00.609] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  44.44%
+
+[2026-08-22 09:34:01.357] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  44.69%
+
+[2026-08-22 09:34:02.097] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  44.94%
+
+[2026-08-22 09:34:02.838] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  45.19%
+
+[2026-08-22 09:34:03.589] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  45.43%
+
+[2026-08-22 09:34:04.339] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  45.68%
+
+[2026-08-22 09:34:05.078] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  45.93%
+
+[2026-08-22 09:34:05.819] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  46.17%
+
+[2026-08-22 09:34:06.022] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  46.42%
+
+[2026-08-22 09:34:06.790] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  46.67%
+
+[2026-08-22 09:34:07.536] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  46.91%
+
+[2026-08-22 09:34:08.285] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  47.16%
+
+[2026-08-22 09:34:09.029] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  47.41%
+
+[2026-08-22 09:34:09.775] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  47.65%
+
+[2026-08-22 09:34:10.522] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  47.90%
+
+[2026-08-22 09:34:11.270] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  48.15%
+
+[2026-08-22 09:34:12.015] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  48.40%
+
+[2026-08-22 09:34:12.755] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  48.64%
+
+[2026-08-22 09:34:13.501] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  48.89%
+
+[2026-08-22 09:34:14.246] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  49.14%
+
+[2026-08-22 09:34:14.990] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  49.38%
+
+[2026-08-22 09:34:15.736] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  49.63%
+
+[2026-08-22 09:34:16.485] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  49.88%
+
+[2026-08-22 09:34:17.231] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  50.12%
+
+[2026-08-22 09:34:17.975] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  50.37%
+
+[2026-08-22 09:34:18.720] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  50.62%
+
+[2026-08-22 09:34:19.468] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  50.86%
+
+[2026-08-22 09:34:20.211] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  51.11%
+
+[2026-08-22 09:34:20.955] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  51.36%
+
+[2026-08-22 09:34:21.704] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  51.60%
+
+[2026-08-22 09:34:22.449] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  51.85%
+
+[2026-08-22 09:34:23.195] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  52.10%
+
+[2026-08-22 09:34:23.937] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  52.35%
+
+[2026-08-22 09:34:24.683] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  52.59%
+
+[2026-08-22 09:34:25.431] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  52.84%
+
+[2026-08-22 09:34:25.630] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  53.09%
+
+[2026-08-22 09:34:26.400] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  53.33%
+
+[2026-08-22 09:34:27.141] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  53.58%
+
+[2026-08-22 09:34:27.886] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  53.83%
+
+[2026-08-22 09:34:28.632] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  54.07%
+
+[2026-08-22 09:34:29.378] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  54.32%
+
+[2026-08-22 09:34:30.123] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  54.57%
+
+[2026-08-22 09:34:30.865] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  54.81%
+
+[2026-08-22 09:34:31.613] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  55.06%
+
+[2026-08-22 09:34:32.358] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  55.31%
+
+[2026-08-22 09:34:33.103] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  55.56%
+
+[2026-08-22 09:34:33.846] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  55.80%
+
+[2026-08-22 09:34:34.595] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  56.05%
+
+[2026-08-22 09:34:35.341] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  56.30%
+
+[2026-08-22 09:34:36.084] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  56.54%
+
+[2026-08-22 09:34:36.826] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  56.79%
+
+[2026-08-22 09:34:37.577] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  57.04%
+
+[2026-08-22 09:34:38.321] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  57.28%
+
+[2026-08-22 09:34:39.065] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  57.53%
+
+[2026-08-22 09:34:39.810] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  57.78%
+
+[2026-08-22 09:34:40.561] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  58.02%
+
+[2026-08-22 09:34:41.307] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  58.27%
+
+[2026-08-22 09:34:42.042] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  58.52%
+
+[2026-08-22 09:34:42.788] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  58.77%
+
+[2026-08-22 09:34:43.538] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  59.01%
+
+[2026-08-22 09:34:44.282] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  59.26%
+
+[2026-08-22 09:34:45.031] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  59.51%
+
+[2026-08-22 09:34:45.238] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  59.75%
+
+[2026-08-22 09:34:46.007] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  60.00%
+
+[2026-08-22 09:34:46.758] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  60.25%
+
+[2026-08-22 09:34:47.509] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  60.49%
+
+[2026-08-22 09:34:48.249] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  60.74%
+
+[2026-08-22 09:34:49.001] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  60.99%
+
+[2026-08-22 09:34:49.750] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  61.23%
+
+[2026-08-22 09:34:50.501] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  61.48%
+
+[2026-08-22 09:34:51.245] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  61.73%
+
+[2026-08-22 09:34:52.001] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  61.98%
+
+[2026-08-22 09:34:52.737] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  62.22%
+
+[2026-08-22 09:34:53.484] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  62.47%
+
+[2026-08-22 09:34:54.232] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  62.72%
+
+[2026-08-22 09:34:54.980] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  62.96%
+
+[2026-08-22 09:34:55.730] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  63.21%
+
+[2026-08-22 09:34:56.479] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  63.46%
+
+[2026-08-22 09:34:57.225] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  63.70%
+
+[2026-08-22 09:34:57.971] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  63.95%
+
+[2026-08-22 09:34:58.713] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  64.20%
+
+[2026-08-22 09:34:59.462] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  64.44%
+
+[2026-08-22 09:35:00.207] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  64.69%
+
+[2026-08-22 09:35:00.950] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  64.94%
+
+[2026-08-22 09:35:01.700] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  65.19%
+
+[2026-08-22 09:35:02.445] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  65.43%
+
+[2026-08-22 09:35:03.195] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  65.68%
+
+[2026-08-22 09:35:03.937] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  65.93%
+
+[2026-08-22 09:35:04.689] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  66.17%
+
+[2026-08-22 09:35:04.890] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  66.42%
+
+[2026-08-22 09:35:05.659] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  66.67%
+
+[2026-08-22 09:35:06.393] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  66.91%
+
+[2026-08-22 09:35:07.129] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  67.16%
+
+[2026-08-22 09:35:07.867] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  67.41%
+
+[2026-08-22 09:35:08.620] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  67.65%
+
+[2026-08-22 09:35:09.363] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  67.90%
+
+[2026-08-22 09:35:10.106] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  68.15%
+
+[2026-08-22 09:35:10.854] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  68.40%
+
+[2026-08-22 09:35:11.594] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  68.64%
+
+[2026-08-22 09:35:12.342] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  68.89%
+
+[2026-08-22 09:35:13.077] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  69.14%
+
+[2026-08-22 09:35:13.820] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  69.38%
+
+[2026-08-22 09:35:14.558] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  69.63%
+
+[2026-08-22 09:35:15.311] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  69.88%
+
+[2026-08-22 09:35:16.049] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  70.12%
+
+[2026-08-22 09:35:16.798] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  70.37%
+
+[2026-08-22 09:35:17.545] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  70.62%
+
+[2026-08-22 09:35:18.290] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  70.86%
+
+[2026-08-22 09:35:19.027] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  71.11%
+
+[2026-08-22 09:35:19.765] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  71.36%
+
+[2026-08-22 09:35:20.504] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  71.60%
+
+[2026-08-22 09:35:21.252] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  71.85%
+
+[2026-08-22 09:35:22.000] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  72.10%
+
+[2026-08-22 09:35:22.744] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  72.35%
+
+[2026-08-22 09:35:23.495] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  72.59%
+
+[2026-08-22 09:35:24.244] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  72.84%
+
+[2026-08-22 09:35:24.441] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  73.09%
+
+[2026-08-22 09:35:25.186] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  73.33%
+
+[2026-08-22 09:35:25.934] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  73.58%
+
+[2026-08-22 09:35:26.679] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  73.83%
+
+[2026-08-22 09:35:27.428] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  74.07%
+
+[2026-08-22 09:35:28.165] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  74.32%
+
+[2026-08-22 09:35:28.910] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  74.57%
+
+[2026-08-22 09:35:29.655] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  74.81%
+
+[2026-08-22 09:35:30.403] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  75.06%
+
+[2026-08-22 09:35:31.151] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  75.31%
+
+[2026-08-22 09:35:31.893] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  75.56%
+
+[2026-08-22 09:35:32.642] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  75.80%
+
+[2026-08-22 09:35:33.393] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  76.05%
+
+[2026-08-22 09:35:34.136] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  76.30%
+
+[2026-08-22 09:35:34.888] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  76.54%
+
+[2026-08-22 09:35:35.642] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  76.79%
+
+[2026-08-22 09:35:36.381] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  77.04%
+
+[2026-08-22 09:35:37.124] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  77.28%
+
+[2026-08-22 09:35:37.882] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  77.53%
+
+[2026-08-22 09:35:38.634] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  77.78%
+
+[2026-08-22 09:35:39.376] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  78.02%
+
+[2026-08-22 09:35:40.125] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  78.27%
+
+[2026-08-22 09:35:40.874] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  78.52%
+
+[2026-08-22 09:35:41.622] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  78.77%
+
+[2026-08-22 09:35:42.366] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  79.01%
+
+[2026-08-22 09:35:43.102] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  79.26%
+
+[2026-08-22 09:35:43.846] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  79.51%
+
+[2026-08-22 09:35:44.051] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  79.75%
+
+[2026-08-22 09:35:44.797] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  80.00%
+
+[2026-08-22 09:35:45.541] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  80.25%
+
+[2026-08-22 09:35:46.282] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  80.49%
+
+[2026-08-22 09:35:47.024] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  80.74%
+
+[2026-08-22 09:35:47.769] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  80.99%
+
+[2026-08-22 09:35:48.516] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  81.23%
+
+[2026-08-22 09:35:49.273] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  81.48%
+
+[2026-08-22 09:35:50.010] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  81.73%
+
+[2026-08-22 09:35:50.766] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  81.98%
+
+[2026-08-22 09:35:51.514] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  82.22%
+
+[2026-08-22 09:35:52.265] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  82.47%
+
+[2026-08-22 09:35:53.012] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  82.72%
+
+[2026-08-22 09:35:53.756] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  82.96%
+
+[2026-08-22 09:35:54.506] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  83.21%
+
+[2026-08-22 09:35:55.249] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  83.46%
+
+[2026-08-22 09:35:55.994] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  83.70%
+
+[2026-08-22 09:35:56.739] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  83.95%
+
+[2026-08-22 09:35:57.488] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  84.20%
+
+[2026-08-22 09:35:58.230] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  84.44%
+
+[2026-08-22 09:35:58.978] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  84.69%
+
+[2026-08-22 09:35:59.723] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  84.94%
+
+[2026-08-22 09:36:00.472] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  85.19%
+
+[2026-08-22 09:36:01.213] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  85.43%
+
+[2026-08-22 09:36:01.964] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  85.68%
+
+[2026-08-22 09:36:02.707] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  85.93%
+
+[2026-08-22 09:36:03.453] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  86.17%
+
+[2026-08-22 09:36:03.656] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  86.42%
+
+[2026-08-22 09:36:04.418] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  86.67%
+
+[2026-08-22 09:36:05.159] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  86.91%
+
+[2026-08-22 09:36:05.911] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  87.16%
+
+[2026-08-22 09:36:06.659] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  87.41%
+
+[2026-08-22 09:36:07.413] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  87.65%
+
+[2026-08-22 09:36:08.150] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  87.90%
+
+[2026-08-22 09:36:08.898] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  88.15%
+
+[2026-08-22 09:36:09.641] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  88.40%
+
+[2026-08-22 09:36:10.377] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  88.64%
+
+[2026-08-22 09:36:11.118] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  88.89%
+
+[2026-08-22 09:36:11.860] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  89.14%
+
+[2026-08-22 09:36:12.605] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  89.38%
+
+[2026-08-22 09:36:13.350] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  89.63%
+
+[2026-08-22 09:36:14.095] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  89.88%
+
+[2026-08-22 09:36:14.847] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  90.12%
+
+[2026-08-22 09:36:15.593] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  90.37%
+
+[2026-08-22 09:36:16.338] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  90.62%
+
+[2026-08-22 09:36:17.082] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  90.86%
+
+[2026-08-22 09:36:17.819] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  91.11%
+
+[2026-08-22 09:36:18.562] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  91.36%
+
+[2026-08-22 09:36:19.307] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  91.60%
+
+[2026-08-22 09:36:20.049] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  91.85%
+
+[2026-08-22 09:36:20.791] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  92.10%
+
+[2026-08-22 09:36:21.537] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  92.35%
+
+[2026-08-22 09:36:22.281] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  92.59%
+
+[2026-08-22 09:36:23.023] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  92.84%
+
+[2026-08-22 09:36:23.225] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  93.09%
+
+[2026-08-22 09:36:23.753] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  93.33%
+
+[2026-08-22 09:36:24.263] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  93.58%
+
+[2026-08-22 09:36:24.772] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  93.83%
+
+[2026-08-22 09:36:25.277] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  94.07%
+
+[2026-08-22 09:36:25.785] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  94.32%
+
+[2026-08-22 09:36:26.296] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  94.57%
+
+[2026-08-22 09:36:26.803] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  94.81%
+
+[2026-08-22 09:36:27.315] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  95.06%
+
+[2026-08-22 09:36:27.832] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  95.31%
+
+[2026-08-22 09:36:28.344] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  95.56%
+
+[2026-08-22 09:36:28.849] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  95.80%
+
+[2026-08-22 09:36:29.368] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  96.05%
+
+[2026-08-22 09:36:29.877] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  96.30%
+
+[2026-08-22 09:36:30.387] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  96.54%
+
+[2026-08-22 09:36:30.894] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  96.79%
+
+[2026-08-22 09:36:31.408] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  97.04%
+
+[2026-08-22 09:36:31.909] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  97.28%
+
+[2026-08-22 09:36:32.415] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  97.53%
+
+[2026-08-22 09:36:32.918] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  97.78%
+
+[2026-08-22 09:36:33.430] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  98.02%
+
+[2026-08-22 09:36:33.934] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  98.27%
+
+[2026-08-22 09:36:34.439] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  98.52%
+
+[2026-08-22 09:36:34.942] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  98.77%
+
+[2026-08-22 09:36:35.446] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  99.01%
+
+[2026-08-22 09:36:35.955] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  99.26%
+
+[2026-08-22 09:36:36.467] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  99.51%
+
+[2026-08-22 09:36:36.613] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  99.75%
+
+[2026-08-22 09:36:36.635] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  🏞️ Resizing image according to output scale
+
+[2026-08-22 09:36:37.315] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  🏞️ Scaled image from 5225x2940 to 10450x5880
+
+[2026-08-22 09:36:37.373] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.00%
+
+[2026-08-22 09:36:38.106] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.25%
+
+[2026-08-22 09:36:38.838] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.49%
+
+[2026-08-22 09:36:39.572] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.74%
+
+[2026-08-22 09:36:40.305] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  0.99%
+
+[2026-08-22 09:36:41.036] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  1.23%
+
+[2026-08-22 09:36:41.771] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  1.48%
+
+[2026-08-22 09:36:42.505] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  1.73%
+
+[2026-08-22 09:36:43.238] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  1.98%
+
+[2026-08-22 09:36:43.970] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  2.22%
+
+[2026-08-22 09:36:44.704] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  2.47%
+
+[2026-08-22 09:36:45.148] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  100.00%
+
+🙌 Upscayled Successfully!
+
+[2026-08-22 09:36:45.443] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  2.72%
+
+[2026-08-22 09:36:46.189] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  2.96%
+
+[2026-08-22 09:36:46.934] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  3.21%
+
+[2026-08-22 09:36:47.682] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  3.46%
+
+[2026-08-22 09:36:48.429] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  3.70%
+
+[2026-08-22 09:36:49.176] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  3.95%
+
+[2026-08-22 09:36:49.923] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  4.20%
+
+[2026-08-22 09:36:50.668] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  4.44%
+
+[2026-08-22 09:36:51.417] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  4.69%
+
+[2026-08-22 09:36:52.158] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  4.94%
+
+[2026-08-22 09:36:52.912] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  5.19%
+
+[2026-08-22 09:36:53.650] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  5.43%
+
+[2026-08-22 09:36:54.394] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  5.68%
+
+[2026-08-22 09:36:55.129] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  5.93%
+
+[2026-08-22 09:36:55.874] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  6.17%
+
+[2026-08-22 09:36:56.082] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  6.42%
+
+[2026-08-22 09:36:56.843] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  6.67%
+
+[2026-08-22 09:36:57.594] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  6.91%
+
+[2026-08-22 09:36:58.338] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  7.16%
+
+[2026-08-22 09:36:59.076] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  7.41%
+
+[2026-08-22 09:36:59.824] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  7.65%
+
+[2026-08-22 09:37:00.572] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  7.90%
+
+[2026-08-22 09:37:01.319] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  8.15%
+
+[2026-08-22 09:37:02.062] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  8.40%
+
+[2026-08-22 09:37:02.805] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  8.64%
+
+[2026-08-22 09:37:03.554] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  8.89%
+
+[2026-08-22 09:37:04.299] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  9.14%
+
+[2026-08-22 09:37:05.045] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  9.38%
+
+[2026-08-22 09:37:05.789] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  9.63%
+
+[2026-08-22 09:37:06.541] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  9.88%
+
+[2026-08-22 09:37:07.288] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  10.12%
+
+[2026-08-22 09:37:08.036] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  10.37%
+
+[2026-08-22 09:37:08.783] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  10.62%
+
+[2026-08-22 09:37:09.531] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  10.86%
+
+[2026-08-22 09:37:10.275] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  11.11%
+
+[2026-08-22 09:37:11.028] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  11.36%
+
+[2026-08-22 09:37:11.760] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  11.60%
+
+[2026-08-22 09:37:12.502] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  11.85%
+
+[2026-08-22 09:37:13.246] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  12.10%
+
+[2026-08-22 09:37:13.991] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  12.35%
+
+[2026-08-22 09:37:14.734] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  12.59%
+
+[2026-08-22 09:37:15.483] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  12.84%
+
+[2026-08-22 09:37:15.679] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  13.09%
+
+[2026-08-22 09:37:16.438] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  13.33%
+
+[2026-08-22 09:37:17.181] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  13.58%
+
+[2026-08-22 09:37:17.926] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  13.83%
+
+[2026-08-22 09:37:18.670] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  14.07%
+
+[2026-08-22 09:37:19.426] [info]  🚧 FOLDER_UPSCAYL_PROGRESS:  14.32%
+
