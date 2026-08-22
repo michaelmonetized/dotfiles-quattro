@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Pick a random background from the current theme's user set, else the theme pack.
+set -euo pipefail
+
+THEME_NAME=$(cat "$HOME/.local/state/omarchy/current/theme.name" 2>/dev/null || true)
+USER_DIR="$HOME/.config/omarchy/backgrounds/$THEME_NAME"
+THEME_DIR="$HOME/.local/state/omarchy/current/theme/backgrounds"
+
+mapfile -d '' -t BACKGROUNDS < <(
+  find -L "$USER_DIR" "$THEME_DIR" -maxdepth 1 -type f \
+    \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.gif' -o -iname '*.bmp' -o -iname '*.webp' \) \
+    -print0 2>/dev/null
+)
+
+# Prefer the user set when it has anything, so stock theme images don't mix in.
+if [[ -d $USER_DIR ]]; then
+  mapfile -d '' -t USER_BGS < <(
+    find -L "$USER_DIR" -maxdepth 1 -type f \
+      \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.gif' -o -iname '*.bmp' -o -iname '*.webp' \) \
+      -print0 2>/dev/null
+  )
+  if ((${#USER_BGS[@]} > 0)); then
+    BACKGROUNDS=("${USER_BGS[@]}")
+  fi
+fi
+
+TOTAL=${#BACKGROUNDS[@]}
+(( TOTAL > 0 )) || exit 0
+
+NEW="${BACKGROUNDS[RANDOM % TOTAL]}"
+omarchy-theme-bg-set "$NEW"

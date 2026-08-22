@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+if [ -n "$TMUX" ]; then
+    exit 0
+fi
+
+if tmux has-session -t hustlelaunch 2>/dev/null; then
+    exec tmux attach-session -t hustlelaunch
+else
+    exec tmux new-session -s hustlelaunch
+fi

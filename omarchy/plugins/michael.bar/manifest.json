@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "michael.bar",
+  "name": "Waybar chips",
+  "version": "1.0.0",
+  "author": "Omarchy",
+  "description": "Omarchy bar with colored powerline chips matching the pre-Quattro Waybar design",
+  "kinds": [
+    "bar"
+  ],
+  "entryPoints": {
+    "bar": "Bar.qml"
+  },
+  "omarchy": {}
+}

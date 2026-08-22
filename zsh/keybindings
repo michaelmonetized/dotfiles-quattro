@@ -1,0 +1,21 @@
+GOKU_EDN_CONFIG_FILE="$HOME/.config/goku/goku.edn"
+
+bindkey -v
+bindkey -s '^ ' '__zoxide_zi^M'
+
+#bindkey '^[[A' history-search-backward
+#bindkey '^[[B' history-search-forward
+
+bindkey '^[w' kill-region
+
+open-nvim-here() {
+  zle -I
+  BUFFER=""
+  print -r --
+  nvim .
+  zle reset-prompt
+}
+
+zle -N open-nvim-here
+
+bindkey '^N' open-nvim-here

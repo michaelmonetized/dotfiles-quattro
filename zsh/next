@@ -1,0 +1,14 @@
+function next_rebuild() {
+  rm -rf .next node_modules
+  npm install
+  npm run build
+}
+
+alias nr=next_rebuild
+
+function next_dev() {
+  nr
+  npm run dev
+}
+
+alias nd=next_dev

@@ -1,0 +1,7 @@
+// Local wrapper. Vicinae writes GUI changes here.
+// Tracked/shared settings live in managed.json so a 5-machine sync
+// does not get stomped by the settings window.
+{
+  "$schema": "https://vicinae.com/schemas/config.json",
+  "imports": ["./managed.json"]
+}

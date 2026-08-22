@@ -1,0 +1,54 @@
+# Alias picker functions - fzf menus for aliases by prefix
+# Source this file in .zshrc
+
+# Remove conflicting aliases so functions take precedence
+unalias n g a b 2>/dev/null
+# Keep c='clear' and m='gt merge' as-is
+
+_alias_pick() {
+  local prefix="$1"
+  local selected
+  
+  if [[ "$prefix" == "all" ]]; then
+    # Show all aliases
+    selected=$(rg "^alias " ~/.config/zsh --no-filename -N | \
+      sed 's/^alias //' | \
+      sort | \
+      fzf --height=40% --reverse --border --ansi \
+          --color="fg:#cdd6f4,bg:#1e1e2e,hl:#f38ba8,fg+:#cdd6f4,bg+:#313244,hl+:#f38ba8,info:#cba6f7,prompt:#94e2d5,pointer:#f5e0dc,marker:#f5e0dc,spinner:#f5e0dc,header:#94e2d5" \
+          --prompt="All aliases: ")
+  else
+    # Show aliases starting with prefix
+    selected=$(rg "^alias ${prefix}" ~/.config/zsh --no-filename -N | \
+      sed 's/^alias //' | \
+      sort | \
+      fzf --height=40% --reverse --border --ansi \
+          --color="fg:#cdd6f4,bg:#1e1e2e,hl:#f38ba8,fg+:#cdd6f4,bg+:#313244,hl+:#f38ba8,info:#cba6f7,prompt:#94e2d5,pointer:#f5e0dc,marker:#f5e0dc,spinner:#f5e0dc,header:#94e2d5" \
+          --prompt="${prefix}* aliases: ")
+  fi
+  
+  if [[ -n "$selected" ]]; then
+    # Extract just the alias name (before the =)
+    local cmd="${selected%%=*}"
+    # Put it on the command line and execute
+    print -z "$cmd"
+  fi
+}
+
+n() { _alias_pick "n" }
+g() { _alias_pick "g" }
+a() { _alias_pick "all" }
+
+b() {
+  local selected
+  selected=$(find ~/.local/bin ~/bin ~/.config/bin -maxdepth 10 -type f -executable 2>/dev/null | \
+    xargs -I {} basename {} | \
+    sort -u | \
+    fzf --height=40% --reverse --border --ansi \
+        --color="fg:#cdd6f4,bg:#1e1e2e,hl:#f38ba8,fg+:#cdd6f4,bg+:#313244,hl+:#f38ba8,info:#cba6f7,prompt:#94e2d5,pointer:#f5e0dc,marker:#f5e0dc,spinner:#f5e0dc,header:#94e2d5" \
+        --prompt="Binaries: ")
+  
+  if [[ -n "$selected" ]]; then
+    print -z "$selected"
+  fi
+}

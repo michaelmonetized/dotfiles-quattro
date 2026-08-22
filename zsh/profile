@@ -1,0 +1,53 @@
+# Prompt
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+[[ ! -f ~/.config/zsh/prompt ]] || source ~/.config/zsh/prompt
+
+export EDITOR=nvim
+export VISUAL="$EDITOR"
+
+export PATH="$PATH:/usr/local/bin"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/bin"
+[[ -d "$HOME/bin/elasticsearch/bin" ]] && export PATH="$PATH:$HOME/bin/elasticsearch/bin"
+if command -v go &>/dev/null; then
+  export PATH="$PATH:$(go env GOPATH)/bin"
+fi
+
+# bun
+if [[ -s "$HOME/.bun/_bun" ]]; then
+  source "$HOME/.bun/_bun"
+fi
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+[[ -d "$HOME/.vite-plus/bin" ]] && export PATH="$PATH:$HOME/.vite-plus/bin"
+
+# Optional pnux/pnpm homes (mac uses Library/pnpm; linux uses ~/.local/share/pnpm)
+if [[ -d "$HOME/Library/pnpm" ]]; then
+  export PNPM_HOME="$HOME/Library/pnpm"
+elif [[ -d "$HOME/.local/share/pnpm" ]]; then
+  export PNPM_HOME="$HOME/.local/share/pnpm"
+fi
+if [[ -n "${PNPM_HOME:-}" ]]; then
+  case ":$PATH:" in
+    *":$PNPM_HOME:"*) ;;
+    *) export PATH="$PNPM_HOME:$PATH" ;;
+  esac
+fi
+
+[[ ! -f ~/.config/zsh/ai ]] || source ~/.config/zsh/ai
+[[ ! -f ~/.config/zsh/zinit ]] || source ~/.config/zsh/zinit
+[[ ! -f ~/.config/zsh/keybindings ]] || source ~/.config/zsh/keybindings
+[[ ! -f ~/.config/zsh/history ]] || source ~/.config/zsh/history
+[[ ! -f ~/.config/zsh/completions ]] || source ~/.config/zsh/completions
+[[ ! -f ~/.config/zsh/aliases ]] || source ~/.config/zsh/aliases
+[[ ! -f ~/.config/zsh/alias-picker ]] || source ~/.config/zsh/alias-picker
+[[ ! -f ~/.config/zsh/integrations ]] || source ~/.config/zsh/integrations
+[[ ! -f ~/.config/zsh/fzf ]] || source ~/.config/zsh/fzf
+[[ ! -f ~/.config/zsh/git ]] || source ~/.config/zsh/git
+[[ ! -f ~/.config/zsh/next ]] || source ~/.config/zsh/next
+[[ ! -f ~/.config/zsh/js ]] || source ~/.config/zsh/js
+[[ ! -f ~/.config/zsh/node ]] || source ~/.config/zsh/node

@@ -1,0 +1,49 @@
+alias gx="grok --always-approve --effort max --permission-mode bypassPermissions --todo-gate"
+alias nano='nvim'
+alias micro='nvim'
+alias ls='eza --color=always --long --git --icons=always --no-filesize --no-time --no-permissions --no-user'
+alias lt='eza --tree --git-ignore --color=always --icons=always --no-filesize --no-time --no-permissions --no-user'
+alias la='eza --color=always --long --git --icons=always --extended --total-size --all'
+alias lg='lazygit'
+alias c='clear'
+alias cxd="codex --dangerously-bypass-approvals-and-sandbox --enable goals"
+alias cld="claude --dangerously-skip-permissions"
+alias gmd="gemini -y"
+alias np="~/bin/newproject"
+alias npr='~/bin/stack "$@"'
+alias ni='gh issue create "$@"'
+alias m='gt merge -q "$@"'
+alias no='openclaw tui'
+alias nob='openclaw browser "$@"'
+alias nv='nvim "$@"'
+alias p='cxd exec "$@"'
+alias q='exit'
+alias ot='NODE_OPTIONS=--use-system-ca openclaw tui'
+alias t='tmux'
+alias ta='tmux a'
+alias z='__zoxide_zi'
+
+if [[ "$(uname -s)" == Darwin ]]; then
+  [[ -x /Applications/BrightIntosh.app/Contents/Resources/cli.sh ]] && alias brighten='/Applications/BrightIntosh.app/Contents/Resources/cli.sh'
+  alias o='open'
+  alias nsh='open "https://sheets.new"'
+  alias ndc='open "https://docs.new"'
+else
+  alias o='xdg-open'
+  alias open='xdg-open'
+  alias nsh='xdg-open "https://sheets.new"'
+  alias ndc='xdg-open "https://docs.new"'
+  alias i='sudo pacman -Syy "$@" --noconfirm --overwrite "*"'
+  alias s='sudo pacman -Ssyy "$@"'
+fi
+
+unalias cb 2>/dev/null
+cb() {
+  git remote show origin | awk '/HEAD branch/ {print $NF}'
+}
+unalias mpr 2>/dev/null
+mpr() {
+  gh pr merge -sd && \
+  git checkout "$(cb)" && \
+  git pull
+}
