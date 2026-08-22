@@ -1,0 +1,13 @@
+[Unit]
+Description=sshfs m1Pro13 backup volume
+After=network-online.target
+Wants=network-online.target
+
+[Mount]
+What=hustlelaunch@192.168.1.94:/Volumes/backup
+Where=/mnt/mac
+Type=fuse.sshfs
+Options=_netdev,reconnect,ServerAliveInterval=15,ServerAliveCountMax=3,IdentityFile=/home/michael/.ssh/id_ed25519,IdentitiesOnly=yes,idmap=user,follow_symlinks,default_permissions,uid=1001,gid=1001
+
+[Install]
+WantedBy=default.target

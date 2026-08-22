@@ -1,0 +1,17 @@
+[Unit]
+Description=sshfs m1Pro13 backup volume
+After=graphical-session.target network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/home/michael/.local/bin/mount-mac-backup
+ExecStop=/usr/bin/fusermount3 -u -z /mnt/mac
+Restart=on-failure
+RestartSec=15
+TimeoutStartSec=150
+
+[Install]
+WantedBy=graphical-session.target

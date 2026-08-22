@@ -1,0 +1,26 @@
+{
+  "keybinding": "vim",
+  "pop_to_root_on_close": true,
+  "favicon_service": "twenty",
+  "theme": {
+    "light": {
+      "name": "catppuccin-latte",
+      "icon_theme": "auto"
+    },
+    "dark": {
+      "name": "catppuccin-mocha",
+      "icon_theme": "auto"
+    }
+  },
+  "favorites": [
+    "clipboard:history"
+  ],
+  "fallbacks": [
+    "files:search"
+  ],
+  "launcher_window": {
+    "layer_shell": {
+      "keyboard_interactivity": "on_demand"
+    }
+  }
+}

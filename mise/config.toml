@@ -1,0 +1,6 @@
+[tools]
+codex = "latest"
+gh = "latest"
+node = "latest"
+"npm:@xai-official/grok" = "latest"
+opencode = "latest"

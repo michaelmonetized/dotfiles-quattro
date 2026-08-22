@@ -1,0 +1,107 @@
+{
+  "bar": {
+    "centerAnchor": "",
+    "id": "michael.bar",
+    "layout": {
+      "center": [],
+      "left": [
+        {
+          "chipColor": "#89b4fa",
+          "chipJoin": "",
+          "chipRadius": "left",
+          "id": "michael.menu",
+          "label": "󱁏 m1pro16"
+        },
+        {
+          "chipColor": "#f38ba8",
+          "chipJoin": "",
+          "chipLead": "",
+          "id": "michael.workspaces"
+        }
+      ],
+      "right": [
+        {
+          "chipColor": "#cdd6f4",
+          "chipLead": "",
+          "id": "omarchy.tray"
+        },
+        {
+          "chipColor": "#cdd6f4",
+          "id": "omarchy.system-update"
+        },
+        {
+          "alwaysShow": true,
+          "chipColor": "#cdd6f4",
+          "chipJoin": "",
+          "id": "omarchy.indicators",
+          "items": [
+            "Dictation",
+            "ScreenRecording",
+            "StayAwake",
+            "Dnd"
+          ]
+        },
+        {
+          "chipColor": "#89b4fa",
+          "chipLead": "",
+          "id": "omarchy.bluetooth"
+        },
+        {
+          "chipColor": "#89b4fa",
+          "id": "omarchy.network"
+        },
+        {
+          "chipColor": "#89b4fa",
+          "id": "omarchy.monitor"
+        },
+        {
+          "chipColor": "#89b4fa",
+          "chipJoin": "",
+          "fontSize": 14,
+          "horizontalMargin": 10,
+          "id": "cpu",
+          "onClick": "omarchy-launch-or-focus-tui btop",
+          "onRightClick": "xdg-terminal-exec",
+          "text": "󰍛",
+          "tooltip": "CPU",
+          "type": "command"
+        },
+        {
+          "chipColor": "#b4befe",
+          "chipJoin": "",
+          "chipLead": "",
+          "id": "omarchy.weather"
+        },
+        {
+          "chipColor": "#f9e2af",
+          "chipJoin": "",
+          "chipLead": "",
+          "id": "omarchy.audio"
+        },
+        {
+          "chipColor": "#a6e3a1",
+          "chipLead": "",
+          "chipRadius": "right",
+          "format": "dddd yyyy-MM-dd HH:mm:ss",
+          "formatAlt": "dddd HH:mm",
+          "id": "michael.clock",
+          "verticalFormat": "HH\n—\nmm"
+        }
+      ]
+    },
+    "position": "top",
+    "transparent": true
+  },
+  "cloneSourceRestores": [
+    "michael.menu"
+  ],
+  "disabledPlugins": [
+    "omarchy.menu"
+  ],
+  "idle": {
+    "lock": 300,
+    "screensaver": 150
+  },
+  "plugins": [],
+  "version": 1
+}

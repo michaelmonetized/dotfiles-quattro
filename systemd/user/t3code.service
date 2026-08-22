@@ -1,0 +1,20 @@
+[Unit]
+Description=T3 Code server
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=simple
+WorkingDirectory=%h
+Environment=T3CODE_HOME=/home/michael/.t3
+Environment=T3_BOOT_SERVICE_UNIT=t3code.service
+ExecStart=/home/michael/.vite-plus/js_runtime/node/24.19.0/bin/node /home/michael/.t3/runtime/service-launcher.mjs
+KillMode=mixed
+OOMPolicy=continue
+Restart=always
+RestartSec=5
+StandardOutput=append:/home/michael/.t3/userdata/logs/boot-service.log
+StandardError=append:/home/michael/.t3/userdata/logs/boot-service.log
+
+[Install]
+WantedBy=default.target

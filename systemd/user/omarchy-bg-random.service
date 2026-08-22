@@ -1,0 +1,10 @@
+[Unit]
+Description=Set a random Omarchy theme background
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/michael/.local/bin/omarchy-theme-bg-random
+
+[Install]
+WantedBy=graphical-session.target

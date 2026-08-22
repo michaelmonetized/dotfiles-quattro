@@ -1,0 +1,194 @@
+# Sanitize repo name: keep only alphanumeric and hyphens
+_sanitize_repo_name() {
+  echo "$1" | sed 's/[^a-zA-Z0-9-]/-/g' | sed 's/--*/-/g' | sed 's/^-//;s/-$//'
+}
+
+# Prompt for repo name with default
+_prompt_repo_name() {
+  local default_name=$(_sanitize_repo_name "${1:-$(basename "$PWD")}")
+  local repo_name
+  echo -n "Repo name [$default_name]: " >&2
+  read -r repo_name
+  if [[ -z "$repo_name" ]]; then
+    echo "$default_name"
+  else
+    echo "$(_sanitize_repo_name "$repo_name")"
+  fi
+}
+
+# Check if we're in a git repo
+_is_git_repo() {
+  command git rev-parse --is-inside-work-tree &>/dev/null
+}
+
+# Check if remote origin exists
+_has_remote() {
+  command git remote get-url origin &>/dev/null
+}
+
+# Create GitHub repo and add remote
+_create_gh_repo() {
+  local name="$1"
+  local visibility="${2:---private}"
+
+  echo "Creating GitHub repo: michaelmonetized/$name ($visibility)..."
+  
+  # Create repo (no --source, no magic)
+  if ! gh repo create "michaelmonetized/$name" "$visibility"; then
+    echo "✗ Failed to create repo"
+    return 1
+  fi
+  
+  echo "✓ Created repo"
+  
+  # Add remote origin with HTTPS URL
+  if git remote get-url origin &>/dev/null; then
+    git remote set-url origin "https://github.com/michaelmonetized/$name.git"
+  else
+    git remote add origin "https://github.com/michaelmonetized/$name.git"
+  fi
+  
+  echo "✓ Set origin: https://github.com/michaelmonetized/$name.git"
+  return 0
+}
+
+# Handle push when no remote is configured
+_handle_no_remote() {
+  echo ""
+  echo "⚠ No remote configured!"
+  local repo_name=$(_prompt_repo_name)
+
+  echo -n "Visibility [private/public] (default: private): "
+  read -r visibility
+  [[ -z "$visibility" ]] && visibility="private"
+  [[ "$visibility" == "public" ]] && visibility="--public" || visibility="--private"
+
+  if _create_gh_repo "$repo_name" "$visibility"; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+function git_commit() {
+  command git commit "$@"
+  exit_status=$?
+  if [ $exit_status -eq 0 ]; then
+    echo "Commit successful! Running additional tasks..."
+    if command -v open >/dev/null && [[ "$(uname -s)" == Darwin ]]; then
+      open -g raycast://extensions/raycast/raycast/confetti
+    fi
+  else
+    echo "Commit failed! Running error handling tasks..."
+  fi
+  return $exit_status
+}
+
+function git_push() {
+  # Check for remote first
+  if ! _has_remote; then
+    if _handle_no_remote; then
+      command git push -u origin HEAD
+      exit_status=$?
+    else
+      return 1
+    fi
+  else
+    command git push "$@"
+    exit_status=$?
+  fi
+
+  if [ $exit_status -eq 0 ]; then
+    echo "Push successful! Running additional tasks..."
+    # /usr/local/bin/win
+    # ascii-commit-graph --full-width --show-todos --show-issues
+    if command -v open >/dev/null && [[ "$(uname -s)" == Darwin ]]; then
+      open -g raycast://extensions/raycast/raycast/confetti
+    fi
+  else
+    echo "Push failed! Running error handling tasks..."
+  fi
+  return $exit_status
+}
+
+function git_() {
+  subcommand=$1
+  shift  # Remove the subcommand from the arguments
+
+  case "$subcommand" in
+    commit)
+      git_commit "$@"
+      ;;
+    push)
+      git_push "$@"
+      ;;
+    *)
+      command git "$subcommand" "$@"
+      ;;
+  esac
+}
+
+alias git='noglob git_'
+
+function git_commit_push() {
+  local commit_msg="${1:---allow-empty-message}"
+
+  # Not a git repo? Initialize it
+  if ! _is_git_repo; then
+    echo "⚠ Not a git repo, initializing..."
+    command git init
+  fi
+
+  git add -A
+
+  if [[ -n $(command git status -s) ]]; then
+    git commit -am "$commit_msg"
+  else
+    git commit --allow-empty -m "$commit_msg"
+  fi
+
+  # Push (git_push handles missing remote)
+  git push
+}
+
+alias gitcp=git_commit_push
+
+# git repo create, add origin, commit, push
+# Usage: grcaocp [repo_name] [commit_message]
+function grcaocp() {
+  local repo_name="$1"
+  local commit_msg="${2:-init}"
+
+  # Not a git repo? Initialize it
+  if ! _is_git_repo; then
+    echo "⚠ Not a git repo, initializing..."
+    command git init
+  fi
+
+  # Prompt for repo name if not provided
+  if [[ -z "$repo_name" ]]; then
+    repo_name=$(_prompt_repo_name)
+  else
+    repo_name=$(_sanitize_repo_name "$repo_name")
+  fi
+
+  echo -n "Visibility [private/public] (default: private): "
+  read -r visibility
+  [[ -z "$visibility" ]] && visibility="private"
+  [[ "$visibility" == "public" ]] && visibility="--public" || visibility="--private"
+
+  if _create_gh_repo "$repo_name" "$visibility"; then
+    gitcp "$commit_msg"
+  else
+    echo "✗ Failed to create repo, aborting."
+    return 1
+  fi
+}
+
+function ga() {
+  git add -A
+  git diff --staged
+  gt create -a -m "$1"
+  gt log short --stack
+  gt submit
+}

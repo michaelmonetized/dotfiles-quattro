@@ -1,0 +1,29 @@
+eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+
+if command -v thefuck >/dev/null 2>&1; then
+  eval "$(thefuck --alias)"
+  eval "$(thefuck --alias fk)"
+fi
+
+if command -v atuin >/dev/null 2>&1; then
+  eval "$(atuin init zsh)"
+fi
+
+zcd() {
+  if [ "$#" -eq 0 ]; then
+    cd
+  else
+    cd "$@"
+  fi
+
+  if [ -f ./.direnv ]; then
+    source ./.direnv
+  fi
+
+  if [ -f ./.welcome ]; then
+    ./.welcome
+  elif command -v ascii-commit-graph >/dev/null 2>&1; then
+    ascii-commit-graph --full-width --show-todos --show-issues
+  fi
+}
