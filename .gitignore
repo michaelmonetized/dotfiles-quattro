@@ -1,0 +1,77 @@
+**/weights.bin
+
+# Dedicated browser profiles (cookies, history, logins, cache, extensions state)
+google-chrome-canary/
+google-chrome/
+google-chrome-beta/
+google-chrome-unstable/
+google-chrome-dev/
+chromium/
+BraveSoftware/
+microsoft-edge/
+microsoft-edge-dev/
+microsoft-edge-beta/
+vivaldi/
+opera/
+zen/
+firefox/
+
+# Electron apps that store a full Chromium profile under ~/.config
+t3code/
+
+# Cookie, login, and history files (Chromium + Firefox), anywhere
+**/Cookies
+**/Cookies-journal
+**/Extension Cookies*
+**/Safe Browsing Cookies*
+**/Login Data*
+**/History
+**/History-journal
+**/HistoryEmbeddings*
+**/cookies.sqlite*
+**/logins.json
+**/logins-backup.json
+**/logins.db
+**/key4.db
+**/places.sqlite*
+
+# Chromium/Electron profile runtime
+**/Cache/
+**/Code Cache/
+**/GPUCache/
+**/DawnGraphiteCache/
+**/DawnWebGPUCache/
+**/IndexedDB/
+**/Local Storage/
+**/Session Storage/
+**/Sessions/
+**/Service Worker/
+**/File System/
+**/blob_storage/
+**/Crashpad/
+**/Crash Reports/
+**/BrowserMetrics/
+**/WebStorage/
+**/Shared Dictionary/
+**/Partitions/
+**/Extension State/
+**/Extension Scripts/
+**/Extension Rules/
+**/GCM Store/
+**/CertificateRevocation/
+**/Dictionaries/
+**/DIPS
+**/DIPS-*
+**/Network Persistent State
+**/SharedStorage
+**/SharedStorage-*
+**/TransportSecurity
+**/Trust Tokens
+**/Trust Tokens-*
+**/SingletonCookie
+**/SingletonLock
+**/SingletonSocket
+**/*.asar
+obsidian/Preferences
+obsidian/obsidian.log
+obsidian/id
