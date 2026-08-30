@@ -314,3 +314,13 @@ on_transcription = true
 # [profiles.code]
 # post_process_command = "ollama run llama3.2:1b 'Format as code comment...'"
 # output_mode = "clipboard"
+
+[osd]
+enabled = true
+frontend = "quickshell"
+position = "bottom-center"
+width_px = 320
+height_px = 48
+margin_px = 80
+opacity = 0.96
+waveform_gain = 12.0
