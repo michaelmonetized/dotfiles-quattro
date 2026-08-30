@@ -52,19 +52,8 @@
         },
         {
           "chipColor": "#89b4fa",
-          "id": "omarchy.monitor"
-        },
-        {
-          "chipColor": "#89b4fa",
-          "chipJoin": "",
-          "fontSize": 14,
-          "horizontalMargin": 10,
-          "id": "cpu",
-          "onClick": "omarchy-launch-or-focus-tui btop",
-          "onRightClick": "xdg-terminal-exec",
-          "text": "󰍛",
-          "tooltip": "CPU",
-          "type": "command"
+          "id": "omarchy.monitor",
+          "chipJoin": ""
         },
         {
           "chipColor": "#b4befe",
@@ -79,10 +68,23 @@
           "id": "omarchy.audio"
         },
         {
+          "chipColor": "#ffffff",
+          "chipJoin": "",
+          "chipLead": "",
+          "id": "omarchy.power",
+          "showPercentage": true
+        },
+        {
+          "id": "slopops",
+          "chipColor": "#f38ba8",
+          "chipLead": "",
+          "chipJoin": ""
+        },
+        {
           "chipColor": "#a6e3a1",
           "chipLead": "",
           "chipRadius": "right",
-          "format": "dddd yyyy-MM-dd HH:mm:ss",
+          "format": "dddd yyyy-MM-dd HH:mm",
           "formatAlt": "dddd HH:mm",
           "id": "michael.clock",
           "verticalFormat": "HH\n—\nmm"
@@ -90,7 +92,10 @@
       ]
     },
     "position": "top",
-    "transparent": true
+    "transparent": true,
+    "marginTop": 10,
+    "marginLeft": 20,
+    "marginRight": 20
   },
   "cloneSourceRestores": [
     "michael.menu"
@@ -102,6 +107,13 @@
     "lock": 300,
     "screensaver": 150
   },
-  "plugins": [],
+  "plugins": [
+    {
+      "id": "blizl.voxtype-osd"
+    },
+    {
+      "id": "jesperlugner.omaflow"
+    }
+  ],
   "version": 1
 }

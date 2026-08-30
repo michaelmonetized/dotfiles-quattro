@@ -1,0 +1,8 @@
+{
+  "widgets": [
+    "Timer",
+    "Media",
+    "Clock",
+    "Battery"
+  ]
+}

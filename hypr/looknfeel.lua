@@ -4,6 +4,14 @@
 -- Default rule is 0.985 / 0.96. Nudge the focused window a hair more open.
 o.window({ tag = "default-opacity" }, { opacity = "0.97 0.96" })
 
+-- Omasnap capture/annotation overlay: no animation, never screen-shared.
+hl.layer_rule({
+  match = { namespace = "^omasnap$" },
+  no_anim = true,
+  animation = "none",
+  no_screen_share = true,
+})
+
 -- hl.config({
 --   general = {
 --     -- No gaps between windows or borders.

@@ -52,6 +52,11 @@ Item {
   property bool centerHoverRevealSuppressed: false
   property int barConfigSerial: 0
   property string position: "top"
+  // Outer spacing between the screen edges and the bar surface, read from
+  // shell.json as bar.marginTop / marginLeft / marginRight (pixels).
+  property int padTop: 0
+  property int padLeft: 0
+  property int padRight: 0
   // Resolves through fontconfig at paint time (Style.font.family defaults
   // to "monospace"), so changing the system font (via `omarchy-font-set`)
   // updates the bar without a reload.
@@ -330,6 +335,11 @@ Item {
     return BarModel.normalizePosition(value)
   }
 
+  function normalizePad(value) {
+    var n = Math.round(Number(value))
+    return isFinite(n) && n > 0 ? n : 0
+  }
+
   // Apply tray-pinning on top of the shared layout normalization so the
   // bar host and scriptable config helpers can't drift on entry shape.
   function normalizeLayout(layout) {
@@ -355,6 +365,9 @@ Item {
     position = normalizePosition(config.position)
     setRequestedTransparency(config.transparent === true)
     centerAnchor = Util.canonicalWidgetId(config.centerAnchor || "")
+    padTop = normalizePad(config.marginTop)
+    padLeft = normalizePad(config.marginLeft)
+    padRight = normalizePad(config.marginRight)
 
     // layoutEntries feeds plain JS arrays to the module Repeaters, and QML
     // cannot diff those: reassigning layoutConfig rebuilds every widget on
@@ -991,10 +1004,10 @@ Item {
     }
 
     margins {
-      top: root.barHidden && root.position === "top" ? -root.barSize : 0
+      top: root.barHidden && root.position === "top" ? -root.barSize : (root.position === "top" ? root.padTop : 0)
       bottom: root.barHidden && root.position === "bottom" ? -root.barSize : 0
-      left: root.barHidden && root.position === "left" ? -root.barSize : 0
-      right: root.barHidden && root.position === "right" ? -root.barSize : 0
+      left: root.barHidden && root.position === "left" ? -root.barSize : (!root.vertical ? root.padLeft : 0)
+      right: root.barHidden && root.position === "right" ? -root.barSize : (!root.vertical ? root.padRight : 0)
     }
 
     anchors {
@@ -1584,10 +1597,15 @@ Item {
 
     Rectangle {
       id: chipBody
-      x: slot.leadWidth
+      x: root.vertical ? 0 : (slot.leadWidth > 0 ? slot.leadWidth - 1 : 0)
       y: 0
       z: 0
+      // Overlap the lead/join cap glyphs by 1px on each side: the glyph
+      // advance leaves a hairline of bar background at each seam. The edge
+      // column of a cap glyph is solid chip color, so tucking the body under
+      // it closes the gap without eating into the arrow notch.
       width: root.vertical ? parent.width : slot.contentWidth
+        + (slot.leadWidth > 0 ? 1 : 0) + (slot.joinWidth > 0 ? 1 : 0)
       height: root.vertical ? slot.contentHeight : parent.height
       visible: slot.hasChip
       color: slot.hasChip ? slot.chipColorValue : "transparent"

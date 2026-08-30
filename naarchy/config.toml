@@ -1,0 +1,36 @@
+# naarchy configuration — hot-reloads on save
+[appearance]
+theme = "auto"          # auto | dark | light
+accent = "#7aa2f7"
+radius = 24
+panel_width = 760
+panel_height = 540
+opacity = 0.98
+
+[behavior]
+hover_open = true
+hover_ms = 180
+hover_band_px = 8
+collapse_on_leave_ms = 180
+hide_fullscreen = true
+monitors = "all"        # all | primary
+
+[features]
+media = true
+shelf = true
+clipboard = true
+calendar = true
+timer = true
+notifications = true    # own org.freedesktop.Notifications (set false to keep dunst/mako)
+battery_chip = true
+
+[clipboard]
+max_entries = 200
+max_image_bytes = 8388608
+
+[hud]
+timeout_ms = 1400
+
+[clock]
+format = "%H:%M"
+show_in_pill = false

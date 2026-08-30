@@ -232,9 +232,6 @@ o.bind("ALT + TAB", "Next window", hl.dsp.window.cycle_next())
 -- Physical Left Control is Hyper via keyd: Super+Ctrl+Alt+Shift (includes Shift).
 local hyper = "SUPER + CTRL + ALT + SHIFT"
 o.bind(hyper .. " + D", "Toggle dictation", "voxtype record toggle")
-local text_ai = os.getenv("HOME") .. "/.local/bin/text-ai"
-o.bind(hyper .. " + F", "Fix spelling and grammar", text_ai .. " fix")
-o.bind(hyper .. " + SLASH", "Dictate prompt", text_ai .. " dictate")
 
 -- Forward chords to the focused app. Explicit down/up split avoids Hyprland
 -- send_shortcut leaving synthetic key state stuck (see default clipboard.lua).
@@ -251,13 +248,6 @@ end
 
 hl.unbind("SUPER + ALT + C")
 o.bind("SUPER + ALT + C", "Screenshot", "omasnap")
-
--- Super+Shift+F was unbound with the rest of Omarchy's defaults.
--- Synchro overlay: Nautilus stays the folder MIME default.
-hl.unbind("SUPER + SHIFT + F")
-hl.unbind("SUPER + ALT + SHIFT + F")
-o.bind("SUPER + SHIFT + F", "Synchro", { omarchy = "synchro" })
-o.bind("SUPER + ALT + SHIFT + F", "Synchro (cwd)", { omarchy = "synchro-cwd" })
 
 hl.unbind("SUPER + A")
 o.bind("SUPER + A", "Select all", send_chord("CTRL", "A"))

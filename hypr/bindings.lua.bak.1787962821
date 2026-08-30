@@ -252,13 +252,6 @@ end
 hl.unbind("SUPER + ALT + C")
 o.bind("SUPER + ALT + C", "Screenshot", "omasnap")
 
--- Super+Shift+F was unbound with the rest of Omarchy's defaults.
--- Synchro overlay: Nautilus stays the folder MIME default.
-hl.unbind("SUPER + SHIFT + F")
-hl.unbind("SUPER + ALT + SHIFT + F")
-o.bind("SUPER + SHIFT + F", "Synchro", { omarchy = "synchro" })
-o.bind("SUPER + ALT + SHIFT + F", "Synchro (cwd)", { omarchy = "synchro-cwd" })
-
 hl.unbind("SUPER + A")
 o.bind("SUPER + A", "Select all", send_chord("CTRL", "A"))
 

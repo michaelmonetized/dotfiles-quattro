@@ -1,0 +1,30 @@
+{
+    "gridSize": 132,
+    "lastPath": "/home/michael",
+    "locationChips": [
+        "synchro.location.home",
+        "synchro.location.recent",
+        "synchro.location.trash",
+        "synchro.location.volumes"
+    ],
+    "panel": {
+        "app": "synchro.panel.terminal",
+        "lookOpen": true,
+        "lookRatio": 0.34,
+        "lookSize": 772,
+        "open": false,
+        "side": "bottom",
+        "size": 260
+    },
+    "pins": [
+    ],
+    "showHidden": false,
+    "sort": {
+        "order": "asc",
+        "role": "name"
+    },
+    "sqlBookmarks": [
+    ],
+    "version": 1,
+    "view": "grid"
+}
