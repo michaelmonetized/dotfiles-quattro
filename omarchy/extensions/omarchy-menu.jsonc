@@ -27,4 +27,7 @@
   // Example: replace the default About action by reusing the same id. Existing
   // fields are kept unless overridden.
   // "about": {"icon":"","label":"About","action":"omarchy-launch-or-focus-tui \"zsh -c 'fastfetch; read -k 1'\""},
+  // omaflow:begin
+  "automations": {"icon": "󱐋", "label": "Automations", "action": "$HOME/.config/omarchy/plugins/jesperlugner.omaflow/bin/omaflow", "description": "Omaflow rules and authoring"},
+  // omaflow:end
 }

@@ -1,9 +1,9 @@
 [Default Applications]
-text/html=zen.desktop
-x-scheme-handler/http=zen.desktop
-x-scheme-handler/https=zen.desktop
-x-scheme-handler/about=zen.desktop
-x-scheme-handler/unknown=zen.desktop
+text/html=chromium.desktop
+x-scheme-handler/http=chromium.desktop
+x-scheme-handler/https=chromium.desktop
+x-scheme-handler/about=chromium.desktop
+x-scheme-handler/unknown=chromium.desktop
 x-scheme-handler/mailto=HEY.desktop
 x-scheme-handler/chrome=zen.desktop
 application/x-extension-htm=zen.desktop
