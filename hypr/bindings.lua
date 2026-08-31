@@ -1,12 +1,12 @@
 for workspace = 1, 10 do
-  local key = "code:" .. tostring(workspace + 9)
-  hl.unbind("SUPER + " .. key, "Switch to workspace " .. workspace, hl.dsp.focus({ workspace = tostring(workspace) }))
-  hl.unbind("SUPER + SHIFT + " .. key, "Move window to workspace " .. workspace, hl.dsp.window.move({ workspace = tostring(workspace) }))
-  hl.unbind("SUPER + SHIFT + ALT + " .. key, "Move window silently to workspace " .. workspace, hl.dsp.window.move({ workspace = tostring(workspace), follow = false }))
+	local key = "code:" .. tostring(workspace + 9)
+	hl.unbind("SUPER + " .. key)
+	hl.unbind("SUPER + SHIFT + " .. key)
+	hl.unbind("SUPER + SHIFT + ALT + " .. key)
 end
 
 for index = 1, 5 do
-  hl.unbind("SUPER + ALT + code:" .. tostring(index + 9), "Switch to group window " .. index, hl.dsp.group.active({ index = index }))
+	hl.unbind("SUPER + ALT + code:" .. tostring(index + 9))
 end
 
 hl.unbind("ALT + PRINT")
@@ -166,43 +166,51 @@ o.bind("ALT + S", "Switch to stream workspace", hl.dsp.focus({ workspace = "9" }
 o.bind("ALT + P", "Switch to play workspace", hl.dsp.focus({ workspace = "10" }))
 
 local ws_to_key = {
-  "G",
-  "Z",
-  "A",
-  "C",
-  "M",
-  "D",
-  "W",
-  "E",
-  "S",
-  "P"
+	"G",
+	"Z",
+	"A",
+	"C",
+	"M",
+	"D",
+	"W",
+	"E",
+	"S",
+	"P",
 }
 
 local ws_to_name = {
-  "terminal",
-  "browser",
-  "agents",
-  "comms",
-  "money",
-  "design",
-  "work",
-  "entertain",
-  "stream",
-  "play"
+	"terminal",
+	"browser",
+	"agents",
+	"comms",
+	"money",
+	"design",
+	"work",
+	"entertain",
+	"stream",
+	"play",
 }
 
 for workspace = 1, 10 do
-  local key = ws_to_key[workspace]
-  if key ~= "C" then -- C is freed for SUPER+ALT+C screenshot
-    local name = ws_to_name[workspace]
-    o.bind("SUPER + ALT + " .. key, "Move window to " .. name .. " space", hl.dsp.window.move({ workspace = tostring(workspace) }))
-    o.bind("SUPER + SHIFT + ALT + " ..key, "Silently move window to " .. name .. " space", hl.dsp.window.move({ workspace = tostring(workspace), follow = false }))
-  end
+	local key = ws_to_key[workspace]
+	if key ~= "C" then -- C is freed for SUPER+ALT+C screenshot
+		local name = ws_to_name[workspace]
+		o.bind(
+			"SUPER + ALT + " .. key,
+			"Move window to " .. name .. " space",
+			hl.dsp.window.move({ workspace = tostring(workspace) })
+		)
+		o.bind(
+			"SUPER + SHIFT + ALT + " .. key,
+			"Silently move window to " .. name .. " space",
+			hl.dsp.window.move({ workspace = tostring(workspace), follow = false })
+		)
+	end
 end
 
 o.bind("ALT + B", "Browser", { omarchy = "browser" })
 o.bind("ALT + T", "T3 Code", o.launch_webapp_sole("t3 Code", "https://app.t3.codes/"))
-o.bind("ALT + R", "Reload Hyprland", "hyprctl reload")
+o.bind("ALT + R", "Reload Hyprland", "hyprctl reload && omarchy restart shell")
 o.bind("ALT + H", "Focus on left window", hl.dsp.focus({ direction = "l" }))
 o.bind("ALT + J", "Focus on below window", hl.dsp.focus({ direction = "d" }))
 o.bind("ALT + K", "Focus on above window", hl.dsp.focus({ direction = "u" }))
@@ -241,12 +249,12 @@ o.bind(hyper .. " + SLASH", "Dictate prompt", text_ai .. " dictate")
 -- Sending to the focused surface by omitting the window target means the
 -- physically held SUPER/ALT does NOT merge into the injected chord.
 local function send_chord(mods, key)
-  return function()
-    hl.dispatch(hl.dsp.send_key_state({ mods = mods, key = key, state = "down" }))
-    hl.timer(function()
-      hl.dispatch(hl.dsp.send_key_state({ mods = mods, key = key, state = "up" }))
-    end, { timeout = 50, type = "oneshot" })
-  end
+	return function()
+		hl.dispatch(hl.dsp.send_key_state({ mods = mods, key = key, state = "down" }))
+		hl.timer(function()
+			hl.dispatch(hl.dsp.send_key_state({ mods = mods, key = key, state = "up" }))
+		end, { timeout = 50, type = "oneshot" })
+	end
 end
 
 hl.unbind("SUPER + ALT + C")
@@ -254,10 +262,9 @@ o.bind("SUPER + ALT + C", "Screenshot", "omasnap")
 
 -- Super+Shift+F was unbound with the rest of Omarchy's defaults.
 -- Synchro overlay: Nautilus stays the folder MIME default.
-hl.unbind("SUPER + SHIFT + F")
 hl.unbind("SUPER + ALT + SHIFT + F")
-o.bind("SUPER + SHIFT + F", "Synchro", { omarchy = "synchro" })
-o.bind("SUPER + ALT + SHIFT + F", "Synchro (cwd)", { omarchy = "synchro-cwd" })
+o.bind("ALT + grave", "Synchro", { omarchy = "synchro" })
+o.bind("SUPER + grave", "Synchro (cwd)", { omarchy = "synchro-cwd" })
 
 hl.unbind("SUPER + A")
 o.bind("SUPER + A", "Select all", send_chord("CTRL", "A"))
@@ -283,5 +290,9 @@ o.bind("SUPER + SHIFT + G", "Cursor to bottom", send_chord("CTRL", "End"))
 o.bind("ALT + LEFT", "Move cursor one word left", send_chord("CTRL", "Left"))
 o.bind("ALT + RIGHT", "Move cursor one word right", send_chord("CTRL", "Right"))
 
+o.bind("SHIFT + ALT + LEFT", "Move cursor one word left", send_chord("CTRL + SHIFT", "Left"))
+o.bind("SHIFT + ALT + RIGHT", "Move cursor one word right", send_chord("CTRL + SHIFT", "Right"))
+
 o.bind("SUPER + SHIFT + comma", "Dismiss all notifications", "omarchy-shell notifications dismissAll")
 
+o.bind("SUPER + SHIFT + U", "Automations (Omaflow)", "$HOME/.config/omarchy/plugins/jesperlugner.omaflow/bin/omaflow")

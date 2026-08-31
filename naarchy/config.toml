@@ -1,11 +1,10 @@
-# naarchy configuration — hot-reloads on save
 [appearance]
-theme = "auto"          # auto | dark | light
+theme = "auto"
 accent = "#7aa2f7"
 radius = 24
 panel_width = 760
 panel_height = 540
-opacity = 0.98
+opacity = 1.00
 
 [behavior]
 hover_open = true
@@ -13,7 +12,7 @@ hover_ms = 180
 hover_band_px = 8
 collapse_on_leave_ms = 180
 hide_fullscreen = true
-monitors = "all"        # all | primary
+monitors = "all"
 
 [features]
 media = true
@@ -21,7 +20,7 @@ shelf = true
 clipboard = true
 calendar = true
 timer = true
-notifications = true    # own org.freedesktop.Notifications (set false to keep dunst/mako)
+notifications = true
 battery_chip = true
 
 [clipboard]
@@ -34,3 +33,7 @@ timeout_ms = 1400
 [clock]
 format = "%H:%M"
 show_in_pill = false
+
+[calendar]
+feeds = ["https://calendar.google.com/calendar/ical/michaelmonetized%40gmail.com/private-ce58b5dcbc074cc4fae6fa054738646e/basic.ics"]
+refresh_min = 1

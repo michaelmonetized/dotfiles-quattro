@@ -9,8 +9,7 @@
           "chipColor": "#89b4fa",
           "chipJoin": "",
           "chipRadius": "left",
-          "id": "michael.menu",
-          "label": "󱁏 m1pro16"
+          "id": "michael.menu"
         },
         {
           "chipColor": "#f38ba8",
@@ -35,8 +34,6 @@
           "chipJoin": "",
           "id": "omarchy.indicators",
           "items": [
-            "Dictation",
-            "ScreenRecording",
             "StayAwake",
             "Dnd"
           ]
@@ -49,11 +46,6 @@
         {
           "chipColor": "#89b4fa",
           "id": "omarchy.network"
-        },
-        {
-          "chipColor": "#89b4fa",
-          "id": "omarchy.monitor",
-          "chipJoin": ""
         },
         {
           "chipColor": "#b4befe",
@@ -77,7 +69,17 @@
         {
           "id": "slopops",
           "chipColor": "#f38ba8",
-          "chipLead": "",
+          "chipLead": ""
+        },
+        {
+          "id": "blizl.voxtype-osd",
+          "alwaysShow": true,
+          "chipColor": "#f38ba8"
+        },
+        {
+          "id": "jesperlugner.omaflow",
+          "alwaysShow": true,
+          "chipColor": "#f38ba8",
           "chipJoin": ""
         },
         {
@@ -104,8 +106,8 @@
     "omarchy.menu"
   ],
   "idle": {
-    "lock": 300,
-    "screensaver": 150
+    "lock": 11400,
+    "screensaver": 600
   },
   "plugins": [
     {
