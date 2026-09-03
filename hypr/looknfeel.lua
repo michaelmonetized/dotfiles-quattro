@@ -1,5 +1,4 @@
 -- Change the default Omarchy look'n'feel.
--- Gaps and rounding live in the Hurleyus theme (hyprland.lua).
 
 -- Default rule is 0.985 / 0.96. Nudge the focused window a hair more open.
 o.window({ tag = "default-opacity" }, { opacity = "0.90 0.86" })
@@ -12,29 +11,17 @@ hl.layer_rule({
 	no_screen_share = true,
 })
 
--- hl.config({
---   general = {
---     -- No gaps between windows or borders.
---     gaps_in = 0,
---     gaps_out = 0,
---     border_size = 0,
---
---     -- Change to niri-like side-scrolling layout.
---     layout = "scrolling",
---   },
--- })
-
--- https://wiki.hypr.land/Configuring/Basics/Variables/#decoration
--- hl.config({
---   decoration = {
---     -- Use round window corners.
---     rounding = 8,
---
---     -- Dim unfocused windows (0.0 = no dim, 1.0 = fully dimmed).
---     dim_inactive = true,
---     dim_strength = 0.15,
---   },
--- })
+-- Stock Omarchy 4.0.2 drops *.lua from git-cloned themes, so Hurleyus
+-- hyprland.lua never reaches Hyprland there. This file always loads.
+hl.config({
+	general = {
+		gaps_in = 20,
+		gaps_out = 20,
+	},
+	decoration = {
+		rounding = 20,
+	},
+})
 
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#animations
 -- hl.config({

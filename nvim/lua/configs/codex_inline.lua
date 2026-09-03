@@ -438,10 +438,18 @@ function M.setup()
   vim.keymap.set("i", "<Tab>", function()
     local codex = require "configs.codex_inline"
     if codex.is_enabled() and codex.has_suggestion() then
-      return codex.accept()
+      codex.accept()
+      return
     end
-    return vim.api.nvim_replace_termcodes("<Tab>", true, false, true)
-  end, { expr = true, silent = true, desc = "Accept remote inline suggestion or insert tab" })
+
+    local ok, suggestion = pcall(require, "supermaven-nvim.completion_preview")
+    if ok and suggestion.has_suggestion() then
+      suggestion.on_accept_suggestion()
+      return
+    end
+
+    vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, false, true), "n", false)
+  end, { silent = true, desc = "Accept SuperMaven or remote inline suggestion" })
 end
 
 function M.is_enabled()

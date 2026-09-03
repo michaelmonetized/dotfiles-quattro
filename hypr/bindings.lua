@@ -244,6 +244,20 @@ local text_ai = os.getenv("HOME") .. "/.local/bin/text-ai"
 o.bind(hyper .. " + F", "Fix spelling and grammar", text_ai .. " fix")
 o.bind(hyper .. " + SLASH", "Dictate prompt", text_ai .. " dictate")
 
+-- Omastreamer: OBS chords via websocket so they work without OBS focus.
+-- Hyper includes Shift, so scene digits must bind the physical keycode.
+for i = 1, 9 do
+	o.bind(
+		hyper .. " + code:" .. tostring(i + 9),
+		"OBS scene " .. i,
+		"omarchy-shell -q omastreamer scene " .. i
+	)
+end
+o.bind(hyper .. " + code:19", "OBS scene 10", "omarchy-shell -q omastreamer scene 10")
+o.bind(hyper .. " + S", "OBS stream toggle", "omarchy-shell -q omastreamer toggleStream")
+o.bind(hyper .. " + R", "OBS record toggle", "omarchy-shell -q omastreamer toggleRecord")
+o.bind(hyper .. " + F5", "OBS mute all audio", "omarchy-shell -q omastreamer toggleMute")
+
 -- Forward chords to the focused app. Explicit down/up split avoids Hyprland
 -- send_shortcut leaving synthetic key state stuck (see default clipboard.lua).
 -- Sending to the focused surface by omitting the window target means the

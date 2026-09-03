@@ -7,21 +7,21 @@
       "left": [
         {
           "chipColor": "#89b4fa",
-          "chipJoin": "",
+          "chipJoin": "\ue0b8",
           "chipRadius": "left",
           "id": "michael.menu"
         },
         {
           "chipColor": "#f38ba8",
-          "chipJoin": "",
-          "chipLead": "",
+          "chipJoin": "\ue0c8",
+          "chipLead": "\ue0be",
           "id": "michael.workspaces"
         }
       ],
       "right": [
         {
           "chipColor": "#cdd6f4",
-          "chipLead": "",
+          "chipLead": "\ue0ca",
           "id": "omarchy.tray"
         },
         {
@@ -31,7 +31,6 @@
         {
           "alwaysShow": true,
           "chipColor": "#cdd6f4",
-          "chipJoin": "",
           "id": "omarchy.indicators",
           "items": [
             "StayAwake",
@@ -39,57 +38,45 @@
           ]
         },
         {
-          "chipColor": "#89b4fa",
-          "chipLead": "",
-          "id": "omarchy.bluetooth"
-        },
-        {
-          "chipColor": "#89b4fa",
-          "id": "omarchy.network"
-        },
-        {
-          "chipColor": "#b4befe",
-          "chipJoin": "",
-          "chipLead": "",
+          "chipColor": "#cdd6f4",
+          "chipJoin": "\ue0b8",
           "id": "omarchy.weather"
         },
         {
-          "chipColor": "#f9e2af",
-          "chipJoin": "",
-          "chipLead": "",
+          "chipColor": "#f38ba8",
+          "chipLead": "\ue0be",
+          "id": "omarchy.bluetooth"
+        },
+        {
+          "chipColor": "#f38ba8",
+          "id": "omarchy.network"
+        },
+        {
+          "chipColor": "#f38ba8",
           "id": "omarchy.audio"
         },
         {
-          "chipColor": "#ffffff",
-          "chipJoin": "",
-          "chipLead": "",
-          "id": "omarchy.power",
-          "showPercentage": true
-        },
-        {
-          "id": "slopops",
-          "chipColor": "#f38ba8",
-          "chipLead": ""
-        },
-        {
-          "id": "blizl.voxtype-osd",
-          "alwaysShow": true,
+          "id": "omastreamer",
           "chipColor": "#f38ba8"
         },
         {
-          "id": "jesperlugner.omaflow",
-          "alwaysShow": true,
-          "chipColor": "#f38ba8",
-          "chipJoin": ""
+          "id": "slopops",
+          "chipColor": "#f38ba8"
         },
         {
-          "chipColor": "#a6e3a1",
-          "chipLead": "",
+          "chipColor": "#f38ba8",
+          "id": "omarchy.power",
+          "showPercentage": true,
+          "chipJoin": "\ue0b0"
+        },
+        {
+          "chipColor": "#cdd6f4",
+          "chipLead": "\ue0d7",
           "chipRadius": "right",
           "format": "dddd yyyy-MM-dd HH:mm",
           "formatAlt": "dddd HH:mm",
           "id": "michael.clock",
-          "verticalFormat": "HH\n—\nmm"
+          "verticalFormat": "HH\n\u2014\nmm"
         }
       ]
     },
@@ -115,6 +102,9 @@
     },
     {
       "id": "jesperlugner.omaflow"
+    },
+    {
+      "id": "omastreamer"
     }
   ],
   "version": 1

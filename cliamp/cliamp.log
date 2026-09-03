@@ -1,0 +1,8 @@
+time=2026-08-31T08:22:30.884-04:00 level=INFO msg="cliamp starting (version=v1.57.1 level=INFO)"
+time=2026-08-31T09:56:29.030-04:00 level=INFO msg="cliamp starting (version=v1.57.1 level=INFO)"
+time=2026-08-31T09:59:12.889-04:00 level=INFO msg="cliamp starting (version=v1.57.1 level=INFO)"
+time=2026-08-31T09:59:12.981-04:00 level=INFO msg="daemon: starting headless mode"
+time=2026-08-31T09:59:15.911-04:00 level=INFO msg="daemon: signal received, shutting down"
+time=2026-08-31T09:59:29.296-04:00 level=INFO msg="cliamp starting (version=v1.57.1 level=INFO)"
+time=2026-08-31T09:59:29.393-04:00 level=INFO msg="daemon: starting headless mode"
+time=2026-08-31T09:59:37.369-04:00 level=INFO msg="daemon: signal received, shutting down"
