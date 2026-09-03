@@ -1,6 +1,6 @@
 {
     "gridSize": 132,
-    "lastPath": "/home/michael/Projects/omarchy-site-tanstack-start/public/assets",
+    "lastPath": "/home/michael/Projects/omarchy-site-tanstack-start/public/brand",
     "locationChips": [
         "synchro.location.home",
         "synchro.location.recent",
@@ -18,7 +18,7 @@
     },
     "pins": [
     ],
-    "showHidden": false,
+    "showHidden": true,
     "sort": {
         "order": "asc",
         "role": "name"
