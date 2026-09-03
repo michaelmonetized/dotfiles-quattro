@@ -18,24 +18,21 @@ BarWidget {
   }
 
   function workspaceIds() {
-    return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   }
 
   function workspaceIcon(id) {
     var icons = {
-      1: "",
-      2: "",
-      3: "",
-      4: "",
-      5: "",
-      6: "",
-      7: "",
-      8: "",
-      9: "0",
-      10: "1",
-      11: "2",
-      12: "3",
-      13: "4"
+      1: "", // Ghostty, alt+g
+      2: "", // Browser, alt+z
+      3: "󰚚", // Agents, alt+a
+      4: "", // Comms, alt+c
+      5: "", // Money, alt+m
+      6: "", // Design, alt+d
+      7: "󰥯", // Work, alt+w 
+      8: "", // Entertain, alt+e
+      9: "", // Stream, alt+s
+      10: "", // Play, alt+p
     }
     return icons[id] || String(id)
   }

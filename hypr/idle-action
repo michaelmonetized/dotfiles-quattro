@@ -1,0 +1,26 @@
+#!/bin/bash
+# Idle actions for hypridle: screensaver after 10 minutes, lock (and display off) after 3 more hours.
+
+export PATH="$HOME/.local/bin:/usr/local/bin:/usr/share/omarchy/bin:$PATH"
+
+stay_awake="$HOME/.local/state/omarchy/indicators/stay-awake"
+[[ -f $stay_awake ]] && exit 0
+
+case "${1:-}" in
+screensaver)
+  if omarchy-toggle-enabled screensaver-off; then
+    exit 0
+  fi
+  if [[ $(omarchy-shell lock isLocked 2>/dev/null) == true ]]; then
+    exit 0
+  fi
+  exec omarchy-launch-screensaver
+  ;;
+lock)
+  exec omarchy-system-lock
+  ;;
+*)
+  echo "usage: idle-action screensaver|lock" >&2
+  exit 2
+  ;;
+esac

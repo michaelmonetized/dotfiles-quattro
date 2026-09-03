@@ -1,0 +1,461 @@
+#!/usr/bin/env python3
+"""OBS websocket 5 bridge for the omastreamer Quickshell plugin.
+
+JSON lines in, JSON lines out. Reads host/port/password from the OBS
+websocket config so the password never sits in shell.json.
+"""
+
+from __future__ import annotations
+
+import asyncio
+import base64
+import hashlib
+import json
+import os
+import socket
+import struct
+import sys
+import uuid
+from pathlib import Path
+from typing import Any
+
+OP_HELLO = 0
+OP_IDENTIFY = 1
+OP_IDENTIFIED = 2
+OP_EVENT = 5
+OP_REQUEST = 6
+OP_RESPONSE = 7
+
+SUB_SCENES = 1 << 2
+SUB_INPUTS = 1 << 3
+SUB_OUTPUTS = 1 << 6
+EVENT_SUBS = SUB_SCENES | SUB_INPUTS | SUB_OUTPUTS
+
+SKIP_KINDS = {"scene", "group"}
+
+
+def emit(payload: dict[str, Any]) -> None:
+    sys.stdout.write(json.dumps(payload, separators=(",", ":")) + "\n")
+    sys.stdout.flush()
+
+
+def auth_token(password: str, salt: str, challenge: str) -> str:
+    """obs-websocket 5 authentication string."""
+    secret = base64.b64encode(hashlib.sha256((password + salt).encode()).digest()).decode()
+    return base64.b64encode(hashlib.sha256((secret + challenge).encode()).digest()).decode()
+
+
+def order_scenes(scenes: list[dict[str, Any]]) -> list[str]:
+    """Top-to-bottom OBS dock order. sceneIndex 0 is the bottom of the list."""
+    ranked = sorted(scenes, key=lambda item: int(item.get("sceneIndex", 0)), reverse=True)
+    names: list[str] = []
+    for item in ranked:
+        name = item.get("sceneName") or item.get("sceneUuid") or ""
+        if name:
+            names.append(str(name))
+    return names
+
+
+def should_mute(mutes: dict[str, bool]) -> bool:
+    """Mute every input if any is live; unmute all if every input is already muted."""
+    if not mutes:
+        return False
+    return any(not muted for muted in mutes.values())
+
+
+def load_obs_config() -> tuple[str, int, str, bool]:
+    host = os.environ.get("OMASTREAMER_OBS_HOST", "127.0.0.1")
+    port = int(os.environ.get("OMASTREAMER_OBS_PORT", "4455"))
+    password = os.environ.get("OMASTREAMER_OBS_PASSWORD", "")
+    auth_required = True
+
+    override = os.environ.get("OMASTREAMER_OBS_CONFIG")
+    config_path = Path(override) if override else Path.home() / ".config/obs-studio/plugin_config/obs-websocket/config.json"
+    if config_path.is_file():
+        data = json.loads(config_path.read_text())
+        port = int(data.get("server_port", port))
+        password = str(data.get("server_password", password) or password)
+        auth_required = bool(data.get("auth_required", True))
+        if not bool(data.get("server_enabled", False)) and "OMASTREAMER_OBS_PORT" not in os.environ:
+            emit(
+                {
+                    "event": "state",
+                    "connected": False,
+                    "error": "OBS websocket is disabled. Enable it in Tools → WebSocket Server Settings, then restart OBS.",
+                }
+            )
+    return host, port, password, auth_required
+
+
+class WebSocket:
+    def __init__(self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter):
+        self.reader = reader
+        self.writer = writer
+
+    @classmethod
+    async def connect(cls, host: str, port: int) -> "WebSocket":
+        reader, writer = await asyncio.open_connection(host, port)
+        key = base64.b64encode(os.urandom(16)).decode()
+        request = (
+            f"GET / HTTP/1.1\r\n"
+            f"Host: {host}:{port}\r\n"
+            f"Upgrade: websocket\r\n"
+            f"Connection: Upgrade\r\n"
+            f"Sec-WebSocket-Key: {key}\r\n"
+            f"Sec-WebSocket-Version: 13\r\n"
+            f"\r\n"
+        )
+        writer.write(request.encode())
+        await writer.drain()
+        header = await reader.readuntil(b"\r\n\r\n")
+        if b"101" not in header.split(b"\r\n", 1)[0]:
+            writer.close()
+            raise ConnectionError("websocket handshake failed")
+        return cls(reader, writer)
+
+    async def send_text(self, text: str) -> None:
+        payload = text.encode()
+        header = bytearray([0x81])
+        length = len(payload)
+        mask_bit = 0x80
+        if length < 126:
+            header.append(mask_bit | length)
+        elif length < 65536:
+            header.append(mask_bit | 126)
+            header.extend(struct.pack(">H", length))
+        else:
+            header.append(mask_bit | 127)
+            header.extend(struct.pack(">Q", length))
+        mask = os.urandom(4)
+        header.extend(mask)
+        masked = bytes(b ^ mask[i % 4] for i, b in enumerate(payload))
+        self.writer.write(header + masked)
+        await self.writer.drain()
+
+    async def send_pong(self, payload: bytes) -> None:
+        header = bytearray([0x8A, 0x80 | len(payload)])
+        mask = os.urandom(4)
+        header.extend(mask)
+        masked = bytes(b ^ mask[i % 4] for i, b in enumerate(payload))
+        self.writer.write(header + masked)
+        await self.writer.drain()
+
+    async def recv_text(self) -> str:
+        chunks = bytearray()
+        while True:
+            opcode, payload, fin = await self._read_frame()
+            if opcode == 0x8:
+                raise ConnectionError("websocket closed")
+            if opcode == 0x9:
+                await self.send_pong(payload)
+                continue
+            if opcode == 0xA:
+                continue
+            chunks.extend(payload)
+            if fin:
+                return chunks.decode()
+
+    async def _read_frame(self) -> tuple[int, bytes, bool]:
+        header = await self._read_exact(2)
+        fin = (header[0] & 0x80) != 0
+        opcode = header[0] & 0x0F
+        masked = (header[1] & 0x80) != 0
+        length = header[1] & 0x7F
+        if length == 126:
+            length = struct.unpack(">H", await self._read_exact(2))[0]
+        elif length == 127:
+            length = struct.unpack(">Q", await self._read_exact(8))[0]
+        mask = await self._read_exact(4) if masked else b""
+        payload = await self._read_exact(length)
+        if masked:
+            payload = bytes(b ^ mask[i % 4] for i, b in enumerate(payload))
+        return opcode, payload, fin
+
+    async def _read_exact(self, n: int) -> bytes:
+        buf = bytearray()
+        while len(buf) < n:
+            chunk = await self.reader.read(n - len(buf))
+            if not chunk:
+                raise ConnectionError("websocket eof")
+            buf.extend(chunk)
+        return bytes(buf)
+
+    def close(self) -> None:
+        self.writer.close()
+
+
+class Bridge:
+    def __init__(self, ws: WebSocket):
+        self.ws = ws
+        self.pending: dict[str, asyncio.Future] = {}
+        self.scenes: list[str] = []
+        self.scene = ""
+        self.streaming = False
+        self.recording = False
+        self.mutes: dict[str, bool] = {}
+        self.connected = False
+
+    @property
+    def muted(self) -> bool:
+        return bool(self.mutes) and all(self.mutes.values())
+
+    def snapshot(self, error: str = "") -> dict[str, Any]:
+        payload = {
+            "event": "state",
+            "connected": self.connected,
+            "scene": self.scene,
+            "scenes": list(self.scenes),
+            "streaming": self.streaming,
+            "recording": self.recording,
+            "muted": self.muted,
+        }
+        if error:
+            payload["error"] = error
+        return payload
+
+    async def send_op(self, op: int, data: dict[str, Any]) -> None:
+        await self.ws.send_text(json.dumps({"op": op, "d": data}))
+
+    async def request(self, request_type: str, data: dict[str, Any] | None = None) -> dict[str, Any]:
+        request_id = str(uuid.uuid4())
+        future: asyncio.Future = asyncio.get_running_loop().create_future()
+        self.pending[request_id] = future
+        payload: dict[str, Any] = {"requestType": request_type, "requestId": request_id}
+        if data:
+            payload["requestData"] = data
+        await self.send_op(OP_REQUEST, payload)
+        try:
+            return await asyncio.wait_for(future, timeout=8)
+        finally:
+            self.pending.pop(request_id, None)
+
+    async def identify(self, password: str, auth_required: bool) -> None:
+        hello = json.loads(await self.ws.recv_text())
+        if hello.get("op") != OP_HELLO:
+            raise ConnectionError("expected hello")
+        data = hello.get("d") or {}
+        identify: dict[str, Any] = {"rpcVersion": 1, "eventSubscriptions": EVENT_SUBS}
+        auth = data.get("authentication")
+        if auth_required and auth:
+            if not password:
+                raise ConnectionError("OBS websocket requires a password")
+            identify["authentication"] = auth_token(password, auth["salt"], auth["challenge"])
+        await self.send_op(OP_IDENTIFY, identify)
+        identified = json.loads(await self.ws.recv_text())
+        if identified.get("op") != OP_IDENTIFIED:
+            raise ConnectionError("identify rejected")
+
+    async def refresh(self) -> None:
+        scene_list = await self.request("GetSceneList")
+        self.scenes = order_scenes(scene_list.get("scenes") or [])
+        self.scene = str(scene_list.get("currentProgramSceneName") or self.scene)
+        try:
+            stream = await self.request("GetStreamStatus")
+            self.streaming = bool(stream.get("outputActive"))
+        except Exception:
+            pass
+        try:
+            record = await self.request("GetRecordStatus")
+            self.recording = bool(record.get("outputActive"))
+        except Exception:
+            pass
+        await self.refresh_mutes()
+        self.connected = True
+        emit(self.snapshot())
+
+    async def refresh_mutes(self) -> None:
+        try:
+            listing = await self.request("GetInputList")
+        except Exception:
+            return
+        mutes: dict[str, bool] = {}
+        for item in listing.get("inputs") or []:
+            kind = str(item.get("unversionedInputKind") or item.get("inputKind") or "")
+            name = str(item.get("inputName") or "")
+            if not name or kind in SKIP_KINDS:
+                continue
+            try:
+                mute = await self.request("GetInputMute", {"inputName": name})
+            except Exception:
+                continue
+            mutes[name] = bool(mute.get("inputMuted"))
+        self.mutes = mutes
+
+    async def handle_event(self, data: dict[str, Any]) -> None:
+        event = data.get("eventType")
+        payload = data.get("eventData") or {}
+        if event == "CurrentProgramSceneChanged":
+            self.scene = str(payload.get("sceneName") or self.scene)
+        elif event in {"SceneListChanged", "SceneCreated", "SceneRemoved", "SceneNameChanged"}:
+            try:
+                scene_list = await self.request("GetSceneList")
+                self.scenes = order_scenes(scene_list.get("scenes") or [])
+                self.scene = str(scene_list.get("currentProgramSceneName") or self.scene)
+            except Exception:
+                pass
+        elif event == "StreamStateChanged":
+            self.streaming = str(payload.get("outputState") or "").endswith("STARTED") or bool(payload.get("outputActive"))
+        elif event == "RecordStateChanged":
+            self.recording = str(payload.get("outputState") or "").endswith("STARTED") or bool(payload.get("outputActive"))
+        elif event == "InputMuteStateChanged":
+            name = str(payload.get("inputName") or "")
+            if name in self.mutes:
+                self.mutes[name] = bool(payload.get("inputMuted"))
+        else:
+            return
+        emit(self.snapshot())
+
+    async def handle_command(self, line: str) -> None:
+        try:
+            cmd = json.loads(line)
+        except json.JSONDecodeError:
+            emit(self.snapshot("bad command"))
+            return
+        op = str(cmd.get("op") or "")
+        try:
+            if op == "scene":
+                await self.set_scene(cmd.get("n"))
+            elif op == "setScene":
+                await self.set_scene_name(str(cmd.get("name") or ""))
+            elif op == "toggleStream":
+                await self.request("ToggleStream")
+            elif op == "toggleRecord":
+                await self.request("ToggleRecord")
+            elif op == "toggleMute":
+                await self.toggle_mute()
+            elif op == "refresh":
+                await self.refresh()
+            else:
+                emit(self.snapshot(f"unknown op {op}"))
+                return
+            await self.refresh()
+        except Exception as exc:
+            emit(self.snapshot(str(exc)))
+
+    async def set_scene(self, raw: Any) -> None:
+        try:
+            index = int(raw)
+        except (TypeError, ValueError) as exc:
+            raise ValueError("scene number required") from exc
+        if index < 1 or index > len(self.scenes):
+            raise ValueError(f"no scene {index}")
+        await self.set_scene_name(self.scenes[index - 1])
+
+    async def set_scene_name(self, name: str) -> None:
+        if not name:
+            raise ValueError("scene name required")
+        await self.request("SetCurrentProgramScene", {"sceneName": name})
+        self.scene = name
+
+    async def toggle_mute(self) -> None:
+        await self.refresh_mutes()
+        mute = should_mute(self.mutes)
+        for name in self.mutes:
+            await self.request("SetInputMute", {"inputName": name, "inputMuted": mute})
+            self.mutes[name] = mute
+
+    async def reader_loop(self) -> None:
+        while True:
+            raw = await self.ws.recv_text()
+            message = json.loads(raw)
+            op = message.get("op")
+            data = message.get("d") or {}
+            if op == OP_EVENT:
+                await self.handle_event(data)
+            elif op == OP_RESPONSE:
+                request_id = str(data.get("requestId") or "")
+                future = self.pending.get(request_id)
+                if not future or future.done():
+                    continue
+                status = data.get("requestStatus") or {}
+                if status.get("result"):
+                    future.set_result(data.get("responseData") or {})
+                else:
+                    comment = status.get("comment") or status.get("code") or "request failed"
+                    future.set_exception(RuntimeError(str(comment)))
+
+
+async def stdin_lines() -> Any:
+    loop = asyncio.get_running_loop()
+    reader = asyncio.StreamReader()
+    protocol = asyncio.StreamReaderProtocol(reader)
+    await loop.connect_read_pipe(lambda: protocol, sys.stdin)
+    while True:
+        line = await reader.readline()
+        if not line:
+            return
+        yield line.decode().strip()
+
+
+async def session(
+    host: str,
+    port: int,
+    password: str,
+    auth_required: bool,
+    command_queue: asyncio.Queue,
+) -> None:
+    ws = await WebSocket.connect(host, port)
+    bridge = Bridge(ws)
+    try:
+        await bridge.identify(password, auth_required)
+        reader_task = asyncio.create_task(bridge.reader_loop())
+        await bridge.refresh()
+
+        async def command_loop() -> None:
+            while True:
+                line = await command_queue.get()
+                if line is None:
+                    raise SystemExit(0)
+                await bridge.handle_command(line)
+
+        command_task = asyncio.create_task(command_loop())
+        done, pending = await asyncio.wait(
+            {reader_task, command_task}, return_when=asyncio.FIRST_COMPLETED
+        )
+        for task in pending:
+            task.cancel()
+        for task in done:
+            if task.cancelled():
+                continue
+            exc = task.exception()
+            if exc:
+                raise exc
+    finally:
+        ws.close()
+
+
+async def main() -> None:
+    sys.stdout.reconfigure(line_buffering=True)
+    host, port, password, auth_required = load_obs_config()
+    command_queue: asyncio.Queue = asyncio.Queue()
+
+    async def pump_stdin() -> None:
+        async for line in stdin_lines():
+            if line:
+                await command_queue.put(line)
+        await command_queue.put(None)
+
+    asyncio.create_task(pump_stdin())
+    backoff = 1.0
+    while True:
+        try:
+            await session(host, port, password, auth_required, command_queue)
+            backoff = 1.0
+        except SystemExit:
+            return
+        except (ConnectionError, OSError, TimeoutError, socket.error) as exc:
+            emit({"event": "state", "connected": False, "error": str(exc) or "OBS websocket offline"})
+            await asyncio.sleep(backoff)
+            backoff = min(8.0, backoff * 2)
+        except Exception as exc:
+            emit({"event": "state", "connected": False, "error": str(exc)})
+            await asyncio.sleep(backoff)
+            backoff = min(8.0, backoff * 2)
+
+
+if __name__ == "__main__":
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        pass
+
