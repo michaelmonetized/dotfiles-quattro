@@ -23,7 +23,7 @@ for path in sorted(state.glob('*.json')):
         prompt_path.write_text(prompt)
         with (state / (item['id'] + '.log')).open('w') as log:
             result = subprocess.run(['grok', '--cwd', str(pathlib.Path.home() / 'Brain'), '--prompt-file', str(prompt_path), '--output-format', 'streaming-json',
-                '--permission-mode', 'dontAsk', '--allow', 'write', '--allow', 'edit_file', '--reasoning-effort', 'low', '--no-subagents', '--max-turns', '40', '--no-auto-update'], stdout=log, stderr=subprocess.STDOUT, timeout=1800)
+                '--permission-mode', 'dontAsk', '--allow', f'Edit({vault}/**)', '--deny', f'Edit({vault}/raw/**)', '--allow', 'WebFetch', '--allow', 'Bash(pdftotext *)', '--reasoning-effort', 'low', '--no-subagents', '--max-turns', '40', '--no-auto-update'], stdout=log, stderr=subprocess.STDOUT, timeout=1800)
         after_log = (vault / 'log.md').read_bytes() if (vault / 'log.md').exists() else b''
         completed = result.returncode == 0 and (vault / 'index.md').exists() and len(after_log) > len(before_log) and after_log.startswith(before_log)
         item['status'] = 'processed' if completed else 'failed'

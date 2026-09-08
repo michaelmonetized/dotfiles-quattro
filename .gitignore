@@ -76,3 +76,7 @@ t3code/
 obsidian/Preferences
 obsidian/obsidian.log
 obsidian/id
+
+# Browser Keys includes its own Zen extension source.
+!browser-keys/zen/
+!browser-keys/zen/**
