@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Keys",
+  "version": "1.0.0",
+  "description": "Local configurable browser shortcuts via Hyprland and native messaging",
+  "permissions": [
+    "tabs",
+    "sessions",
+    "nativeMessaging"
+  ],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqKRXiDIe0ha0ytInAwuXx/el2fjdX5gDkzbFlXrtrv8jAnNqE/76+eSOi3q0DRusRgQGBBj/QVbUsnYyKr6K/ndq7dtcB482mZJRV46m6MX+OW4/U/Y2DEgLOJ8qkef2HUVWJE7NXNzCb9DKwddNt2nN2yr029Y14uUpzaehHmo7A0UU7K/ssVf5d8SD2mdxNKp4UzYUYAEPA6YEdb+ToOb99Yat/T13og283SD+7PnIJ/V2uUlaWVnp7mNfNZWOWFzY7SLt+94A4oSd7vSi3aTWdMMTcRsCdDMhJvjvZwMlDU93D++SVR0dFbVNasBHEs5GA96IBjMNXTdDTnHvbwIDAQAB",
+  "background": {
+    "service_worker": "background.js"
+  }
+}

@@ -1,0 +1,1 @@
+{"schemaVersion":1,"id":"michael.brain","name":"Brain Capture","version":"1.0.0","author":"michael","description":"Capture sources into Brain","kinds":["bar-widget"],"entryPoints":{"barWidget":"Brain.qml"},"barWidget":{"displayName":"Brain Capture","category":"Productivity","allowMultiple":false,"defaultSection":"right"}}

@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+import fcntl, json, os, pathlib, subprocess, time
+runtime = pathlib.Path(os.environ['XDG_RUNTIME_DIR'])
+lock = (runtime / 'omawrite-dictate.lock').open('w')
+fcntl.flock(lock, fcntl.LOCK_EX)
+marker = runtime / 'omawrite-dictate-window'
+def active(): return json.loads(subprocess.check_output(['hyprctl', '-j', 'activewindow']))
+state = subprocess.run(['voxtype', 'status'], capture_output=True, text=True).stdout.strip()
+if state == 'recording' and marker.exists():
+    target = marker.read_text()
+    subprocess.run(['hyprctl', 'dispatch', 'hl.dsp.focus({window=' + json.dumps('address:' + target) + '})'], check=True)
+    subprocess.run(['voxtype', 'record', 'stop'], check=True)
+    marker.unlink(missing_ok=True)
+    raise SystemExit
+if state in ('recording', 'transcribing'):
+    subprocess.run(['notify-send', 'Dictation is busy', 'Finish the current recording first.'])
+    raise SystemExit(1)
+previous = {w['address'] for w in json.loads(subprocess.check_output(['hyprctl', '-j', 'clients']))}
+subprocess.Popen(['omawrite'], start_new_session=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+for _ in range(100):
+    window = active()
+    if 'omawrite' in window.get('class', '').lower() and window['address'] not in previous:
+        time.sleep(.25)
+        if active().get('address') != window['address']: continue
+        subprocess.run(['voxtype', 'record', 'start'], check=True)
+        marker.write_text(window['address'])
+        break
+    time.sleep(.1)
+else:
+    subprocess.run(['notify-send', 'Dictation not started', 'Omawrite did not receive focus.'])
+    raise SystemExit(1)

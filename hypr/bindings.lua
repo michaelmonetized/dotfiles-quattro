@@ -239,7 +239,7 @@ o.bind("SUPER + SPACE", "Vicinae", "vicinae toggle")
 o.bind("ALT + TAB", "Next window", hl.dsp.window.cycle_next())
 -- Physical Left Control is Hyper via keyd: Super+Ctrl+Alt+Shift (includes Shift).
 local hyper = "SUPER + CTRL + ALT + SHIFT"
-o.bind(hyper .. " + D", "Toggle dictation", "voxtype record toggle")
+o.bind(hyper .. " + D", "Dictate Grok prompt", os.getenv("HOME") .. "/.local/bin/text-ai dictate")
 local text_ai = os.getenv("HOME") .. "/.local/bin/text-ai"
 o.bind(hyper .. " + F", "Fix spelling and grammar", text_ai .. " fix")
 o.bind(hyper .. " + SLASH", "Dictate prompt", text_ai .. " dictate")
@@ -277,7 +277,7 @@ o.bind("SUPER + ALT + C", "Screenshot", "omasnap")
 -- Super+Shift+F was unbound with the rest of Omarchy's defaults.
 -- Synchro overlay: Nautilus stays the folder MIME default.
 hl.unbind("SUPER + ALT + SHIFT + F")
-o.bind("ALT + grave", "Synchro", { omarchy = "synchro" })
+o.bind("ALT + grave", "Toggle Synchro", os.getenv("HOME") .. "/.config/desktop/bin/synchro-toggle")
 o.bind("SUPER + grave", "Synchro (cwd)", { omarchy = "synchro-cwd" })
 
 hl.unbind("SUPER + A")
@@ -310,3 +310,11 @@ o.bind("SHIFT + ALT + RIGHT", "Move cursor one word right", send_chord("CTRL + S
 o.bind("SUPER + SHIFT + comma", "Dismiss all notifications", "omarchy-shell notifications dismissAll")
 
 o.bind("SUPER + SHIFT + U", "Automations (Omaflow)", "$HOME/.config/omarchy/plugins/jesperlugner.omaflow/bin/omaflow")
+
+-- Writing and Brain shortcuts.
+hl.unbind(hyper .. " + W")
+hl.unbind(hyper .. " + E")
+hl.unbind(hyper .. " + B")
+o.bind(hyper .. " + W", "Dictate in Omawrite", os.getenv("HOME") .. "/.config/desktop/bin/omawrite-dictate")
+o.bind(hyper .. " + E", "Omawrite", "omawrite")
+o.bind(hyper .. " + B", "Brain in Synchro", "synchro ~/Brain")
