@@ -6,7 +6,7 @@ const tabs = [{id:8,index:3,active:false},{id:4,index:1,active:true},{id:6,index
 const context = {chrome:{
  windows:{getLastFocused:async()=>({id:1,focused:true})},
  tabs:{query:async()=>tabs,update:async(id,change)=>{updated={id,change}}},
- runtime:{connectNative:()=>({postMessage:()=>{},onMessage:{addListener:f=>handler=f},onDisconnect:{addListener:()=>{}}})}
+ runtime:{getManifest:()=>({}),connectNative:()=>({postMessage:()=>{},onMessage:{addListener:f=>handler=f},onDisconnect:{addListener:()=>{}}})}
 },console,setTimeout};
 vm.createContext(context);vm.runInContext(fs.readFileSync('browser-keys/background.js','utf8'),context);
 (async()=>{

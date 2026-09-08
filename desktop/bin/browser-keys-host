@@ -11,6 +11,9 @@ def read():
 def write(value):
     data=json.dumps(value).encode(); sys.stdout.buffer.write(struct.pack('=I',len(data))+data);sys.stdout.buffer.flush()
 hello=read(); flavor=hello['browser']
+# Chromium provides its authenticated extension origin as the first argument.
+if len(sys.argv) > 1 and sys.argv[1].startswith('chrome-extension://'):
+    flavor = 'chrome'
 if flavor not in ('chrome','zen'): raise SystemExit(1)
 path=runtime / f'{flavor}-{os.getpid()}.sock'
 server=socket.socket(socket.AF_UNIX);server.bind(str(path));os.chmod(path,0o600);server.listen(4)
