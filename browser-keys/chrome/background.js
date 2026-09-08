@@ -1,5 +1,5 @@
 const api = globalThis.browser || chrome;
-const flavor = globalThis.browser ? 'zen' : 'chrome';
+const flavor = api.runtime.getManifest().browser_specific_settings?.gecko ? 'zen' : 'chrome';
 async function act(action) {
   const win = await api.windows.getLastFocused();
   if (!win.focused) throw new Error('Browser window is not focused');

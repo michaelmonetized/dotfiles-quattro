@@ -18,3 +18,9 @@ The initial portable mappings were derived from the local Zen shortcut file. Sup
 Sources: https://developer.chrome.com/docs/extensions/develop/concepts/native-messaging and https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/query
 
 Run `node desktop/tests/browser-keys.test.cjs` from `~/.config` to verify visible-order selection and focus guards.
+
+## Packed transport
+
+`chrome.crx` is the distributable package; `chrome.pem` is its private signing key and stays on the build machine. Both generated files are excluded from Git. Repack with the same PEM to retain the package ID. The native-host installer registers both `chrome-id` (unpacked) and `chrome-packed-id` (packed).
+
+On another machine, copy the CRX, install the versioned Browser Keys configuration and helper scripts, then run `~/.config/desktop/bin/browser-keys-install` before loading the extension. The CRX alone does not include the native bridge or compositor bindings.

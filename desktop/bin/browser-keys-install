@@ -16,10 +16,12 @@ for key,value in data['bindings'].items():
  if 'action' in value and not re.fullmatch(r'[a-z0-9-]+',value['action']): raise ValueError('Invalid action')
  entries.append('{key='+json.dumps(key)+','+','.join(k+'='+json.dumps(v) for k,v in value.items())+'}')
 (root/'bindings.lua').write_text('return {\n'+',\n'.join(entries)+'\n}\n')
+ids = [(root/'chrome-id').read_text().strip()]
+if (root/'chrome-packed-id').exists(): ids.append((root/'chrome-packed-id').read_text().strip())
 base={'name':'com.michael.browser_keys','description':'Browser Keys local shortcut bridge','path':str(config/'desktop/bin/browser-keys-host'),'type':'stdio'}
 for browser in ('google-chrome','chromium'):
  directory=config/browser/'NativeMessagingHosts';directory.mkdir(parents=True,exist_ok=True)
- (directory/'com.michael.browser_keys.json').write_text(json.dumps({**base,'allowed_origins':['chrome-extension://'+(root/'chrome-id').read_text().strip()+'/']},indent=2))
+ (directory/'com.michael.browser_keys.json').write_text(json.dumps({**base,'allowed_origins':['chrome-extension://'+ident+'/' for ident in ids]},indent=2))
 directory=home/'.mozilla/native-messaging-hosts';directory.mkdir(parents=True,exist_ok=True)
 (directory/'com.michael.browser_keys.json').write_text(json.dumps({**base,'allowed_extensions':['browser-keys@michael.local']},indent=2))
 subprocess.run(['hyprctl','reload'],check=True)

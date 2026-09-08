@@ -80,3 +80,8 @@ obsidian/id
 # Browser Keys includes its own Zen extension source.
 !browser-keys/zen/
 !browser-keys/zen/**
+
+# Local extension signing material and generated packages.
+/browser-keys/*.pem
+/browser-keys/**/*.pem
+/browser-keys/*.crx
