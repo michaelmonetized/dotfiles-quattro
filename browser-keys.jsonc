@@ -1,0 +1,131 @@
+// Edit bindings, then run ~/.config/desktop/bin/browser-keys-install
+{
+  "bindings": {
+    "SUPER + ALT + UP": {
+      "action": "previous-tab"
+    },
+    "SUPER + ALT + DOWN": {
+      "action": "next-tab"
+    },
+    "SUPER + T": {
+      "action": "new-tab"
+    },
+    "SUPER + W": {
+      "action": "close-tab"
+    },
+    "SUPER + SHIFT + T": {
+      "action": "restore-tab"
+    },
+    "SUPER + R": {
+      "action": "reload"
+    },
+    "SUPER + SHIFT + R": {
+      "action": "reload-no-cache"
+    },
+    "SUPER + N": {
+      "action": "new-window"
+    },
+    "SUPER + SHIFT + N": {
+      "action": "private-window"
+    },
+    "SUPER + SHIFT + W": {
+      "action": "close-window"
+    },
+    "SUPER + SHIFT + D": {
+      "action": "pin-tab"
+    },
+    "SUPER + M": {
+      "action": "mute-tab"
+    },
+    "SUPER + H": {
+      "action": "history"
+    },
+    "SUPER + ALT + H": {
+      "action": "history"
+    },
+    "SUPER + SHIFT + C": {
+      "action": "copy-url"
+    },
+    "SUPER + ALT + SHIFT + C": {
+      "action": "copy-url-markdown"
+    },
+    "CTRL + D": {
+      "action": "duplicate-tab"
+    },
+    "SUPER + code:34": {
+      "action": "back"
+    },
+    "SUPER + code:35": {
+      "action": "forward"
+    },
+    "SUPER + code:21": {
+      "action": "zoom-in"
+    },
+    "SUPER + code:20": {
+      "action": "zoom-out"
+    },
+    "SUPER + ALT + SHIFT + 0": {
+      "action": "zoom-reset"
+    },
+    "SUPER + code:10": {
+      "action": "tab-1"
+    },
+    "SUPER + code:11": {
+      "action": "tab-2"
+    },
+    "SUPER + code:12": {
+      "action": "tab-3"
+    },
+    "SUPER + code:13": {
+      "action": "tab-4"
+    },
+    "SUPER + code:14": {
+      "action": "tab-5"
+    },
+    "SUPER + code:15": {
+      "action": "tab-6"
+    },
+    "SUPER + code:16": {
+      "action": "tab-7"
+    },
+    "SUPER + code:17": {
+      "action": "tab-8"
+    },
+    "SUPER + code:18": {
+      "action": "tab-9"
+    },
+    "SUPER + L": {
+      "shortcut": "CTRL + L"
+    },
+    "SUPER + F": {
+      "shortcut": "CTRL + F"
+    },
+    "SUPER + J": {
+      "shortcut": "CTRL + G"
+    },
+    "SUPER + K": {
+      "shortcut": "CTRL + SHIFT + G"
+    },
+    "SUPER + D": {
+      "shortcut": "CTRL + D"
+    },
+    "SUPER + P": {
+      "shortcut": "CTRL + P"
+    },
+    "SUPER + S": {
+      "shortcut": "CTRL + S"
+    },
+    "SUPER + SLASH": {
+      "shortcut": "CTRL + L"
+    },
+    "SUPER + SHIFT + E": {
+      "shortcut": "CTRL + SHIFT + J"
+    },
+    "SUPER + ALT + J": {
+      "shortcut": "CTRL + U"
+    },
+    "SUPER + SHIFT + I": {
+      "shortcut": "CTRL + SHIFT + I"
+    }
+  }
+}

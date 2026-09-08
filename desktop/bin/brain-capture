@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+"""Atomic source collections, content deduplication and a durable processing queue."""
+import datetime, fcntl, hashlib, json, os, pathlib, shutil, subprocess, sys, tempfile, urllib.parse, uuid
+ROOT = pathlib.Path(os.environ.get('BRAIN_ROOT', str(pathlib.Path.home() / 'Brain')))
+STATE = pathlib.Path(os.environ.get('BRAIN_CAPTURE_STATE', str(pathlib.Path.home() / '.local/state/brain-capture')))
+STATE.mkdir(parents=True, exist_ok=True)
+def history():
+    return sorted((json.loads(p.read_text()) for p in STATE.glob('*.json')), key=lambda x: x['created'], reverse=True)
+def main():
+    if len(sys.argv) > 1 and sys.argv[1] == 'history':
+        print(json.dumps(history()[:5])); return
+    if len(sys.argv) > 2 and sys.argv[1] == 'retry':
+        ident = sys.argv[2]
+        if not ident or any(c not in '0123456789abcdef-' for c in ident): raise ValueError('Invalid capture id')
+        path = STATE / (ident + '.json')
+        with (STATE / 'capture.lock').open('w') as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            item = json.loads(path.read_text())
+            if item['status'] != 'failed': raise ValueError('Only failed captures can be retried')
+            item['status'] = 'queued'; item['error'] = ''
+            temp = path.with_suffix('.tmp'); temp.write_text(json.dumps(item)); temp.replace(path)
+        subprocess.run(['systemctl', '--user', 'start', '--no-block', 'brain-capture.service'], check=True)
+        print(json.dumps({'ok': True})); return
+    if len(sys.argv) > 2 and sys.argv[1] == 'enqueue':
+        path = pathlib.Path(sys.argv[2]).resolve()
+        path.relative_to((ROOT / 'raw').resolve())
+        fingerprint = hashlib.sha256(path.read_bytes()).hexdigest()
+        with (STATE / 'capture.lock').open('w') as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            if not any(x['digest'] == fingerprint for x in history()):
+                ident = uuid.uuid4().hex
+                item = {'id': ident, 'created': datetime.datetime.now().astimezone().isoformat(), 'title': path.stem, 'path': str(path), 'digest': fingerprint, 'status': 'queued', 'count': 1}
+                temp = STATE / (ident + '.tmp'); temp.write_text(json.dumps(item)); temp.replace(STATE / (ident + '.json'))
+        subprocess.run(['systemctl', '--user', 'start', '--no-block', 'brain-capture.service'], check=True)
+        print(json.dumps({'ok': True})); return
+    request = json.load(sys.stdin)
+    text = request.get('text', '').strip()
+    paths = request.get('files', [])
+    if request.get('clipboard'):
+        types = subprocess.check_output(['wl-paste', '--list-types'], text=True).splitlines()
+        if 'text/uri-list' in types:
+            paths += subprocess.check_output(['wl-paste', '--type', 'text/uri-list'], text=True).splitlines()
+        else:
+            text = subprocess.check_output(['wl-paste', '--no-newline'], text=True).strip()
+    files = []
+    links = []
+    for value in paths:
+        if not value or value.startswith('#'): continue
+        url = urllib.parse.urlparse(value)
+        if url.scheme in ('http', 'https'): links.append(value); continue
+        if url.scheme == 'file' and url.netloc not in ('', 'localhost'): raise ValueError('Only local files are supported')
+        path = pathlib.Path(urllib.parse.unquote(url.path) if url.scheme == 'file' else value).expanduser()
+        if not path.is_file(): raise ValueError(f'Not a regular file: {path}')
+        files.append(path)
+    text = '\n\n'.join(filter(None, [text, *links]))
+    if not text and not files: raise ValueError('Add text, links or files first')
+    digest = hashlib.sha256(text.encode())
+    for path in files:
+        with path.open('rb') as stream:
+            digest.update(hashlib.file_digest(stream, 'sha256').digest())
+    fingerprint = digest.hexdigest()
+    with (STATE / 'capture.lock').open('w') as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        duplicate = next((x for x in history() if x['digest'] == fingerprint), None)
+        if duplicate:
+            print(json.dumps({'ok': True, 'duplicate': True, 'item': duplicate})); return
+        ident = datetime.datetime.now().strftime('%Y-%m-%d-%H%M%S') + '-' + uuid.uuid4().hex[:8]
+        raw = ROOT / 'raw'; raw.mkdir(parents=True, exist_ok=True)
+        stage = pathlib.Path(tempfile.mkdtemp(prefix='.capture-', dir=raw))
+        try:
+            for i, path in enumerate(files): shutil.copy2(path, stage / f'{i+1}-{path.name}')
+            if text: (stage / 'Source.md').write_text(text + '\n')
+            destination = raw / ('Capture ' + ident)
+            stage.rename(destination)
+        except BaseException:
+            shutil.rmtree(stage); raise
+        item = {'id': ident, 'created': datetime.datetime.now().astimezone().isoformat(), 'title': text.splitlines()[0][:100] if text else ', '.join(p.name for p in files)[:100], 'path': str(destination), 'digest': fingerprint, 'status': 'queued', 'count': len(files) + bool(text)}
+        temp = STATE / (ident + '.tmp'); temp.write_text(json.dumps(item)); temp.replace(STATE / (ident + '.json'))
+    if not os.environ.get('BRAIN_CAPTURE_NO_RUN'):
+        subprocess.run(['systemctl', '--user', 'start', '--no-block', 'brain-capture.service'], check=True)
+    print(json.dumps({'ok': True, 'item': item}))
+try: main()
+except Exception as exc:
+    print(json.dumps({'ok': False, 'error': str(exc)})); sys.exit(1)

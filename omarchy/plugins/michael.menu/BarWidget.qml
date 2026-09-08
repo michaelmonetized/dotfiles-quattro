@@ -1,8 +1,15 @@
 import QtQuick
 import qs.Ui
+import Quickshell.Io
 
 BarWidget {
   id: root
+  property string hostname: "…"
+  Process {
+    command: ["sh", "-c", "$HOME/.config/desktop/bin/machine-hostname"]
+    running: true
+    stdout: StdioCollector { onStreamFinished: root.hostname = text.trim() }
+  }
   moduleName: "omarchy.menu"
 
   implicitWidth: button.implicitWidth
@@ -12,7 +19,7 @@ BarWidget {
     id: button
     anchors.fill: parent
     bar: root.bar
-    text: root.setting("label", "󱁏 hpeliteclient")
+    text: "󱁏 " + root.hostname
     horizontalMargin: 12
     onPressed: function(button) {
       if (!root.bar) return

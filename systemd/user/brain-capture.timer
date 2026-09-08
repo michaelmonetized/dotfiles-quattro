@@ -1,0 +1,8 @@
+[Unit]
+Description=Recover queued Brain captures after restart
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=1min
+Unit=brain-capture.service
+[Install]
+WantedBy=timers.target

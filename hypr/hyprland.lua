@@ -10,6 +10,8 @@ dofile((os.getenv("OMARCHY_PATH") or "/usr/share/omarchy") .. "/default/hypr/boo
 -- keeping core window-manager bindings:
 -- omarchy_preinstalled_bindings = false
 
+local browser_keys = dofile(os.getenv("HOME") .. "/.config/browser-keys/hypr.lua")
+
 -- Load Omarchy defaults.
 require("default.hypr.omarchy")
 
@@ -28,3 +30,5 @@ require("default.hypr.toggles")
 
 -- Add any other personal Hyprland configuration below.
 -- o.window("qemu", { workspace = "5" })
+
+browser_keys.install()

@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+import json, os, pathlib, socket, subprocess, sys, uuid
+flavor,action=sys.argv[1:3]
+errors=[]
+for path in (pathlib.Path(os.environ['XDG_RUNTIME_DIR'])/'browser-keys').glob(flavor+'-*.sock'):
+    try:
+        with socket.socket(socket.AF_UNIX) as client:
+            client.settimeout(12);client.connect(str(path))
+            client.sendall(json.dumps({'id':uuid.uuid4().hex,'action':action}).encode())
+            result=json.loads(client.recv(16384))
+            if result.get('ok'): raise SystemExit(0)
+            errors.append(result.get('error','Unknown failure'))
+    except (OSError,ValueError) as e: errors.append(str(e))
+subprocess.run(['notify-send','Browser Keys', '; '.join(errors) or 'Load the Browser Keys extension in this browser first.'])
+raise SystemExit(1)

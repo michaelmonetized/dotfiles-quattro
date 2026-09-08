@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+"""Register native hosts and generate compositor bindings from local JSONC."""
+import json, pathlib, re, subprocess
+home=pathlib.Path.home(); config=home/'.config'; root=config/'browser-keys'
+for flavor in ('chrome', 'zen'):
+ (root/flavor/'background.js').write_text((root/'background.js').read_text())
+source=(config/'browser-keys.jsonc').read_text()
+# Strip JSONC comments without touching quoted strings (including URLs).
+source=re.sub(r'("(?:\\.|[^"\\])*"|//[^\n]*|/\*[\s\S]*?\*/)',lambda m:m[0] if m[0].startswith('"') else '',source)
+source=re.sub(r',\s*([}\]])',r'\1',source)
+data=json.loads(source)
+entries=[]
+for key,value in data['bindings'].items():
+ if not re.fullmatch(r'[A-Za-z0-9_:+ ]+',key): raise ValueError('Invalid key: '+key)
+ if len(value)!=1 or not set(value)<= {'action','shortcut'}: raise ValueError('Use one action or shortcut')
+ if 'action' in value and not re.fullmatch(r'[a-z0-9-]+',value['action']): raise ValueError('Invalid action')
+ entries.append('{key='+json.dumps(key)+','+','.join(k+'='+json.dumps(v) for k,v in value.items())+'}')
+(root/'bindings.lua').write_text('return {\n'+',\n'.join(entries)+'\n}\n')
+base={'name':'com.michael.browser_keys','description':'Browser Keys local shortcut bridge','path':str(config/'desktop/bin/browser-keys-host'),'type':'stdio'}
+for browser in ('google-chrome','chromium'):
+ directory=config/browser/'NativeMessagingHosts';directory.mkdir(parents=True,exist_ok=True)
+ (directory/'com.michael.browser_keys.json').write_text(json.dumps({**base,'allowed_origins':['chrome-extension://'+(root/'chrome-id').read_text().strip()+'/']},indent=2))
+directory=home/'.mozilla/native-messaging-hosts';directory.mkdir(parents=True,exist_ok=True)
+(directory/'com.michael.browser_keys.json').write_text(json.dumps({**base,'allowed_extensions':['browser-keys@michael.local']},indent=2))
+subprocess.run(['hyprctl','reload'],check=True)
+print('Bindings and native hosts installed. Load browser-keys/chrome or browser-keys/zen in the corresponding browser.')

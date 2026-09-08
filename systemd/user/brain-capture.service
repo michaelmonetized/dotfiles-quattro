@@ -1,0 +1,11 @@
+[Unit]
+Description=Process explicitly submitted Brain captures
+[Service]
+Type=oneshot
+ExecStart=%h/.config/desktop/bin/brain-process
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin
+TimeoutStartSec=infinity
+ReadOnlyPaths=%h/Brain/raw
+ProtectHome=read-only
+ReadWritePaths=%h/Brain %h/.local/state/brain-capture %h/.grok
+PrivateTmp=yes

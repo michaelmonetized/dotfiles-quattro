@@ -20,6 +20,10 @@
       ],
       "right": [
         {
+          "id": "michael.brain",
+          "chipColor": "#cdd6f4"
+        },
+        {
           "chipColor": "#cdd6f4",
           "chipLead": "\ue0ca",
           "id": "omarchy.tray"
