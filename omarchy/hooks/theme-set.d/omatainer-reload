@@ -1,0 +1,3 @@
+#!/bin/bash
+# Theme files are watched by omatainer; this is a belt-and-braces ping.
+omatainer ctl reload-theme >/dev/null 2>&1 || true

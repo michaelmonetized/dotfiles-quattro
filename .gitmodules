@@ -1,3 +1,15 @@
 [submodule "omarchy/themes/hurleyus"]
 	path = omarchy/themes/hurleyus
 	url = https://github.com/michaelmonetized/omarchy-hurleyus-theme
+[submodule "omarchy/plugins/netmojo.omdrop"]
+	path = omarchy/plugins/netmojo.omdrop
+	url = https://github.com/brentkearney/omdrop-plugin
+[submodule "omarchy/plugins/nixfred.blip"]
+	path = omarchy/plugins/nixfred.blip
+	url = https://github.com/nixfred/blip
+[submodule "omarchy/plugins/blizl.voxtype-osd"]
+	path = omarchy/plugins/blizl.voxtype-osd
+	url = https://github.com/Blizl/Omarchy-VoxType-OSD
+[submodule "omarchy/plugins/jesperlugner.omaflow"]
+	path = omarchy/plugins/jesperlugner.omaflow
+	url = https://github.com/jlugner/omarchy-omaflow

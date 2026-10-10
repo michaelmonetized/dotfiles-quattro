@@ -1,4 +1,10 @@
 {
+  // keylens:begin
+  "apps.keylens": {"icon":"󰌌","label":"Keylens","action":"/home/michael/.local/bin/keylens settings","description":"Keystrokes · desktop and stream settings"},
+  // keylens:end
+
+  "apps.omatainer": {"icon": "󰝚", "label": "Omatainer", "action": "omarchy-launch-or-focus org.omarchy.omatainer 'uwsm-app -- omatainer'", "description": "DAW + dual-deck DJ"},
+
   // Extend the Quickshell Omarchy menu with JSONC.
   //
   // IDs are object keys. The parent is inferred from the dotted id, so

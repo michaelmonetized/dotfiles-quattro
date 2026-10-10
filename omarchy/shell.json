@@ -24,12 +24,22 @@
           "chipColor": "#cdd6f4"
         },
         {
+          "id": "io.github.thisisgm.flea-shelf"
+        },
+        {
           "chipColor": "#cdd6f4",
           "chipLead": "\ue0ca",
           "id": "omarchy.tray"
         },
         {
           "id": "netmojo.omdrop"
+        },
+        {
+          "id": "nixfred.blip"
+        },
+        {
+          "chipColor": "#cdd6f4",
+          "id": "michael.ghrepos"
         },
         {
           "chipColor": "#cdd6f4",
@@ -61,6 +71,10 @@
         {
           "chipColor": "#f38ba8",
           "id": "omarchy.audio"
+        },
+        {
+          "id": "omatainer",
+          "chipColor": "#f38ba8"
         },
         {
           "id": "omastreamer",
@@ -113,6 +127,9 @@
     },
     {
       "id": "omastreamer"
+    },
+    {
+      "id": "omatainer"
     }
   ],
   "version": 1
