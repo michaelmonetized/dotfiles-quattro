@@ -107,7 +107,7 @@ obs-studio/plugin_config/obs-browser/
 omadesign/telemetry-state.json
 
 # ---- Credentials and sessions (never commit) ----
-slopops/
+/slopops/
 resend/credentials.json
 icloudpd/
 keylens/stream-token
