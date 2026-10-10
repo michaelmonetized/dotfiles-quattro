@@ -37,7 +37,6 @@ return {
 {key="SUPER + D",shortcut="CTRL + D"},
 {key="SUPER + P",shortcut="CTRL + P"},
 {key="SUPER + S",shortcut="CTRL + S"},
-{key="SUPER + SLASH",shortcut="CTRL + L"},
 {key="SUPER + SHIFT + E",shortcut="CTRL + SHIFT + J"},
 {key="SUPER + ALT + J",shortcut="CTRL + U"},
 {key="SUPER + SHIFT + I",shortcut="CTRL + SHIFT + I"}

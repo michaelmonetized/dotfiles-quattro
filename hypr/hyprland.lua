@@ -23,7 +23,8 @@ require("hypr.input")
 require("hypr.bindings")
 require("hypr.looknfeel")
 require("hypr.autostart")
-require("hypr.apps.synchro")
+require("hypr.apps.omatainer")
+require("hypr.apps.showmethekey")
 
 -- Toggle config flags dynamically.
 require("default.hypr.toggles")
@@ -32,3 +33,9 @@ require("default.hypr.toggles")
 -- o.window("qemu", { workspace = "5" })
 
 browser_keys.install()
+
+-- Browser-key install captures the desktop command that used to sit on a
+-- chord and runs it outside browser windows. These two must stay unbound
+-- after that install, or Super+/ scales the panel again.
+hl.unbind("SUPER + SLASH")
+hl.unbind("SUPER + ALT + SLASH")

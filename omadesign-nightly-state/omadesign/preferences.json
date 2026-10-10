@@ -1,0 +1,13 @@
+{
+  "start_tab": "welcome",
+  "start_page": "remember_last",
+  "last_mode": "design",
+  "last_page": "recents",
+  "ui_font": "",
+  "ui_font_size": 13,
+  "anonymous_usage": false,
+  "check_updates": true,
+  "guides_locked_by_default": true,
+  "show_rulers": true,
+  "show_key_hud": true
+}

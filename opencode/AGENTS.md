@@ -1,0 +1,1 @@
+/home/michael/.config/agents/AGENTS.md

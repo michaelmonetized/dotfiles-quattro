@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+"""Recursively reconcile raw sources with the durable Brain queue.
+
+Polling also works for synchronized folders and recovers changes after downtime.
+Only the first run baselines existing files; subsequent runs enqueue changes.
+"""
+import fcntl
+import json
+import os
+from pathlib import Path
+import subprocess
+import time
+
+
+ROOT = Path(os.environ.get('BRAIN_ROOT', str(Path.home() / 'Brain')))
+STATE = Path(os.environ.get('BRAIN_CAPTURE_STATE', str(Path.home() / '.local/state/brain-capture')))
+CAPTURE = Path(__file__).with_name('brain-capture')
+INTERVAL = float(os.environ.get('BRAIN_WATCH_INTERVAL', '2'))
+SETTLE = float(os.environ.get('BRAIN_WATCH_SETTLE', '10'))
+
+
+def inventory(raw):
+    found = {}
+    # Do not follow symlinks or ingest editor/download staging files.
+    for directory, dirs, files in os.walk(raw, followlinks=False, onerror=lambda exc: (_ for _ in ()).throw(exc)):
+        dirs[:] = [d for d in dirs if not d.startswith('.') and not (Path(directory) / d).is_symlink()]
+        for name in files:
+            if name.startswith('.') or name.endswith(('~', '.tmp', '.part', '.crdownload', '.swp', '.swx')):
+                continue
+            path = Path(directory) / name
+            try:
+                if path.is_symlink() or not path.is_file():
+                    continue
+                stat = path.stat()
+            except FileNotFoundError:
+                continue
+            found[str(path.relative_to(raw))] = [stat.st_ino, stat.st_size, stat.st_mtime_ns, stat.st_ctime_ns]
+    return found
+
+
+def save(path, value):
+    temp = path.with_suffix('.tmp')
+    with temp.open('w') as stream:
+        json.dump(value, stream)
+        stream.flush()
+        os.fsync(stream.fileno())
+    temp.replace(path)
+
+
+def main():
+    STATE.mkdir(parents=True, exist_ok=True)
+    with (STATE / 'watch.lock').open('w') as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        raw = ROOT / 'raw'
+        if not raw.is_dir():
+            raise RuntimeError(f'Missing raw source directory: {raw}')
+        checkpoint = STATE / 'watch.state'
+        if checkpoint.exists():
+            known = json.loads(checkpoint.read_text())
+        else:
+            known = inventory(raw)
+            save(checkpoint, known)
+            print(f'Baselined {len(known)} existing sources; watching for new saves', flush=True)
+        pending = {}
+        while True:
+            if not raw.is_dir():
+                raise RuntimeError(f'Raw source directory disappeared: {raw}')
+            current = inventory(raw)
+            now = time.monotonic()
+            dirty = False
+            for name in list(known):
+                if name not in current:
+                    del known[name]
+                    dirty = True
+            for name in list(pending):
+                if name not in current:
+                    del pending[name]
+            for name, signature in current.items():
+                if known.get(name) == signature:
+                    pending.pop(name, None)
+                    continue
+                if name not in pending or pending[name][0] != signature:
+                    pending[name] = (signature, now)
+                    continue
+                if now - pending[name][1] < SETTLE:
+                    continue
+                result = subprocess.run([str(CAPTURE), 'enqueue', str(raw / name)], capture_output=True, text=True, timeout=120)
+                if result.returncode:
+                    print(f'Queue failed for {name!r}: {result.stdout} {result.stderr}', flush=True)
+                    pending[name] = (signature, now)
+                    continue
+                known[name] = signature
+                del pending[name]
+                dirty = True
+                print(f'Reconciled source: {name}', flush=True)
+            if dirty:
+                save(checkpoint, known)
+            time.sleep(INTERVAL)
+
+
+if __name__ == '__main__':
+    main()

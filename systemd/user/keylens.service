@@ -1,0 +1,14 @@
+[Unit]
+Description=Keylens native keystroke visualizer
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart="/home/michael/.local/bin/keylens" start
+Restart=always
+RestartSec=2
+TimeoutStopSec=5
+
+[Install]
+WantedBy=graphical-session.target

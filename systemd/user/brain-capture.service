@@ -1,5 +1,5 @@
 [Unit]
-Description=Process explicitly submitted Brain captures
+Description=Process queued Brain captures and watched raw sources
 [Service]
 Type=oneshot
 ExecStart=%h/.config/desktop/bin/brain-process

@@ -1,0 +1,16 @@
+[Unit]
+Description=Watch Brain raw sources and queue new saves for Grok
+
+[Service]
+Type=simple
+ExecStart=%h/.config/desktop/bin/brain-watch
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin
+Restart=on-failure
+RestartSec=5
+ProtectHome=read-only
+ReadWritePaths=%h/.local/state/brain-capture
+PrivateTmp=yes
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=default.target

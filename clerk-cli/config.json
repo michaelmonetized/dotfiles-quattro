@@ -1,0 +1,197 @@
+{
+  "profiles": {
+    "github.com/hurleyus/s12.in": {
+      "workspaceId": "",
+      "appId": "app_391J54eO9eh0ACKVzATosUqL0Nw",
+      "appName": "S12 URL Shortener",
+      "instances": {
+        "development": "ins_391J54WfTtmT2UekZaDJjaN8TOT",
+        "production": "ins_3J5nRE0wz5pbBPaOYT6HTTDiUoo"
+      }
+    },
+    "github.com/hurleyus/reaferral": {
+      "workspaceId": "",
+      "appId": "app_39DvZc0LYiNlOS2p1OtmSVyFJ1f",
+      "appName": "Reaferral",
+      "instances": {
+        "development": "ins_39DvZZTiR0MACKItMmmwjMOF62H",
+        "production": "ins_3J5nqtQeIRRZi7wnfQMBWu6cjT2"
+      }
+    },
+    "github.com/hurleyus/ileague.golf": {
+      "workspaceId": "",
+      "appId": "app_391KKvCFFCOJWyTeKHQmPKbi6nX",
+      "appName": "iLeague Golf",
+      "instances": {
+        "development": "ins_391KL0GAK6s5u4dzHWrqvg9TuFi",
+        "production": "ins_3J5okwr98QsMMi7PnplJ3YGjawp"
+      }
+    },
+    "github.com/hurleyus/itour.golf": {
+      "workspaceId": "",
+      "appId": "app_39Ix2B3jRiHOG6TmcL28OksPbBt",
+      "appName": "iTour Golf",
+      "instances": {
+        "development": "ins_39Ix2APPNeGpLJNpL8bYQ5aSP9S",
+        "production": "ins_3J5owQ6YJO8fPT1R7ZhoGqkY562"
+      }
+    },
+    "github.com/hurleyus/cravees.com": {
+      "workspaceId": "",
+      "appId": "app_391I0iQQuUzIyCNWKAlPuhOQNbs",
+      "appName": "Cravees",
+      "instances": {
+        "development": "ins_391I0hsolAViTXdFzIZjiuKUEFg",
+        "production": "ins_3J5ozs9WBxj4SGYSIHyjwhCxr4N"
+      }
+    },
+    "github.com/hurleyus/coordinatorapp.com": {
+      "workspaceId": "",
+      "appId": "app_391HmHfA6fbj9mwzx3XrPX6eIY1",
+      "appName": "Coordinator App",
+      "instances": {
+        "development": "ins_391HmGHgqBCrTg6TYgyGwE0Qh6d",
+        "production": "ins_3J5pBtDRE6iei4BIPGpp6pMnEgR"
+      }
+    },
+    "github.com/hurleyus/michaelchurley.com": {
+      "workspaceId": "",
+      "appId": "app_39Ckhv8DIccwpNn6iEyivmHT2LV",
+      "appName": "michaelchurley.com",
+      "instances": {
+        "development": "ins_39CkhuEP9WDkHLEAWJruePnqNsq"
+      }
+    },
+    "github.com/hurleyus/merchwinner.com": {
+      "workspaceId": "",
+      "appId": "app_391IrueWUqAW7Swe9nvIvlKXu1D",
+      "appName": "Merch Winner",
+      "instances": {
+        "development": "ins_391IroTK0pmsNU8YbQTSxGHqdef"
+      }
+    },
+    "github.com/michaelmonetized/kitchen": {
+      "workspaceId": "",
+      "appId": "app_3FKGf5FjU0xo2auiacRVidD84r0",
+      "appName": "Kitchen",
+      "instances": {
+        "development": "ins_3FKGfAdsyuUXxAjtnkEzXFT1RWC"
+      }
+    },
+    "github.com/hurleyus/www.yourzaxbys.com": {
+      "workspaceId": "",
+      "appId": "app_33VnA7F666MfnAo3VKDDvI4IMBz",
+      "appName": "Your Zaxby's",
+      "instances": {
+        "development": "ins_33VnABRTBYqRR47K3SlCOFBorWE"
+      }
+    },
+    "github.com/hurleyus/waynesville.yourzaxbys.com": {
+      "workspaceId": "",
+      "appId": "app_313FQ8pIGCxkh46CJdPnAbCTnW3",
+      "appName": "Zaxby's Chicken Fingers + Wings Waynesville, NC",
+      "instances": {
+        "development": "ins_313FQ8TGk38mhHXhmUlChyP6Z3P",
+        "production": "ins_313yDmk2pguX78iIFv5q151jmaE"
+      }
+    },
+    "github.com/michaelmonetized/launchpad": {
+      "workspaceId": "",
+      "appId": "app_39Iw2lJZCkgAmyHrfurdlQKLP9x",
+      "appName": "launchpad",
+      "instances": {
+        "development": "ins_39Iw2o6tMOXLzfkpuGsIBXfnwTz"
+      }
+    },
+    "github.com/michaelmonetized/codefolio": {
+      "workspaceId": "",
+      "appId": "app_39M4iPXok3VyK9erRZmanTEEAn9",
+      "appName": "codefolio",
+      "instances": {
+        "development": "ins_39M4iMkCAWpbXMbf0LXPPNwQV3n"
+      }
+    },
+    "github.com/hurleyus/citation-manager": {
+      "workspaceId": "",
+      "appId": "app_3BJQH5LifXCvEY3gc1msaAsnPyp",
+      "appName": "Citation Manager",
+      "instances": {
+        "development": "ins_3BJQH7TjQVchXpltis6KasH8EmT"
+      }
+    },
+    "github.com/hustle-launch/mission-control-os": {
+      "workspaceId": "",
+      "appId": "app_3HMFcySnDh7BpLS2BZU2e4BzvT9",
+      "appName": "Mission Control OS",
+      "instances": {
+        "development": "ins_3HMFcyLvtTR4eMUzbiexuhsiZ0f"
+      }
+    },
+    "github.com/hurleyus/uncap.us": {
+      "workspaceId": "",
+      "appId": "app_391JV526iTmnxl0GHUURLVHMYDY",
+      "appName": "uncap.us",
+      "instances": {
+        "development": "ins_391JV78nmFA3rDpz565hyH4C3Am",
+        "production": "ins_3DMja0nEl9gLWbj4dpzC35F1F5d"
+      }
+    },
+    "github.com/hurleyus/bestwnc.com": {
+      "workspaceId": "",
+      "appId": "app_391L57bX9Agn5VyjVFIKOeL6IiD",
+      "appName": "Best WNC",
+      "instances": {
+        "development": "ins_391L54BlM0fErXr4EEVUtzShY4f",
+        "production": "ins_3Afe9lt5g4VktXRvevSgCiXerVL"
+      }
+    },
+    "github.com/michaelmonetized/hms": {
+      "workspaceId": "",
+      "appId": "app_3HrdizdsDHqK1WX5Q2pV5Hq3QIu",
+      "appName": "HMS",
+      "instances": {
+        "development": "ins_3HrdixmWPVbuxUknxslEDCH7A82"
+      }
+    },
+    "github.com/hurleyus/santabox.org": {
+      "workspaceId": "",
+      "appId": "app_391K8DDI9ywTcBMSjKvezt3qOZT",
+      "appName": "Santa Box",
+      "instances": {
+        "development": "ins_391K877A5ehS7L2POjJ9kwOedgW"
+      }
+    },
+    "github.com/hurleyus/wnchistorytours.com": {
+      "workspaceId": "",
+      "appId": "app_391La980wes8L9e87J2E15Yo1A7",
+      "appName": "WNC History Tours",
+      "instances": {
+        "development": "ins_391La8nakMngSPe0oLUqgiuPObL"
+      }
+    },
+    "github.com/hurleyus/getfarmin.com": {
+      "workspaceId": "",
+      "appId": "app_391IdjoCbdnucysKadxN4htiAW4",
+      "appName": "Get Farmin",
+      "instances": {
+        "development": "ins_391IdqVLqUnBLGufiMLYAWZvucg"
+      }
+    },
+    "github.com/michaelmonetized/omadesign": {
+      "workspaceId": "",
+      "appId": "app_3JYE4IKxwgZBZ5k55khOaRGRRZz",
+      "appName": "Omadesign",
+      "instances": {
+        "development": "ins_3JYE4HkUULol4wXImjORyuhOzQS",
+        "production": "ins_3JYEGt0d9ofsF3nmOquGlZkCU6i"
+      }
+    }
+  },
+  "machineUuid": "432103ee-6e7c-4448-9780-8d6e875a388d",
+  "telemetryNoticeShown": true,
+  "auth": {
+    "production": {
+      "userId": "user_2hpJjxWL1FDnFK7N5zdGWqO5w4z"
+    }
+  }
+}

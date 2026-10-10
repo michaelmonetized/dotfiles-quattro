@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "node_id": "7a12f4a8-735a-4706-8146-125f6e95e5a7",
+  "node_name": "m1pro16",
+  "peers": [
+    {
+      "name": "intelpro",
+      "ssh_command": "ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes michael@100.79.126.75"
+    },
+    {
+      "name": "hpeliteclient",
+      "ssh_command": "ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes michael@100.117.134.70"
+    },
+    {
+      "name": "m1pro13",
+      "ssh_command": "ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes hustlelaunch@100.66.53.120"
+    }
+  ],
+  "max_bytes": 268435456,
+  "poll_interval_ms": 75,
+  "headless_x11": false
+}

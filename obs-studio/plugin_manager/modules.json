@@ -12,5 +12,42 @@
             "enhanceportrait"
         ],
         "version": ""
+    },
+    {
+        "display_name": "",
+        "enabled": true,
+        "encoders": [],
+        "id": "",
+        "module_name": "keylens",
+        "outputs": [],
+        "services": [],
+        "sources": [
+            "keylens_source"
+        ],
+        "version": ""
+    },
+    {
+        "display_name": "",
+        "enabled": true,
+        "encoders": [],
+        "id": "",
+        "module_name": "obs-browser",
+        "outputs": [],
+        "services": [],
+        "sources": [
+            "browser_source"
+        ],
+        "version": ""
+    },
+    {
+        "display_name": "",
+        "enabled": true,
+        "encoders": [],
+        "id": "",
+        "module_name": "linux-hyprland",
+        "outputs": [],
+        "services": [],
+        "sources": [],
+        "version": ""
     }
 ]

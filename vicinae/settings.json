@@ -13,9 +13,150 @@
    "imports": [
       "./managed.json"
    ],
+   "wrap_navigation": true,
+   "font": {
+      "rendering": "native",
+      "normal": {
+         "family": "NotoSansM Nerd Font Mono",
+         "size": 16
+      }
+   },
+   "theme": {
+      "dark": {
+         "icon_theme": "Yaru-blue-dark"
+      }
+   },
+   "launcher_window": {
+      "opacity": 0.8,
+      "client_side_decorations": {
+         "shadow_size": 12
+      }
+   },
+   "keybinds": {
+      "toggle-action-panel": "super+K"
+   },
    "favorites": [
       "applications:org.omarchy.synchro",
       "@franzwilhelm/search-router:search",
       "clipboard:history"
-   ]
+   ],
+   "providers": {
+      "@ThatNerd/timers": {
+         "preferences": {
+            "closeWindowOnTimerStart": false,
+            "copyOnSwStop": false,
+            "customTimerFormBypass": false,
+            "newTimerInputOrder": "Hours , Minutes, Seconds",
+            "ringContinuously": true,
+            "selectedSound": "alarmClock.wav",
+            "showMenuBarIconWhen": "always",
+            "showTitleInMenuBar": true,
+            "volumeSetting": "1"
+         }
+      },
+      "@akshay_k/vim-leader-key": {
+         "preferences": {
+            "enableTimeout": false,
+            "openUrlsInActiveBrowser": true,
+            "timeoutSeconds": "2.5"
+         }
+      },
+      "@anwarulislam/ruler": {
+         "preferences": {
+            "copyToClipboard": true,
+            "dragMode": true
+         }
+      },
+      "@asubbotin/shell": {
+         "preferences": {
+            "arguments_terminal": false,
+            "arguments_terminal_type": "ghostty"
+         }
+      },
+      "@erics118/change-case": {
+         "preferences": {
+            "AlternatingCase": true,
+            "CamelCase": true,
+            "CapitalCase": true,
+            "ConstantCase": true,
+            "DotCase": true,
+            "HeaderCase": true,
+            "KebabCase": true,
+            "KebabUpperCase": true,
+            "LowerCase": true,
+            "LowerFirst": true,
+            "NoCase": true,
+            "PascalCase": true,
+            "PascalSnakeCase": true,
+            "PathCase": true,
+            "RandomCase": true,
+            "SentenceCase": true,
+            "SnakeCase": true,
+            "SwapCase": true,
+            "TitleCase": true,
+            "UpperCase": true,
+            "UpperFirst": true,
+            "action": "paste",
+            "exceptions": "iOS, iPadOS, iPhone, macOS, tvOS, watchOS",
+            "hideHUD": false,
+            "popToRoot": false,
+            "prefixCharacters": "",
+            "preserveCase": true,
+            "preservePunctuation": true,
+            "source": "selected",
+            "suffixCharacters": ""
+         }
+      },
+      "@marcjulian/obsidian": {
+         "preferences": {
+            "configFileName": ".obsidian",
+            "vaultPath": "~/Brain"
+         }
+      },
+      "@moored/git-repos": {
+         "preferences": {
+            "includeSubmodules": false,
+            "openWith1": "Visual Studio Code",
+            "openWith2": "Finder",
+            "openWith3": "",
+            "openWith4": "",
+            "openWith5": "",
+            "repoScanDepth": "3",
+            "repoScanPath": "~/Projects",
+            "searchKeys": "name"
+         }
+      },
+      "@mrpunkin/raycast-zoxide": {
+         "preferences": {
+            "open-in": "Synchro",
+            "open-in-editor": "nvim",
+            "open-in-terminal": "Ghostty",
+            "search-mode": "fuzzy"
+         }
+      },
+      "@ozencb/obsidian-tasks": {
+         "preferences": {
+            "filePath": "/home/michael/Brain/TASKS.md",
+            "maxMenubarDescriptionLength": "30",
+            "menubarTaskCount": true,
+            "refreshIntervalInMinutes": "1",
+            "showDueDate": true,
+            "showIcon": true,
+            "showOnlyCurrent": true,
+            "sortByPriority": true
+         }
+      },
+      "@tegola/remove-paywall": {
+         "preferences": {
+            "service": "https://freedium-mirror.cfd"
+         }
+      },
+      "@thomas/downloads-manager": {
+         "preferences": {
+            "deletionBehavior": "trash",
+            "downloadsFolder": "/home/michael/Downloads",
+            "lastestDownloadOrder": "modifiedTime"
+         }
+      }
+   }
 }

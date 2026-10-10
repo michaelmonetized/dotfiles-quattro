@@ -1,0 +1,4 @@
+# omarchy-icloud-photos configuration, sourced by omarchy-icloud-photos-sync
+APPLE_ID=everythingmonetized@icloud.com
+# APPLE_ID is filled in by the sign-in card in the app.
+LIBRARY=$HOME/Pictures/iCloud

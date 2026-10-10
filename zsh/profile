@@ -38,6 +38,8 @@ if [[ -n "${PNPM_HOME:-}" ]]; then
   esac
 fi
 
+export MISE_QUIET=1
+
 [[ ! -f ~/.config/zsh/ai ]] || source ~/.config/zsh/ai
 [[ ! -f ~/.config/zsh/zinit ]] || source ~/.config/zsh/zinit
 [[ ! -f ~/.config/zsh/keybindings ]] || source ~/.config/zsh/keybindings

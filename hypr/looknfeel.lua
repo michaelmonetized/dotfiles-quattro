@@ -1,7 +1,7 @@
 -- Change the default Omarchy look'n'feel.
 
 -- Default rule is 0.985 / 0.96. Nudge the focused window a hair more open.
-o.window({ tag = "default-opacity" }, { opacity = "0.90 0.86" })
+o.window({ tag = "default-opacity" }, { opacity = "1.00 0.86" })
 
 -- Omasnap capture/annotation overlay: no animation, never screen-shared.
 hl.layer_rule({

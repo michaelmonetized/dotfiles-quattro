@@ -1,0 +1,8 @@
+[Unit]
+Description=GoPro HERO6 Wi-Fi webcam
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/gopro-webcam
+KillMode=mixed
+TimeoutStopSec=40

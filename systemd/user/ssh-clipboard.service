@@ -1,0 +1,13 @@
+[Unit]
+Description=Native encrypted clipboard sync over SSH
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart="/home/michael/.local/bin/ssh-clipboard" daemon
+Restart=always
+RestartSec=1
+PassEnvironment=DISPLAY WAYLAND_DISPLAY XDG_RUNTIME_DIR DBUS_SESSION_BUS_ADDRESS
+
+[Install]
+WantedBy=default.target

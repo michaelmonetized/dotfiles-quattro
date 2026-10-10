@@ -24,14 +24,23 @@ def main():
     if len(sys.argv) > 2 and sys.argv[1] == 'enqueue':
         path = pathlib.Path(sys.argv[2]).resolve()
         path.relative_to((ROOT / 'raw').resolve())
-        fingerprint = hashlib.sha256(path.read_bytes()).hexdigest()
+        before = path.stat()
+        with path.open('rb') as stream:
+            fingerprint = hashlib.file_digest(stream, 'sha256').hexdigest()
+        after = path.stat()
+        if (before.st_ino, before.st_size, before.st_mtime_ns) != (after.st_ino, after.st_size, after.st_mtime_ns):
+            raise ValueError('Source changed while being read; retry after saving finishes')
         with (STATE / 'capture.lock').open('w') as lock:
             fcntl.flock(lock, fcntl.LOCK_EX)
-            if not any(x['digest'] == fingerprint for x in history()):
+            items = history()
+            covered = any(pathlib.Path(x['path']).is_dir() and path.is_relative_to(pathlib.Path(x['path']))
+                          and after.st_ctime <= datetime.datetime.fromisoformat(x['created']).timestamp() for x in items)
+            if not covered and not any(x['digest'] == fingerprint for x in items):
                 ident = uuid.uuid4().hex
                 item = {'id': ident, 'created': datetime.datetime.now().astimezone().isoformat(), 'title': path.stem, 'path': str(path), 'digest': fingerprint, 'status': 'queued', 'count': 1}
                 temp = STATE / (ident + '.tmp'); temp.write_text(json.dumps(item)); temp.replace(STATE / (ident + '.json'))
-        subprocess.run(['systemctl', '--user', 'start', '--no-block', 'brain-capture.service'], check=True)
+        if not os.environ.get('BRAIN_CAPTURE_NO_RUN'):
+            subprocess.run(['systemctl', '--user', 'start', '--no-block', 'brain-capture.service'], check=True)
         print(json.dumps({'ok': True})); return
     request = json.load(sys.stdin)
     text = request.get('text', '').strip()

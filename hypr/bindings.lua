@@ -193,13 +193,13 @@ local ws_to_name = {
 
 for workspace = 1, 10 do
 	local key = ws_to_key[workspace]
-	if key ~= "C" then -- C is freed for SUPER+ALT+C screenshot
-		local name = ws_to_name[workspace]
-		o.bind(
-			"SUPER + ALT + " .. key,
-			"Move window to " .. name .. " space",
-			hl.dsp.window.move({ workspace = tostring(workspace) })
-		)
+	local name = ws_to_name[workspace]
+	o.bind(
+		"SUPER + ALT + " .. key,
+		"Move window to " .. name .. " space",
+		hl.dsp.window.move({ workspace = tostring(workspace) })
+	)
+	if key ~= "C" then
 		o.bind(
 			"SUPER + SHIFT + ALT + " .. key,
 			"Silently move window to " .. name .. " space",
@@ -247,16 +247,13 @@ o.bind(hyper .. " + SLASH", "Dictate prompt", text_ai .. " dictate")
 -- Omastreamer: OBS chords via websocket so they work without OBS focus.
 -- Hyper includes Shift, so scene digits must bind the physical keycode.
 for i = 1, 9 do
-	o.bind(
-		hyper .. " + code:" .. tostring(i + 9),
-		"OBS scene " .. i,
-		"omarchy-shell -q omastreamer scene " .. i
-	)
+	o.bind(hyper .. " + code:" .. tostring(i + 9), "OBS scene " .. i, "omarchy-shell -q omastreamer scene " .. i)
 end
 o.bind(hyper .. " + code:19", "OBS scene 10", "omarchy-shell -q omastreamer scene 10")
 o.bind(hyper .. " + S", "OBS stream toggle", "omarchy-shell -q omastreamer toggleStream")
 o.bind(hyper .. " + R", "OBS record toggle", "omarchy-shell -q omastreamer toggleRecord")
-o.bind(hyper .. " + F5", "OBS mute all audio", "omarchy-shell -q omastreamer toggleMute")
+hl.unbind(hyper .. " + F5") -- Formerly OBS mute; moved to F7.
+o.bind(hyper .. " + F7", "OBS mute all audio", "omarchy-shell -q omastreamer toggleMute")
 
 -- Forward chords to the focused app. Explicit down/up split avoids Hyprland
 -- send_shortcut leaving synthetic key state stuck (see default clipboard.lua).
@@ -271,14 +268,12 @@ local function send_chord(mods, key)
 	end
 end
 
-hl.unbind("SUPER + ALT + C")
-o.bind("SUPER + ALT + C", "Screenshot", "omasnap")
+o.bind("SUPER + ALT + 2", "Screenshot", "omasnap")
 
--- Super+Shift+F was unbound with the rest of Omarchy's defaults.
--- Synchro overlay: Nautilus stays the folder MIME default.
-hl.unbind("SUPER + ALT + SHIFT + F")
-o.bind("ALT + grave", "Toggle Synchro", os.getenv("HOME") .. "/.config/desktop/bin/synchro-toggle")
-o.bind("SUPER + grave", "Synchro (cwd)", { omarchy = "synchro-cwd" })
+hl.unbind("ALT + grave")
+o.bind("ALT + grave", "Toggle Flea", os.getenv("HOME") .. "/.config/desktop/bin/flea-toggle")
+hl.unbind("SUPER + grave")
+o.bind("SUPER + grave", "Flea (cwd)", "flea --gui \"$(omarchy-cmd-terminal-cwd)\"")
 
 hl.unbind("SUPER + A")
 o.bind("SUPER + A", "Select all", send_chord("CTRL", "A"))
@@ -321,4 +316,78 @@ hl.unbind(hyper .. " + E")
 hl.unbind(hyper .. " + B")
 o.bind(hyper .. " + W", "Dictate in Omawrite", os.getenv("HOME") .. "/.config/desktop/bin/omawrite-dictate")
 o.bind(hyper .. " + E", "Omawrite", "omawrite")
-o.bind(hyper .. " + B", "Brain in Synchro", "synchro ~/Brain")
+o.bind(hyper .. " + B", "Brain in Flea", "flea --gui ~/Brain")
+
+-- omatainer
+o.bind("SUPER + O", "Omatainer", o.launch_sole("org.omarchy.omatainer", "omatainer"))
+o.bind("SUPER + SHIFT + SPACE", "Omatainer play/stop", "omatainer ctl togglePlay")
+
+-- Theme switching (demo-friendly).
+o.bind("ALT + SHIFT + SPACE", "Theme menu", "omarchy-menu toggle theme")
+o.bind("ALT + CTRL + SPACE", "Next theme", os.getenv("HOME") .. "/.local/bin/omarchy-theme-cycle")
+o.bind("ALT + CTRL + SHIFT + SPACE", "Previous theme", os.getenv("HOME") .. "/.local/bin/omarchy-theme-cycle prev")
+
+-- Demo capture: smart region/window picker and a repeatable 1080p canvas.
+o.bind(hyper .. " + F5", "Record region/window (start/stop)", os.getenv("HOME") .. "/.local/bin/demo-screenrecord")
+function demo_window_1080p()
+	local window = hl.get_active_window()
+	if
+		window
+		and window.floating
+		and window.size
+		and math.abs(window.size.x - 1920) <= 40
+		and math.abs(window.size.y - 1080) <= 40
+	then
+		hl.dispatch(hl.dsp.window.float({ action = "off" }))
+		return
+	end
+	hl.dispatch(hl.dsp.window.fullscreen({ action = "unset", layout_aware = false }))
+	hl.dispatch(hl.dsp.window.float({ action = "on" }))
+	hl.dispatch(hl.dsp.window.resize({ x = 1920, y = 1080, relative = false }))
+	hl.dispatch(hl.dsp.window.center())
+end
+o.bind(hyper .. " + F6", "Toggle floating 1920x1080 window / tiled", demo_window_1080p)
+
+-- Compact floating side window, or return to normal tiling.
+function toggle_float_width_20()
+	local window = hl.get_active_window()
+	if not window or not window.monitor then
+		return
+	end
+	local monitor = window.monitor
+	local mw, mh = monitor.width / monitor.scale, monitor.height / monitor.scale
+	if monitor.transform % 2 == 1 then
+		mw, mh = mh, mw
+	end
+	local width = math.floor(mw * 0.20 + 0.5)
+	local x, y = monitor.x + 20, monitor.y + monitor.reserved.top + 20
+	if window.floating then
+		hl.dispatch(hl.dsp.window.float({ action = "off" }))
+		return
+	end
+	local height = math.min(window.size.y, math.floor(mh - monitor.reserved.top - monitor.reserved.bottom - 40))
+	hl.dispatch(hl.dsp.window.fullscreen({ action = "unset", layout_aware = false }))
+	hl.dispatch(hl.dsp.window.float({ action = "on" }))
+	hl.dispatch(hl.dsp.window.resize({ x = width, y = height, relative = false }))
+	hl.dispatch(hl.dsp.window.move({ x = x, y = y, relative = false }))
+	-- Reapply after the client acknowledges its new floating size.
+	hl.timer(function()
+		if window.floating then
+			hl.dispatch(hl.dsp.window.move({ x = x, y = y, relative = false, window = window }))
+		end
+	end, { timeout = 250, type = "oneshot" })
+end
+hl.unbind(hyper .. " + F2")
+o.bind(hyper .. " + F2", "Toggle floating 20% window below bar / tiled", toggle_float_width_20)
+hl.bind("CTRL + SHIFT + 2", hl.dsp.global("com.t3tools.T3Code:capture-window"))
+
+-- flea --default: begin. Written by `flea --default`; `flea --default off` removes the block whole.
+hl.unbind("SUPER + SHIFT + F")
+o.bind("SUPER + SHIFT + F", "File manager", { launch = 'flea --gui' })
+hl.unbind("SUPER + ALT + SHIFT + F")
+o.bind("SUPER + ALT + SHIFT + F", "File manager (cwd)", { launch = 'flea --gui "$(omarchy-cmd-terminal-cwd)"' })
+-- flea --default: end.
+
+-- flea --picker: begin. Written by `flea --picker`; `flea --picker off` removes the block whole.
+o.window("com.thisisgm.flea.picker", { tag = "+floating-window" })
+-- flea --picker: end.

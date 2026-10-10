@@ -10,7 +10,15 @@
 
 The `michael.brain` bar panel saves text, URLs and copied files in timestamped collections under `~/Brain/raw`. Submit groups attachments and text together; Paste clipboard also accepts a file-manager URI list. Duplicate content is not re-added. The last five submissions show processing state.
 
-`brain-capture.service` runs Grok with edit approval, reads the vault AGENTS.md, and requires wiki indexes and an appended activity log. The raw directory is mounted read-only for the service. No historical backlog is automatically queued. `brain-capture.timer` recovers queued work after restart. Queue metadata and processing logs live in `~/.local/state/brain-capture`; failed items remain available there. Voice results are registered in the same queue after saving/pushing.
+`brain-watch.service` recursively scans `~/Brain/raw` every two seconds and queues new or changed files after ten seconds without metadata changes. Hidden files/directories, symlinks, and common temporary/download files are ignored. On its first start it baselines existing files without ingesting the archive. Its durable `watch.state` checkpoint catches saves made while stopped. Duplicate contents and files already submitted as part of a capture collection are not ingested again.
+
+`brain-capture.service` runs Grok headlessly with the current contents of the vault `AGENTS.md` as `--system-prompt-override`. Each job must change wiki pages and `index.md`, and append to `log.md`, before it is marked processed. Raw sources are mounted read-only for the service. `brain-capture.timer` recovers queued work after restart; failed items require explicit retry. Queue metadata and per-item processing logs live in `~/.local/state/brain-capture`. Voice results use the same queue. Automatic ingestion records takeaways in the wiki instead of waiting for an interactive discussion.
+
+Watcher status: `systemctl --user status brain-watch.service`
+
+Watcher log: `journalctl --user -u brain-watch.service -f`
+
+Pause watching: `systemctl --user stop brain-watch.service` (already queued jobs still run). Resume: `systemctl --user start brain-watch.service`. To disable automatic startup: `systemctl --user disable --now brain-watch.service`.
 
 Retry a failed capture: `~/.config/desktop/bin/brain-capture retry CAPTURE-ID`
 

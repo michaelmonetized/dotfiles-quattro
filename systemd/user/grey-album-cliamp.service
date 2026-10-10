@@ -1,0 +1,11 @@
+[Unit]
+Description=The Grey Album local Cliamp station
+
+[Service]
+ExecStart=/usr/bin/node /home/michael/Projects/grey-album-cliamp/station.mjs
+WorkingDirectory=/home/michael/Projects/grey-album-cliamp
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

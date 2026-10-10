@@ -1,6 +1,26 @@
 {
     "gridSize": 132,
-    "lastPath": "/home/michael/Projects/omarchy-site-tanstack-start/public/brand",
+    "indexers": {
+        "background": {
+            "catalogEnabled": true,
+            "maxWatches": 2048,
+            "recursiveScan": true,
+            "scanIntervalMinutes": 360,
+            "watchDebounceMs": 650,
+            "watchNeighborhood": 128
+        },
+        "foreground": {
+            "imageFacts": true,
+            "thumbnailWorkers": 2
+        },
+        "semantic": {
+            "batchSize": 16,
+            "imageEmbeddings": false,
+            "imageModel": "Qdrant/clip-ViT-B-32-vision",
+            "intervalSeconds": 60
+        }
+    },
+    "lastPath": "/home/michael/Videos/Screenrecordings",
     "locationChips": [
         "synchro.location.home",
         "synchro.location.recent",
@@ -9,14 +29,19 @@
     ],
     "panel": {
         "app": "synchro.panel.terminal",
-        "lookOpen": true,
+        "lookOpen": false,
         "lookRatio": 0.34,
+        "lookSide": "",
         "lookSize": 772,
         "open": false,
         "side": "bottom",
         "size": 260
     },
     "pins": [
+        "/home/michael/Clients/HurleyUS/Ventures",
+        "/home/michael/Clients",
+        "/home/michael/Downloads",
+        "/home/michael/Videos"
     ],
     "showHidden": true,
     "sort": {
