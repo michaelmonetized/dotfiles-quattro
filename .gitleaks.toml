@@ -1,0 +1,21 @@
+# gitleaks config: default rules plus verified false positives only.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Verified non-secrets"
+regexTarget = "line"
+regexes = [
+  # Chromium's public Google OAuth client shipped in Linux distro builds (documented, not ours).
+  '''--oauth2-client-(id|secret)=''',
+  # xdg-desktop-portal screencast RestoreToken in OBS scenes: only valid on the machine that issued it.
+  '''"RestoreToken":''',
+  # Chrome extension manifest "key" is the extension's public key (fixes the extension ID).
+  '''^\s*"key": "MII''',
+]
+paths = [
+  # Published RFC/obs-websocket auth test vector ("password"/"salt"/"challenge").
+  '''omarchy/plugins/omastreamer/tests/test_bridge\.py''',
+  # Vendored Cloudflare skill docs: placeholder examples (YOUR_API_TOKEN, sk_live_abc123).
+  '''opencode/skills/.*\.md''',
+]

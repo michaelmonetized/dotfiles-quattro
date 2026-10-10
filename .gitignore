@@ -126,3 +126,8 @@ omarchy/plugins/.*.bak.*/
 # More credentials
 obs-studio/plugin_config/obs-websocket/config.json
 pulse/cookie
+
+# OBS profiles keep Twitch OAuth tokens (basic.ini) and the websocket password (user.ini)
+obs-studio/basic/profiles/*/basic.ini
+obs-studio/user.ini
+zsh/tokens

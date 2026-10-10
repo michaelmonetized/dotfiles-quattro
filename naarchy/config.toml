@@ -35,5 +35,5 @@ format = "%H:%M"
 show_in_pill = false
 
 [calendar]
-feeds = ["REMOVED_PRIVATE_CALENDAR_URL"]
+feeds = []   # private ICS feed URL lives only in the local copy (git skip-worktree), never in git
 refresh_min = 1
