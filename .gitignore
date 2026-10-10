@@ -85,3 +85,40 @@ obsidian/id
 /browser-keys/*.pem
 /browser-keys/**/*.pem
 /browser-keys/*.crx
+
+# ---- App state, caches, telemetry and logs (not config) ----
+Grok Bot/
+Codex/
+t3code-v2/
+google-chrome-for-testing/
+.wrangler/
+fallow/
+go/telemetry/
+turborepo/telemetry.json
+resend/telemetry-*
+resend/update-state.json
+ibus/bus/
+cliamp/cliamp.log
+cliamp/cliamp.sock.pid
+inkscape/extension-errors.log
+obs-studio/logs/
+obs-studio/profiler_data/
+obs-studio/plugin_config/obs-browser/
+omadesign/telemetry-state.json
+
+# ---- Credentials and sessions (never commit) ----
+slopops/
+resend/credentials.json
+icloudpd/
+keylens/stream-token
+omadesign/cloud-identity.json
+obs-studio/basic/profiles/*/service.json*
+obs-studio/basic/profiles/*/extra_services.json*
+**/secrets.env
+**/*.session
+
+# ---- Editor/tool backup copies ----
+*.bak.*
+*.keylens-backup-*
+*.before-*
+omarchy/plugins/.*.bak.*/
