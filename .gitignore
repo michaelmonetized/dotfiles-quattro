@@ -122,3 +122,7 @@ obs-studio/basic/profiles/*/extra_services.json*
 *.keylens-backup-*
 *.before-*
 omarchy/plugins/.*.bak.*/
+
+# More credentials
+obs-studio/plugin_config/obs-websocket/config.json
+pulse/cookie
