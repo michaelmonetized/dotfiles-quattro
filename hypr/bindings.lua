@@ -307,7 +307,11 @@ o.bind("ALT + RIGHT", "Move cursor one word right", send_chord("CTRL", "Right"))
 o.bind("SHIFT + ALT + LEFT", "Move cursor one word left", send_chord("CTRL + SHIFT", "Left"))
 o.bind("SHIFT + ALT + RIGHT", "Move cursor one word right", send_chord("CTRL + SHIFT", "Right"))
 
-o.bind("SUPER + SHIFT + comma", "Dismiss all notifications", "omarchy-shell notifications dismissAll")
+-- Naarchy owns org.freedesktop.Notifications (omarchy.notifications is in shell.json disabledPlugins).
+o.bind("SUPER + SHIFT + comma", "Dismiss all notifications", "naarchy notifications clear")
+o.bind("SUPER + comma", "Dismiss last notification", "naarchy notifications dismiss")
+o.bind("SUPER + CTRL + comma", "Toggle silencing notifications", "naarchy notifications dnd toggle")
+o.bind("SUPER + ALT + comma", "Invoke last notification", "naarchy notifications invoke")
 
 o.bind("SUPER + SHIFT + U", "Automations (Omaflow)", "$HOME/.config/omarchy/plugins/jesperlugner.omaflow/bin/omaflow")
 

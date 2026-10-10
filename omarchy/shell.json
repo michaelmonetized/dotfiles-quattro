@@ -29,6 +29,9 @@
           "id": "omarchy.tray"
         },
         {
+          "id": "netmojo.omdrop"
+        },
+        {
           "chipColor": "#cdd6f4",
           "id": "omarchy.system-update"
         },
@@ -94,7 +97,8 @@
     "michael.menu"
   ],
   "disabledPlugins": [
-    "omarchy.menu"
+    "omarchy.menu",
+    "omarchy.notifications"
   ],
   "idle": {
     "lock": 11400,

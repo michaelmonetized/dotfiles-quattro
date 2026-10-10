@@ -1,4 +1,5 @@
 [tools]
+bun = "1.4.2"
 codex = "latest"
 gh = "latest"
 opencode = "latest"
