@@ -18,9 +18,9 @@ cp "$policy/gitignore" "$scratch/.gitignore"
 env -u GIT_DIR -u GIT_WORK_TREE -u GIT_INDEX_FILE -u GIT_COMMON_DIR git -C "$scratch" init --quiet
 
 check_paths() {
-  if env -u GIT_DIR -u GIT_WORK_TREE -u GIT_INDEX_FILE -u GIT_COMMON_DIR git -C "$scratch" check-ignore --no-index --stdin < "$scratch/paths" > "$scratch/ignored"; then
+  if env -u GIT_DIR -u GIT_WORK_TREE -u GIT_INDEX_FILE -u GIT_COMMON_DIR git -C "$scratch" check-ignore --no-index -z --stdin < "$scratch/paths" > "$scratch/ignored"; then
     printf '%s\n' 'Blocked: ignored files appear in tracked content. Review .gitignore and untrack these paths:' >&2
-    cat "$scratch/ignored" >&2
+    tr '\0' '\n' < "$scratch/ignored" >&2
     exit 1
   else
     result=$?
@@ -30,14 +30,14 @@ check_paths() {
 
 case "${1:-}" in
   commit)
-    git ls-files > "$scratch/paths"
+    git ls-files -z > "$scratch/paths"
     check_paths
     gitleaks git . --pre-commit --staged --config "$policy/gitleaks.toml" --redact --no-banner --ignore-gitleaks-allow
     ;;
   push)
     while read -r local_ref local_sha remote_ref remote_sha; do
       case "$local_sha" in 0000000000000000000000000000000000000000) continue ;; esac
-      git log --format= --name-only --no-renames "$local_sha" | sed '/^$/d' | sort -u > "$scratch/paths"
+      git log --format= --name-only --no-renames -z "$local_sha" | sed -z '/^$/d' | sort -zu > "$scratch/paths"
       check_paths
       gitleaks git . --log-opts="$local_sha" --config "$policy/gitleaks.toml" --redact --no-banner --ignore-gitleaks-allow
     done
