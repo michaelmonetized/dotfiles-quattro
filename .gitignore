@@ -16,10 +16,8 @@ vivaldi/
 opera/
 zen/
 firefox/
-
 # Electron apps that store a full Chromium profile under ~/.config
 t3code/
-
 # Cookie, login, and history files (Chromium + Firefox), anywhere
 **/Cookies
 **/Cookies-journal
@@ -35,7 +33,6 @@ t3code/
 **/logins.db
 **/key4.db
 **/places.sqlite*
-
 # Chromium/Electron profile runtime
 **/Cache/
 **/Code Cache/
@@ -76,16 +73,13 @@ t3code/
 obsidian/Preferences
 obsidian/obsidian.log
 obsidian/id
-
 # Browser Keys includes its own Zen extension source.
 !browser-keys/zen/
 !browser-keys/zen/**
-
 # Local extension signing material and generated packages.
 /browser-keys/*.pem
 /browser-keys/**/*.pem
 /browser-keys/*.crx
-
 # ---- App state, caches, telemetry and logs (not config) ----
 Grok Bot/
 Codex/
@@ -105,7 +99,6 @@ obs-studio/logs/
 obs-studio/profiler_data/
 obs-studio/plugin_config/obs-browser/
 omadesign/telemetry-state.json
-
 # ---- Credentials and sessions (never commit) ----
 /slopops/
 resend/credentials.json
@@ -116,18 +109,59 @@ obs-studio/basic/profiles/*/service.json*
 obs-studio/basic/profiles/*/extra_services.json*
 **/secrets.env
 **/*.session
-
 # ---- Editor/tool backup copies ----
 *.bak.*
 *.keylens-backup-*
 *.before-*
 omarchy/plugins/.*.bak.*/
-
 # More credentials
 obs-studio/plugin_config/obs-websocket/config.json
 pulse/cookie
-
 # OBS profiles keep Twitch OAuth tokens (basic.ini) and the websocket password (user.ini)
 obs-studio/basic/profiles/*/basic.ini
 obs-studio/user.ini
 zsh/tokens
+# Browser profile backups (large, personal data)
+Restore Firefox/
+# Credentials, app state, telemetry and logs (never commit)
+Deskflow/tls/
+graphite/auth
+# Shell tokens (sourced by zsh/rc when present)
+/gh/hosts.yml
+/Deskflow/tls/
+/graphite/auth
+/zsh/tokens
+/wayvnc/config
+/tigervnc/passwd
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.sample
+**/__pycache__/
+**/*.pyc
+*.bak
+/artifacts/
+
+/gh/hosts.yml
+/Deskflow/tls/
+/graphite/auth
+/zsh/tokens
+/wayvnc/config
+/tigervnc/passwd
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.sample
+**/__pycache__/
+**/*.pyc
+*.bak
+*.bak.*
+/artifacts/

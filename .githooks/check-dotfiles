@@ -1,0 +1,42 @@
+#!/bin/sh
+set -eu
+
+if [ "${1:-}" = --help ]; then
+  printf '%s\n' 'Check dotfiles before publishing.' 'Reject ignored files and scan secrets with Gitleaks.' 'Arguments: commit checks the index; push reads Git pre-push refs.' 'Returns: zero when all checks pass; nonzero when publishing must stop.'
+  exit 0
+fi
+
+repo=$(git rev-parse --show-toplevel)
+cd "$repo"
+command -v gitleaks >/dev/null 2>&1 || { printf '%s\n' 'Install Gitleaks before committing or pushing dotfiles.' >&2; exit 1; }
+gitdir=$(git rev-parse --absolute-git-dir)
+scratch=$(mktemp -d "$gitdir/dotfiles-check.XXXXXX")
+trap 'rm -rf "$scratch"' EXIT HUP INT TERM
+
+check_paths() {
+  if git check-ignore --no-index --stdin < "$scratch/paths" > "$scratch/ignored"; then
+    printf '%s\n' 'Blocked: ignored files appear in tracked content. Review .gitignore and untrack these paths:' >&2
+    cat "$scratch/ignored" >&2
+    exit 1
+  else
+    result=$?
+    [ "$result" -eq 1 ] || exit "$result"
+  fi
+}
+
+case "${1:-}" in
+  commit)
+    git ls-files > "$scratch/paths"
+    check_paths
+    gitleaks git . --pre-commit --staged --config .gitleaks.toml --redact --no-banner --ignore-gitleaks-allow
+    ;;
+  push)
+    while read -r local_ref local_sha remote_ref remote_sha; do
+      case "$local_sha" in 0000000000000000000000000000000000000000) continue ;; esac
+      git log --format= --name-only --no-renames "$local_sha" | sed '/^$/d' | sort -u > "$scratch/paths"
+      check_paths
+      gitleaks git . --log-opts="$local_sha" --config .gitleaks.toml --redact --no-banner --ignore-gitleaks-allow
+    done
+    ;;
+  *) printf '%s\n' 'Usage: .githooks/check-dotfiles commit|push' >&2; exit 2 ;;
+esac

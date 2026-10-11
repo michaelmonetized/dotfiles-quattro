@@ -1,21 +1,58 @@
-# gitleaks config: default rules plus verified false positives only.
 [extend]
 useDefault = true
 
-[allowlist]
-description = "Verified non-secrets"
+[[rules]]
+id = "private-google-calendar"
+description = "Private Google Calendar address"
+regex = '''https?://(?:calendar\.google\.com|www\.google\.com)/calendar/ical/[^\s"'<>]+/private[^\s"'<>]*'''
+keywords = ["/calendar/ical/"]
+
+[[rules]]
+id = "twitch-stream-key"
+description = "Twitch stream key"
+regex = '''live_[0-9]+_[A-Za-z0-9_]+'''
+keywords = ["live_"]
+
+[[allowlists]]
+description = "Chrome extension public key"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^browser-keys/chrome/manifest\.json$''']
 regexTarget = "line"
-regexes = [
-  # Chromium's public Google OAuth client shipped in Linux distro builds (documented, not ours).
-  '''--oauth2-client-(id|secret)=''',
-  # xdg-desktop-portal screencast RestoreToken in OBS scenes: only valid on the machine that issued it.
-  '''"RestoreToken":''',
-  # Chrome extension manifest "key" is the extension's public key (fixes the extension ID).
-  '''^\s*"key": "MII''',
-]
-paths = [
-  # Published RFC/obs-websocket auth test vector ("password"/"salt"/"challenge").
-  '''omarchy/plugins/omastreamer/tests/test_bridge\.py''',
-  # Vendored Cloudflare skill docs: placeholder examples (YOUR_API_TOKEN, sk_live_abc123).
-  '''opencode/skills/.*\.md''',
-]
+regexes = ['''^\s*"key": "MII''']
+
+[[allowlists]]
+description = "Local PipeWire portal restore handle"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^obs-studio/basic/scenes/[^/]+\.json$''']
+regexTarget = "line"
+regexes = ['''"RestoreToken":''']
+
+[[allowlists]]
+description = "Public Chromium OAuth client distributed by Omarchy"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^chromium-flags\.conf$''']
+regexes = ['''^OTJgUOQcT7lO7GsGZq2G4IlT$''']
+
+[[allowlists]]
+description = "Published OBS websocket authentication test vector"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^omarchy/plugins/omastreamer/tests/test_bridge\.py$''']
+regexes = ['''^zTM5ki6L2vVvBQiTG9ckH1Lh64AbnCf6XZ226UmnkIA=$''']
+
+[[allowlists]]
+description = "Cloudflare documentation placeholders"
+targetRules = ["generic-api-key", "curl-auth-header"]
+condition = "AND"
+paths = ['''^opencode/skills/(?:cloudflare|workers-best-practices)/.*\.md$''']
+regexes = ['''^(?:YOUR_API_TOKEN|YOUR_API_KEY|sk_live_abc123)$''']
+
+[[allowlists]]
+description = "Documented example API key"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^opencode/skills/workers\-best\-practices/references/rules\.md$''']
+regexes = ['''^sk\-live\-abc123\.\.\.$''']
