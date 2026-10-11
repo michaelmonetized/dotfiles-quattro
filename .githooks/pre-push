@@ -1,2 +1,2 @@
 #!/bin/sh
-exec "$(git rev-parse --show-toplevel)/.githooks/check-dotfiles" push
+exec "$(git rev-parse --absolute-git-dir)/dotfiles-hooks/check-dotfiles" push

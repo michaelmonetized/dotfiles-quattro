@@ -12,9 +12,13 @@ command -v gitleaks >/dev/null 2>&1 || { printf '%s\n' 'Install Gitleaks before 
 gitdir=$(git rev-parse --absolute-git-dir)
 scratch=$(mktemp -d "$gitdir/dotfiles-check.XXXXXX")
 trap 'rm -rf "$scratch"' EXIT HUP INT TERM
+policy="$gitdir/dotfiles-hooks"
+test -f "$policy/gitleaks.toml" || { printf '%s\n' 'Run .githooks/install before committing or pushing.' >&2; exit 1; }
+cp "$policy/gitignore" "$scratch/.gitignore"
+env -u GIT_DIR -u GIT_WORK_TREE -u GIT_INDEX_FILE -u GIT_COMMON_DIR git -C "$scratch" init --quiet
 
 check_paths() {
-  if git check-ignore --no-index --stdin < "$scratch/paths" > "$scratch/ignored"; then
+  if env -u GIT_DIR -u GIT_WORK_TREE -u GIT_INDEX_FILE -u GIT_COMMON_DIR git -C "$scratch" check-ignore --no-index --stdin < "$scratch/paths" > "$scratch/ignored"; then
     printf '%s\n' 'Blocked: ignored files appear in tracked content. Review .gitignore and untrack these paths:' >&2
     cat "$scratch/ignored" >&2
     exit 1
@@ -28,14 +32,14 @@ case "${1:-}" in
   commit)
     git ls-files > "$scratch/paths"
     check_paths
-    gitleaks git . --pre-commit --staged --config .gitleaks.toml --redact --no-banner --ignore-gitleaks-allow
+    gitleaks git . --pre-commit --staged --config "$policy/gitleaks.toml" --redact --no-banner --ignore-gitleaks-allow
     ;;
   push)
     while read -r local_ref local_sha remote_ref remote_sha; do
       case "$local_sha" in 0000000000000000000000000000000000000000) continue ;; esac
       git log --format= --name-only --no-renames "$local_sha" | sed '/^$/d' | sort -u > "$scratch/paths"
       check_paths
-      gitleaks git . --log-opts="$local_sha" --config .gitleaks.toml --redact --no-banner --ignore-gitleaks-allow
+      gitleaks git . --log-opts="$local_sha" --config "$policy/gitleaks.toml" --redact --no-banner --ignore-gitleaks-allow
     done
     ;;
   *) printf '%s\n' 'Usage: .githooks/check-dotfiles commit|push' >&2; exit 2 ;;

@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+repo=$(git rev-parse --show-toplevel)
+gitdir=$(git rev-parse --absolute-git-dir)
+hooks="$gitdir/dotfiles-hooks"
+mkdir -p "$hooks"
+cp "$repo/.githooks/check-dotfiles" "$repo/.githooks/pre-commit" "$repo/.githooks/pre-push" "$hooks/"
+cp "$repo/.gitleaks.toml" "$hooks/gitleaks.toml"
+cp "$repo/.gitignore" "$hooks/gitignore"
+chmod 755 "$hooks/check-dotfiles" "$hooks/pre-commit" "$hooks/pre-push"
+git config core.hooksPath "$hooks"
+printf '%s\n' 'Dotfiles commit and push checks installed for every branch.'
